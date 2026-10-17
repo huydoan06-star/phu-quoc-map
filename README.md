@@ -63,3 +63,13 @@ The 6 seed spots use original placeholder SVGs marked "PLACEHOLDER" and `capture
 ## Licences
 
 Code: yours. Leaflet: BSD-2 (`vendor/leaflet/LICENSE`). Fonts: SIL OFL (`fonts/`). Map data © OpenStreetMap contributors (ODbL).
+
+
+## Design & motion (v2)
+
+- Full-bleed live map hero (OSM standard tiles, toned with a CSS filter — no keyed tile service), glass hero card, glass category chips, category-coloured SVG pins (`js/icons.js`).
+- Spot card: side panel on desktop, bottom sheet on mobile (drag the handle/photo down to dismiss; the × button does the same). Spring in, faster ease-in out. `#spot=<id>` deep links still work.
+- Motion is transform/opacity only; tokens live in `tokens.css` (`--ease-spring`, `--dur-*`, `--stagger`). `prefers-reduced-motion: reduce` turns every animation, flyTo and View Transition into an instant change.
+- View Transitions API for "Travel tips" / "All spots" / "Back to the map" links and for switching language (fallback: smooth scroll / instant swap).
+- Fonts are self-hosted (no Google Fonts/CDN, works in mainland China): Fraunces (display) + Be Vietnam Pro (body). Korean, Chinese, Japanese, Hindi and Russian use native system fonts via `:lang()` fallbacks in `tokens.css`.
+- Design sources: Hallmark skill (redesign, stamp in `css/site.css` + `.hallmark/log.json`) and UI UX Pro Max (palette "Travel/Tourism Agency", typography "Vietnamese Friendly", glassmorphism, motion/UX rules).

@@ -1,3 +1,28 @@
 [
-  { "date": "2026-10-17", "macrostructure": "Map / Diagram", "theme": "Garden", "enrichment": "none (the map is the image)", "nav": "N9 Edge-aligned minimal", "footer": "Ft6 Letter close", "brief": "Phú Quốc Map · static travel map + tips for international visitors" }
+  {
+    "date": "2026-10-17",
+    "verb": "redesign",
+    "scope": "index.html (single page, visual + motion layer)",
+    "genre": "editorial / atmospheric-light hybrid",
+    "macrostructure": "Map / Diagram — full-bleed hero map",
+    "theme": "custom: sunlit island, sea-glass, field guide (palette + pairing from UI UX Pro Max 'Travel/Tourism' + 'Vietnamese Friendly')",
+    "nav": "N2 floating glass chip",
+    "footer": "Ft6 letter close",
+    "fonts": [
+      "Fraunces (display)",
+      "Be Vietnam Pro (body/UI)",
+      "native CJK/Devanagari/Cyrillic system fallbacks via :lang()"
+    ],
+    "motion": "spring sheet/panel, staggered pins + cards, flyTo with panel offset, blur-up media, View Transitions (section nav + language), reduced-motion = instant",
+    "critique": "P4 H5 E4 S4 R4 V4"
+  },
+  {
+    "date": "2026-10-17",
+    "macrostructure": "Map / Diagram",
+    "theme": "Garden",
+    "enrichment": "none (the map is the image)",
+    "nav": "N9 Edge-aligned minimal",
+    "footer": "Ft6 Letter close",
+    "brief": "Phú Quốc Map · static travel map + tips for international visitors"
+  }
 ]

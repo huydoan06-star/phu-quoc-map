@@ -66,6 +66,19 @@ export async function setLang(code) {
   listeners.forEach((fn) => fn(code));
 }
 
+// Language switch without a jarring reflow: fetch the dictionary first, then swap every string
+// inside one View Transition (a short cross-fade). Falls back to an instant swap; reduced motion = instant.
+export async function switchLang(code) {
+  try { await loadDict(code); } catch {}
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!document.startViewTransition || reduce) return setLang(code);
+  const root = document.documentElement;
+  root.dataset.vt = 'lang';
+  const vt = document.startViewTransition(() => setLang(code));
+  vt.finished.finally(() => { delete root.dataset.vt; });
+  return vt.updateCallbackDone;
+}
+
 function pickInitial() {
   const q = new URLSearchParams(location.search).get('lang');
   if (q && langs.some((l) => l.code === q)) return q;
@@ -78,7 +91,7 @@ export async function initI18n() {
   await loadDict('en');
   const sel = document.getElementById('lang-select');
   sel.replaceChildren(...langs.map((l) => { const o = document.createElement('option'); o.value = l.code; o.textContent = l.nativeName; o.lang = l.code; return o; }));
-  sel.addEventListener('change', () => setLang(sel.value));
+  sel.addEventListener('change', () => switchLang(sel.value));
   const first = pickInitial();
   lang = first;
   if (first !== 'en') { try { await loadDict(first); } catch { lang = 'en'; } }

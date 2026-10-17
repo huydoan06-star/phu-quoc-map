@@ -1,7 +1,10 @@
-/* Hallmark · genre: editorial · theme: Garden · axes: light / high-contrast roman serif / chromatic-green
- * Tokens for Phú Quốc Map. Every colour and font in css/site.css references these names. */
+/* Hallmark · redesign · theme: custom (vibe: "sunlit island, sea-glass, field guide")
+ * paper oklch(97.7% 0.013 236) · accent oklch(64.6% 0.194 41) adventure-orange + sky oklch(68.5% 0.148 237)
+ * display: Fraunces (roman) · body/UI: Be Vietnam Pro · axes: light / high-contrast roman serif / warm-orange on cool-sky
+ * Palette + font pairing from UI UX Pro Max: "Travel/Tourism Agency" palette (sky blue + adventure orange),
+ * "Vietnamese Friendly" pairing (Be Vietnam Pro + Noto Sans fallback). Values converted to OKLCH tokens. */
 
-/* Self-hosted fonts (no third-party font CDN: keeps the page fast and reachable from every market) */
+/* Self-hosted fonts — no third-party CDN, reachable from every market (incl. China) */
 @font-face { font-family: "Fraunces"; font-style: normal; font-display: swap; font-weight: 100 900;
   src: url("fonts/fraunces-vietnamese-wght-normal.woff2") format("woff2");
   unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB; }
@@ -11,51 +14,91 @@
 @font-face { font-family: "Fraunces"; font-style: normal; font-display: swap; font-weight: 100 900;
   src: url("fonts/fraunces-latin-wght-normal.woff2") format("woff2");
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
-@font-face { font-family: "Newsreader"; font-style: normal; font-display: swap; font-weight: 200 800;
-  src: url("fonts/newsreader-vietnamese-wght-normal.woff2") format("woff2");
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 400;
+  src: url("fonts/be-vietnam-pro-vietnamese-400-normal.woff2") format("woff2");
   unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB; }
-@font-face { font-family: "Newsreader"; font-style: normal; font-display: swap; font-weight: 200 800;
-  src: url("fonts/newsreader-latin-ext-wght-normal.woff2") format("woff2");
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 600;
+  src: url("fonts/be-vietnam-pro-vietnamese-600-normal.woff2") format("woff2");
+  unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB; }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 700;
+  src: url("fonts/be-vietnam-pro-vietnamese-700-normal.woff2") format("woff2");
+  unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB; }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 400;
+  src: url("fonts/be-vietnam-pro-latin-ext-400-normal.woff2") format("woff2");
   unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
-@font-face { font-family: "Newsreader"; font-style: normal; font-display: swap; font-weight: 200 800;
-  src: url("fonts/newsreader-latin-wght-normal.woff2") format("woff2");
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 600;
+  src: url("fonts/be-vietnam-pro-latin-ext-600-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 700;
+  src: url("fonts/be-vietnam-pro-latin-ext-700-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 400;
+  src: url("fonts/be-vietnam-pro-latin-400-normal.woff2") format("woff2");
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
-@font-face { font-family: "Newsreader"; font-style: italic; font-display: swap; font-weight: 200 800;
-  src: url("fonts/newsreader-latin-wght-italic.woff2") format("woff2");
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+2000-206F; }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 600;
+  src: url("fonts/be-vietnam-pro-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Be Vietnam Pro"; font-style: normal; font-display: swap; font-weight: 700;
+  src: url("fonts/be-vietnam-pro-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
 
 :root {
-  /* Colour — Garden: warm cream paper, deep leaf ink, one leaf-green accent (<5% of any viewport) */
-  --color-paper: oklch(96.5% 0.018 95);
-  --color-paper-2: oklch(93% 0.024 95);
-  --color-paper-3: oklch(89% 0.03 95);
-  --color-ink: oklch(24% 0.03 160);
-  --color-ink-2: oklch(40% 0.03 160);
-  --color-muted: oklch(48% 0.025 160);
-  --color-rule: oklch(82% 0.03 120);
-  --color-accent: oklch(50% 0.13 155);
-  --color-accent-ink: oklch(98% 0.01 95);
-  --color-accent-soft: oklch(90% 0.06 150);
-  --color-sun: oklch(72% 0.15 65);
-  --color-warn: oklch(46% 0.15 35);
-  --color-warn-soft: oklch(93% 0.04 50);
-  --color-focus: oklch(45% 0.16 260);
-  --color-scrim: oklch(24% 0.03 160 / 0.35);
-  --color-shadow: oklch(24% 0.03 160 / 0.18);
+  /* Colour — surfaces */
+  --color-paper: oklch(97.7% 0.013 236);          /* #F0F9FF */
+  --color-paper-2: oklch(95.2% 0.02 236);
+  --color-card: oklch(99.4% 0.004 236);
+  --color-glass: oklch(99% 0.006 236 / 0.74);
+  --color-glass-strong: oklch(99% 0.006 236 / 0.9);
+  --color-glass-edge: oklch(100% 0 0 / 0.55);
+  --color-border: oklch(90.1% 0.058 230);         /* #BAE6FD */
+  --color-rule: oklch(88% 0.03 236);
+  /* Colour — text */
+  --color-ink: oklch(29.3% 0.066 243);            /* #082F49 headings */
+  --color-ink-2: oklch(39.1% 0.09 240);           /* #0C4A6E body */
+  --color-muted: oklch(44.6% 0.037 257);          /* #475569 */
+  /* Colour — brand */
+  --color-sky: oklch(68.5% 0.148 237);            /* #0EA5E9 decorative / fills */
+  --color-sky-ink: oklch(50% 0.134 242);          /* #0369A1 text-safe sky (≥4.5:1) */
+  --color-sky-soft: oklch(93% 0.04 230);
+  --color-accent: oklch(64.6% 0.194 41);          /* #EA580C CTA fill */
+  --color-accent-ink: oklch(55.3% 0.195 38.4);    /* #C2410C text-safe orange */
+  --color-accent-press: oklch(50% 0.18 38);
+  --color-on-accent: oklch(99% 0.01 60);
+  --color-warn: oklch(50.5% 0.19 30);
+  --color-warn-soft: oklch(95% 0.035 50);
+  --color-focus: oklch(29.3% 0.066 243);
+  --color-shadow: oklch(29% 0.07 243 / 0.16);
+  --color-shadow-strong: oklch(29% 0.07 243 / 0.28);
+  --color-scrim: oklch(29% 0.07 243 / 0.32);
+  /* Category pins (white glyph on fill ≥ 3:1) */
+  --cat-beach: oklch(58.8% 0.158 242);
+  --cat-sunset: oklch(64.6% 0.194 41);
+  --cat-food: oklch(58.6% 0.222 17.6);
+  --cat-market: oklch(55.5% 0.146 49);
+  --cat-nature: oklch(50.8% 0.118 165.6);
+  --cat-viewpoint: oklch(51.1% 0.086 186.4);
+  --cat-culture: oklch(49.1% 0.241 292.6);
+  --cat-nightlife: oklch(39.8% 0.195 277.4);
+  --cat-safety: oklch(50.5% 0.213 27.5);
+  --color-on-pin: oklch(99% 0.005 236);
 
   /* Type */
-  --font-display: "Fraunces", "Noto Serif", "Noto Serif KR", "Noto Serif SC", "Noto Serif TC", "Noto Serif JP", "Noto Serif Devanagari", Georgia, serif;
-  --font-body: "Newsreader", "Noto Serif", "Noto Serif KR", "Noto Serif SC", "Noto Serif TC", "Noto Serif JP", "Noto Serif Devanagari", Georgia, serif;
-  --font-ui: system-ui, -apple-system, "Segoe UI", "Noto Sans", "Malgun Gothic", "Microsoft YaHei", "Microsoft JhengHei", "Yu Gothic UI", "Nirmala UI", sans-serif;
+  --font-display: "Fraunces", var(--font-script-display), Georgia, serif;
+  --font-body: "Be Vietnam Pro", var(--font-script), system-ui, -apple-system, "Segoe UI", "Noto Sans", Roboto, sans-serif;
+  --font-ui: var(--font-body);
+  --font-script: "Segoe UI";
+  --font-script-display: "Noto Serif";
+  --lh-body: 1.6;
+  --lh-head: 1.08;
   --text-xs: 0.8125rem;
   --text-sm: 0.9375rem;
   --text-md: 1.0625rem;
-  --text-lg: 1.25rem;
+  --text-lg: 1.1875rem;
   --text-xl: 1.5rem;
   --text-2xl: 2rem;
-  --text-display: clamp(2.25rem, 1.4rem + 4.2vw, 4.25rem);
+  --text-display: clamp(2.4rem, 1.5rem + 4vw, 4.6rem);
 
-  /* Space — 4pt scale */
+  /* Space — 4pt */
   --space-3xs: 0.25rem;
   --space-2xs: 0.5rem;
   --space-xs: 0.75rem;
@@ -68,17 +111,38 @@
   --page-gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
   --measure: 62ch;
 
-  /* Lines, radius */
+  /* Lines, radius, elevation */
   --rule-hair: 1px solid var(--color-rule);
-  --rule-ink: 1px solid var(--color-ink);
-  --radius-sm: 4px;
-  --radius-md: 10px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
   --radius-pill: 999px;
+  --blur-glass: 16px;
+  --elev-1: 0 1px 2px var(--color-shadow), 0 4px 14px var(--color-shadow);
+  --elev-2: 0 2px 6px var(--color-shadow), 0 18px 44px var(--color-shadow-strong);
 
-  /* Motion */
+  /* Motion — one rhythm for the whole page */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --dur-fast: 140ms;
-  --dur-med: 260ms;
+  --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
+  --dur-fast: 160ms;
+  --dur-med: 280ms;
+  --dur-slow: 520ms;
+  --dur-exit: 200ms;
+  --stagger: 45ms;
 }
+/* Spring curve where the browser supports linear() — sampled from a critically-damped spring */
+@supports (transition-timing-function: linear(0, 1)) {
+  :root { --ease-spring: linear(0, 0.009, 0.035 2.1%, 0.141 4.4%, 0.723 12.9%, 0.938 16.7%, 1.017 19.4%, 1.067, 1.099 24.3%, 1.108 26%, 1.103 27.9%, 1.085 30.1%, 1.017 36.9%, 0.996 40.5%, 0.988 44%, 0.991 50.6%, 1.001 61.6%, 1); }
+}
+
+/* Per-script font fallbacks: each language gets a native system face for its script */
+:lang(ko) { --font-script: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR"; --font-script-display: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR"; }
+:lang(zh-CN) { --font-script: "PingFang SC", "Microsoft YaHei", "Noto Sans SC"; --font-script-display: "PingFang SC", "Microsoft YaHei", "Noto Sans SC"; }
+:lang(zh-TW) { --font-script: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC"; --font-script-display: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC"; }
+:lang(ja) { --font-script: "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", "Meiryo", "Noto Sans JP"; --font-script-display: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP"; }
+:lang(hi) { --font-script: "Nirmala UI", "Kohinoor Devanagari", "Noto Sans Devanagari"; --font-script-display: "Nirmala UI", "Kohinoor Devanagari", "Noto Sans Devanagari"; --lh-body: 1.75; --lh-head: 1.3; }
+:lang(ru) { --font-script: "Segoe UI", Roboto, "Noto Sans"; --font-script-display: "Noto Serif", Georgia; }
+/* CJK, Hangul and Devanagari headlines: use the bold native sans instead of a mismatched serif fallback */
+:lang(ko), :lang(zh-CN), :lang(zh-TW), :lang(ja), :lang(hi) { --font-display: var(--font-script-display), system-ui, sans-serif; }

@@ -6,7 +6,8 @@
   <title>Phú Quốc Map — real spots, photos &amp; travel tips for Phu Quoc island, Vietnam</title>
   <meta name="description" content="A hand-made map of Phú Quốc island, Vietnam: beaches, sunsets, night markets and viewpoints with photo, location and capture time, plus verified travel tips — visa-free 30 days, weather, jellyfish season, Grab, money.">
   <link rel="canonical" href="https://huydoan06-star.github.io/phu-quoc-map/">
-  <meta name="theme-color" content="#f6f1e4">
+  <meta name="theme-color" content="#f0f9ff">
+  <meta name="view-transition" content="same-origin">
   <meta name="robots" content="index, follow">
 
   <meta property="og:type" content="website">
@@ -26,6 +27,7 @@
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/be-vietnam-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="tokens.css">
@@ -43,19 +45,24 @@
     "touristType": ["Beach lovers", "Photographers", "Families"]
   }
   </script>
+  <noscript><style>body.is-loading .topbar, body.is-loading .hero__filters, body.is-loading .hero__card { opacity: 1; transform: none; }</style></noscript>
   <script src="vendor/leaflet/leaflet.js" defer></script>
   <script type="module" src="js/app.js"></script>
 </head>
-<body>
-  <a class="skip-link" href="#atlas" data-i18n="ui.skipToMap">Skip to the map</a>
+<body class="is-loading">
+  <a class="skip-link" href="#spots" data-i18n="ui.skipToMap">Skip to the map</a>
 
-  <header class="nav-edge">
+  <header class="topbar" id="topbar">
     <a class="wordmark" href="./" aria-label="Phú Quốc Map — home">
       <svg class="wordmark__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2c-3.9 0-7 3.1-7 7 0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
       <span>Phú Quốc Map</span>
     </a>
+    <nav class="topbar__nav" aria-label="Sections">
+      <a class="topbar__link" href="#tips" data-nav="tips" data-i18n="ui.toTips">Travel tips &amp; reminders</a>
+    </nav>
     <div class="lang">
       <label class="visually-hidden" for="lang-select" data-i18n="ui.language">Language</label>
+      <svg class="lang__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
       <select id="lang-select" class="lang__select">
         <option value="en">English</option>
       </select>
@@ -63,64 +70,74 @@
   </header>
 
   <main id="main">
-    <section class="intro" aria-labelledby="intro-title">
-      <h1 id="intro-title" class="intro__title" data-i18n="ui.heroTitle">Phú Quốc, pinned spot by spot.</h1>
-      <p class="intro__lede" data-i18n="ui.heroLede">Real places filmed on the island — where they are, when they were shot, and what to know before you go.</p>
-      <p class="intro__links"><a class="text-link" href="#tips" data-i18n="ui.toTips">Travel tips &amp; reminders</a></p>
-    </section>
+    <section id="atlas" class="hero" aria-labelledby="intro-title">
+      <div id="map" class="hero__map" role="region" aria-label="Interactive map of Phú Quốc" data-i18n-aria="ui.mapLabel"></div>
+      <div class="hero__veil" aria-hidden="true"></div>
 
-    <section id="atlas" class="atlas" aria-labelledby="atlas-title" tabindex="-1">
-      <h2 id="atlas-title" class="visually-hidden" data-i18n="ui.mapTitle">Map of spots</h2>
-      <div class="atlas__filters" role="group" aria-label="Filter by category" data-i18n-aria="ui.filterLabel" id="filters"></div>
-      <div class="atlas__stage">
-        <div id="map" class="atlas__map" role="region" aria-label="Interactive map of Phú Quốc" data-i18n-aria="ui.mapLabel"></div>
-        <aside id="spot-panel" class="panel" aria-labelledby="panel-title" hidden>
-          <div class="panel__inner">
-            <button type="button" class="panel__close" id="panel-close" data-i18n-aria="ui.close" aria-label="Close">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
-            </button>
-            <figure class="panel__figure">
-              <img id="panel-img" alt="" width="1600" height="1067" decoding="async">
-              <figcaption id="panel-badge" class="panel__badge" hidden></figcaption>
-            </figure>
-            <p class="panel__meta"><span id="panel-cat" class="panel__cat"></span> <span id="panel-time"></span></p>
-            <h3 id="panel-title" class="panel__title" tabindex="-1"></h3>
+      <div class="hero__filters" role="group" aria-label="Filter by category" data-i18n-aria="ui.filterLabel" id="filters"></div>
+
+      <div class="hero__card" id="hero-card">
+        <h1 id="intro-title" class="hero__title" data-i18n="ui.heroTitle">Phú Quốc, pinned spot by spot.</h1>
+        <p class="hero__lede" data-i18n="ui.heroLede">Real places filmed on the island — where they are, when they were shot, and what to know before you go.</p>
+        <p class="hero__actions">
+          <a class="btn-accent" href="#spots" data-nav="spots"><span data-i18n="ui.explore">Explore the spots</span></a>
+          <a class="text-link" href="#tips" data-nav="tips" data-i18n="ui.toTips">Travel tips &amp; reminders</a>
+        </p>
+      </div>
+
+      <aside id="spot-panel" class="panel is-parked" aria-labelledby="panel-title" data-state="closed" inert>
+        <div class="panel__grip" id="panel-grip" aria-hidden="true"><span></span></div>
+        <div class="panel__scroll" id="panel-scroll">
+          <button type="button" class="panel__close" id="panel-close" data-i18n-aria="ui.close" aria-label="Close">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+          <figure class="panel__figure" id="panel-figure">
+            <img id="panel-img" alt="" width="1600" height="1067" decoding="async">
+            <figcaption id="panel-badge" class="panel__badge" hidden></figcaption>
+          </figure>
+          <div class="panel__body">
+            <p class="panel__meta"><span id="panel-cat" class="cat-pill"></span> <span id="panel-time" class="panel__time"></span></p>
+            <h2 id="panel-title" class="panel__title" tabindex="-1"></h2>
             <div class="panel__section">
-              <h4 data-i18n="ui.guide">Guide</h4>
+              <h3 data-i18n="ui.guide">Guide</h3>
               <p id="panel-guide"></p>
             </div>
             <div class="panel__section panel__section--tips">
-              <h4 data-i18n="ui.tipsReminders">Tips &amp; reminders</h4>
+              <h3 data-i18n="ui.tipsReminders">Tips &amp; reminders</h3>
               <p id="panel-tips"></p>
             </div>
             <div class="panel__section">
-              <h4 data-i18n="ui.bestTime">Best time</h4>
+              <h3 data-i18n="ui.bestTime">Best time</h3>
               <p id="panel-best"></p>
             </div>
             <p class="panel__actions">
-              <a id="panel-directions" class="btn-outline" href="#" target="_blank" rel="noopener" data-i18n="ui.openMaps">Open in Google Maps</a>
+              <a id="panel-directions" class="btn-accent" href="#" target="_blank" rel="noopener"><span data-i18n="ui.openMaps">Open in Google Maps</span></a>
               <a id="panel-video" class="text-link" href="#" target="_blank" rel="noopener" hidden data-i18n="ui.watchVideo">Watch the video</a>
             </p>
             <!-- Affiliate slot (v2): spot.links[] renders here only when present. No links in v1. -->
             <ul id="panel-links" class="panel__links" hidden></ul>
           </div>
-        </aside>
-      </div>
-      <div class="index">
-        <h2 class="index__title" data-i18n="ui.listTitle">All spots</h2>
-        <ol id="spot-list" class="index__list"></ol>
-        <p id="spot-empty" class="index__empty" hidden data-i18n="ui.noSpots">No spots in this category yet.</p>
-        <noscript><p>This map needs JavaScript. The travel tips below work without it.</p></noscript>
-      </div>
+        </div>
+      </aside>
     </section>
 
-    <section id="tips" class="tips" aria-labelledby="tips-title">
-      <div class="tips__head">
-        <h2 id="tips-title" class="tips__title" data-i18n="ui.tipsTitle">Before you go</h2>
+    <section id="spots" class="spots" aria-labelledby="spots-title" tabindex="-1">
+      <div class="section-head">
+        <h2 id="spots-title" class="section-title" data-i18n="ui.listTitle">All spots</h2>
+      </div>
+      <ol id="spot-list" class="spot-grid"></ol>
+      <p id="spot-empty" class="spots__empty" hidden data-i18n="ui.noSpots">No spots in this category yet.</p>
+      <noscript><p>This map needs JavaScript. The travel tips below work without it.</p></noscript>
+    </section>
+
+    <section id="tips" class="tips" aria-labelledby="tips-title" tabindex="-1">
+      <div class="section-head">
+        <h2 id="tips-title" class="section-title" data-i18n="ui.tipsTitle">Before you go</h2>
         <p class="tips__lede" data-i18n="ui.tipsLede">Travel tips and reminders for Phú Quốc, checked against official and public sources.</p>
         <p class="tips__disclaimer" data-i18n="ui.disclaimer">Rules change — check official sources before you travel. Last checked: 2026-10-17.</p>
       </div>
       <ol id="tips-list" class="tips__list"></ol>
+      <p class="tips__back"><a class="text-link" href="#atlas" data-nav="atlas" data-i18n="ui.backToMap">Back to the map</a></p>
     </section>
 
     <!--
