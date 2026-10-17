@@ -1,0 +1,87 @@
+{
+  "_note": "Order and sources for the Travel tips section. Text lives in i18n/<lang>.json under tips.<id>. Last checked 2026-10-17.",
+  "lastChecked": "2026-10-17",
+  "order": [
+    {
+      "id": "visa",
+      "sources": [
+        "https://vietnamtourism.vn/en/index.php/useful/items/2282",
+        "https://visitphuquoc.com.vn/en/essential-travel-information/visa-policy",
+        "https://visitphuquoc.com.vn/en/essential-travel-information/faq",
+        "https://evisa.gov.vn"
+      ]
+    },
+    {
+      "id": "weather",
+      "sources": [
+        "https://vietnam.travel/places-to-go/mekong-delta/phu-quoc",
+        "https://visitphuquoc.com.vn/en/essential-travel-information",
+        "https://www.vietnam.travel/places-to-go/southern-vietnam/phu-quoc"
+      ]
+    },
+    {
+      "id": "jellyfish",
+      "sources": [
+        "https://news.tuoitre.vn/vietnams-phu-quoc-issues-jellyfish-warning-after-foreign-tourist-gets-stung-103250505151201646.htm",
+        "https://vtv9.vtv.vn/khuyen-cao-du-khach-tam-bien-phu-quoc-vao-mua-sua"
+      ]
+    },
+    {
+      "id": "sea",
+      "sources": [
+        "https://vietnam.travel/places-to-go/mekong-delta/phu-quoc"
+      ]
+    },
+    {
+      "id": "sun",
+      "general": true,
+      "sources": [
+        "https://www.vietnam.travel/places-to-go/southern-vietnam/phu-quoc"
+      ]
+    },
+    {
+      "id": "transport",
+      "sources": [
+        "https://www.grab.com/global/airport-rides/phu-quoc-international-airport/"
+      ]
+    },
+    {
+      "id": "money",
+      "sources": [
+        "https://visitphuquoc.com.vn/en/essential-travel-information"
+      ]
+    },
+    {
+      "id": "emergency",
+      "sources": [
+        "https://visitphuquoc.com.vn/en/essential-travel-information"
+      ]
+    },
+    {
+      "id": "power",
+      "sources": [
+        "https://visitphuquoc.com.vn/en/essential-travel-information"
+      ]
+    },
+    {
+      "id": "rules",
+      "sources": [
+        "https://visitphuquoc.com.vn/en/essential-travel-information",
+        "https://www.tobaccocontrollaws.org/laws/resolution-no-173-2024-qh15-viet-nam",
+        "https://vietnamnet.vn/en/vietnam-to-impose-fines-for-e-cigarette-use-and-possession-2478396.html"
+      ]
+    },
+    {
+      "id": "language",
+      "sources": [
+        "https://visitphuquoc.com.vn/en/essential-travel-information"
+      ]
+    },
+    {
+      "id": "zone",
+      "sources": [
+        "https://visitphuquoc.com.vn/en/phu-quoc-officially-becomes-a-special-zone-igniting-a-new-growth-engine"
+      ]
+    }
+  ]
+}

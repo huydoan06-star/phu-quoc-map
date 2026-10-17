@@ -1,0 +1,130 @@
+{
+  "_meta": {
+    "language": "Tiếng Việt",
+    "machineTranslated": false,
+    "needsReview": true,
+    "note": "Viết bởi trợ lý, chủ site nên đọc lại."
+  },
+  "ui": {
+    "skipToMap": "Đi tới bản đồ",
+    "language": "Ngôn ngữ",
+    "heroTitle": "Phú Quốc, từng điểm một.",
+    "heroLede": "Những nơi có thật được quay trên đảo — ở đâu, quay lúc nào, và cần biết gì trước khi đi.",
+    "toTips": "Mẹo & lưu ý du lịch",
+    "mapTitle": "Bản đồ các điểm",
+    "mapLabel": "Bản đồ tương tác Phú Quốc",
+    "filterLabel": "Lọc theo loại",
+    "filterAll": "Tất cả",
+    "listTitle": "Tất cả các điểm",
+    "noSpots": "Chưa có điểm nào trong mục này.",
+    "loadError": "Không tải được danh sách điểm. Hãy tải lại trang.",
+    "close": "Đóng",
+    "guide": "Giới thiệu",
+    "tipsReminders": "Mẹo & lưu ý",
+    "bestTime": "Thời điểm đẹp nhất",
+    "captured": "Chụp lúc",
+    "captureSoon": "Thời gian chụp: sắp cập nhật",
+    "placeholderBadge": "Ảnh tạm — ảnh thật sắp có",
+    "openMaps": "Mở trong Google Maps",
+    "watchVideo": "Xem video",
+    "tipsTitle": "Trước khi đi",
+    "tipsLede": "Mẹo và lưu ý khi du lịch Phú Quốc, đối chiếu với nguồn chính thức và công khai.",
+    "disclaimer": "Quy định có thể thay đổi — hãy kiểm tra nguồn chính thức trước khi đi. Kiểm tra lần cuối: 17/10/2026.",
+    "source": "Nguồn",
+    "generalAdvice": "Lời khuyên chung",
+    "planTitle": "Lên kế hoạch chuyến đi",
+    "footerClose": "Hẹn gặp bạn trên đảo.",
+    "footerSign": "— Phú Quốc Map",
+    "footerPs": "Ảnh và video do chủ trang thực hiện. Dữ liệu bản đồ © OpenStreetMap contributors.",
+    "machineNote": "Ngôn ngữ này được dịch máy và đang chờ người bản xứ duyệt."
+  },
+  "categories": {
+    "beach": "Bãi biển",
+    "sunset": "Hoàng hôn",
+    "food": "Ẩm thực",
+    "market": "Chợ",
+    "nature": "Thiên nhiên",
+    "viewpoint": "Điểm ngắm cảnh",
+    "culture": "Văn hoá",
+    "nightlife": "Vui chơi tối",
+    "safety": "An toàn"
+  },
+  "tips": {
+    "visa": {
+      "title": "Miễn thị thực 30 ngày — chỉ trong Phú Quốc",
+      "body": [
+        "Khách nước ngoài được nhập cảnh và lưu trú tại Phú Quốc tối đa 30 ngày không cần thị thực — kể cả khi quá cảnh qua một cửa khẩu quốc tế khác của Việt Nam và ở trong khu vực quá cảnh. Hộ chiếu nên còn hạn ít nhất 6 tháng; có thể được yêu cầu xuất trình vé rời Phú Quốc trong vòng 30 ngày.",
+        "Miễn thị thực chỉ áp dụng trong Phú Quốc. Muốn vào đất liền Việt Nam cần có thị thực; thị thực điện tử chính thức (tối đa 90 ngày) tại evisa.gov.vn. Một số quốc tịch được miễn thị thực dài hơn — hãy kiểm tra với nguồn chính thức hoặc hãng bay trước khi đi."
+      ]
+    },
+    "weather": {
+      "title": "Mùa khô tháng 11–4, mùa mưa tháng 5–10",
+      "body": [
+        "Từ tháng 11 đến tháng 4 trời khô, nắng, biển êm và trong — đẹp nhất để tắm biển. Tháng 5 đến tháng 10 biển động hơn, có mưa rào ngắn và nặng hạt, đảo vắng hơn. Trời ấm quanh năm (trung bình khoảng 27 °C); tháng 4 và 5 nóng nhất."
+      ]
+    },
+    "jellyfish": {
+      "title": "Mùa sứa: tháng 4 đến tháng 8",
+      "body": [
+        "Từ tháng 4 đến tháng 8 sứa vào gần bờ, nhất là sau mưa hoặc khi triều lên. Cơ quan chức năng nêu Gành Dầu, Cửa Cạn, Bãi Thơm, Hàm Ninh và An Thới là khu vực có nhiều sứa. Nên mặc đồ bơi dài tay, không xuống nước khi thấy sứa hoặc bọt lạ, và không chạm vào sứa — kể cả sứa chết vẫn có thể gây bỏng.",
+        "Nếu bị sứa đốt: không chà xát. Rửa bằng nước biển, không dùng nước ngọt; dùng giấm nếu có, gỡ xúc tu bằng một vật dẹt. Đến cơ sở y tế ngay nếu khó thở, chóng mặt hoặc đau dữ dội."
+      ]
+    },
+    "sea": {
+      "title": "Tắm ở nơi có cứu hộ",
+      "body": [
+        "Mùa mưa biển động hơn. Hãy tắm ở bãi có cứu hộ, làm theo cờ báo và hướng dẫn của nhân viên cứu hộ, không xuống nước khi sóng lớn."
+      ]
+    },
+    "sun": {
+      "title": "Nắng và nóng",
+      "body": [
+        "Trời ấm quanh năm, nóng nhất vào tháng 4 và 5. Uống nước thường xuyên, dùng kem chống nắng, mũ và tìm bóng râm, nên tắm biển vào buổi sáng hoặc chiều muộn."
+      ]
+    },
+    "transport": {
+      "title": "Đi lại: Grab và taxi",
+      "body": [
+        "Grab hoạt động ở Phú Quốc với xe ô tô và xe máy, có cả đưa đón sân bay, hiện giá trong ứng dụng trước khi đặt. Taxi tính cước bằng đồng hồ cũng có — hãy chắc chắn đồng hồ đang chạy hoặc thoả thuận giá trước."
+      ]
+    },
+    "money": {
+      "title": "Tiền: Việt Nam đồng (VND)",
+      "body": [
+        "Giá cả hằng ngày tính bằng VND. Một số khách sạn, khu nghỉ dưỡng, casino có thể nhận đô la Mỹ; thẻ được chấp nhận rộng rãi ở các điểm du lịch lớn, nhà hàng và trung tâm mua sắm. Nên mang theo ít tiền mặt cho chợ và cửa hàng nhỏ."
+      ]
+    },
+    "emergency": {
+      "title": "Số điện thoại khẩn cấp",
+      "body": [
+        "Công an 113 · Cứu hoả 114 · Cấp cứu 115. Đường dây hỗ trợ du khách: 1900 1720 (từ nước ngoài: +84 1900 1720)."
+      ]
+    },
+    "power": {
+      "title": "Ổ cắm điện",
+      "body": [
+        "220 V, 50 Hz. Ổ cắm dùng chuẩn A, C và G; phổ biến nhất là loại C (hai chân tròn). Mang theo bộ chuyển đổi nếu phích cắm của bạn khác."
+      ]
+    },
+    "rules": {
+      "title": "Quy định địa phương nên biết",
+      "body": [
+        "Cấm hút thuốc ở nơi công cộng kín như trung tâm mua sắm, nhà hàng, khu vực có máy lạnh — hãy hút ở khu vực được chỉ định.",
+        "Thuốc lá điện tử và thuốc lá nung nóng bị cấm tại Việt Nam từ 1/1/2025, du khách không được miễn: sử dụng hoặc mang theo có thể bị phạt.",
+        "Tiền tip được hoan nghênh nhưng không bắt buộc. Ở đền, miếu như Dinh Cậu, hãy ăn mặc kín đáo và giữ trật tự."
+      ]
+    },
+    "language": {
+      "title": "Ngôn ngữ",
+      "body": [
+        "Tiếng Việt là ngôn ngữ chính. Tiếng Anh được dùng rộng rãi ở khách sạn, nhà hàng và khu du lịch; nhiều nhân viên du lịch còn nói tiếng Trung, tiếng Hàn hoặc tiếng Nga."
+      ]
+    },
+    "zone": {
+      "title": "Nên biết: bạn đang ở đâu",
+      "body": [
+        "Từ ngày 1/7/2025, Phú Quốc là đặc khu thuộc tỉnh An Giang; trước đó thuộc tỉnh Kiên Giang."
+      ]
+    }
+  }
+}

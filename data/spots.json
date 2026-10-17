@@ -1,0 +1,377 @@
+{
+  "_doc": "See docs/DATA.md. Only status=published entries with lat/lng are shown.",
+  "spots": [
+    {
+      "id": "kiss-bridge",
+      "status": "published",
+      "category": "sunset",
+      "lat": 10.02826,
+      "lng": 104.00419,
+      "capturedAt": null,
+      "photos": [
+        {
+          "src": "photos/placeholder-kiss-bridge.svg",
+          "width": 1200,
+          "height": 800,
+          "placeholder": true,
+          "alt": {
+            "en": "Placeholder illustration for Kiss Bridge, Sunset Town"
+          }
+        }
+      ],
+      "name": {
+        "en": "Kiss Bridge, Sunset Town",
+        "vi": "Cầu Hôn, Sunset Town (An Thới)",
+        "ko": "키스 브리지, 선셋타운",
+        "zh-CN": "亲吻桥（日落小镇）",
+        "zh-TW": "親吻橋（日落小鎮）",
+        "ja": "キスブリッジ（サンセットタウン）",
+        "hi": "किस ब्रिज, सनसेट टाउन",
+        "ru": "Мост Поцелуев, Сансет-Таун"
+      },
+      "guide": {
+        "en": "Two halves of a bridge reach out over the sea at Sunset Town in An Thới, in the far south of the island, and almost meet in the middle — a favourite place to watch the sun go down.",
+        "vi": "Hai nửa cây cầu vươn ra biển ở Sunset Town, An Thới, cực nam đảo, gần chạm nhau ở giữa — nơi nhiều người chọn để ngắm hoàng hôn.",
+        "ko": "섬 최남단 안터이의 선셋타운에서 다리 두 개가 바다 위로 뻗어 나와 가운데에서 거의 맞닿습니다. 해 지는 모습을 보기 좋은 인기 장소입니다.",
+        "zh-CN": "在岛屿最南端安泰（An Thới）的日落小镇，两段桥身伸向海面，在中间几乎相触——是看日落的热门地点。",
+        "zh-TW": "在島嶼最南端安泰（An Thới）的日落小鎮，兩段橋身伸向海面，在中間幾乎相碰——是看夕陽的熱門地點。",
+        "ja": "島の最南端アントイのサンセットタウンで、二つの橋が海へ伸び、中央でほとんど触れ合います。夕日を眺める人気スポットです。",
+        "hi": "द्वीप के दक्षिणी छोर पर An Thới के सनसेट टाउन में पुल के दो हिस्से समुद्र के ऊपर बढ़ते हैं और बीच में लगभग मिल जाते हैं — सूर्यास्त देखने की पसंदीदा जगह।",
+        "ru": "В Сансет-Тауне в Ан Тхой, на самом юге острова, две половины моста тянутся над морем и почти соприкасаются посередине — любимое место для встречи заката."
+      },
+      "tips": {
+        "en": "It gets crowded around sunset — arrive early for a clear view. Sunset Town is a large resort area; follow local signs for access.",
+        "vi": "Gần giờ hoàng hôn rất đông — đến sớm để có chỗ đẹp. Sunset Town là khu nghỉ dưỡng rộng, hãy theo biển chỉ dẫn tại chỗ.",
+        "ko": "일몰 무렵에는 붐비니 일찍 도착하세요. 선셋타운은 넓은 리조트 단지이므로 현장 안내 표지판을 따르세요.",
+        "zh-CN": "日落前后人很多，建议提早到达。日落小镇是大型度假区，请按现场指示牌前往。",
+        "zh-TW": "夕陽前後人潮多，建議提早抵達。日落小鎮是大型度假區，請依現場指標前往。",
+        "ja": "夕日の時間帯は混み合うので早めに到着を。サンセットタウンは広いリゾートエリアなので、現地の案内表示に従ってください。",
+        "hi": "सूर्यास्त के समय भीड़ होती है — अच्छी जगह के लिए जल्दी पहुँचें। सनसेट टाउन एक बड़ा रिसॉर्ट क्षेत्र है; वहाँ लगे संकेतों का पालन करें।",
+        "ru": "К закату здесь многолюдно — приходите заранее. Сансет-Таун — большой курортный район, ориентируйтесь по местным указателям."
+      },
+      "bestTime": {
+        "en": "Late afternoon to sunset; dry season (Nov–Apr) for clearer skies.",
+        "vi": "Chiều muộn đến hoàng hôn; mùa khô (tháng 11–4) trời trong hơn.",
+        "ko": "늦은 오후부터 일몰까지. 하늘이 맑은 건기(11–4월) 추천.",
+        "zh-CN": "傍晚至日落；旱季（11–4 月）天空更晴朗。",
+        "zh-TW": "傍晚至日落；乾季（11–4 月）天空較晴朗。",
+        "ja": "夕方〜日没。空が澄む乾季（11〜4月）がおすすめ。",
+        "hi": "देर दोपहर से सूर्यास्त तक; साफ़ आसमान के लिए सूखा मौसम (नवंबर–अप्रैल)।",
+        "ru": "Ближе к вечеру и на закате; в сухой сезон (ноябрь–апрель) небо чище."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "seed"
+    },
+    {
+      "id": "duong-dong-night-market",
+      "status": "published",
+      "category": "food",
+      "lat": 10.2163,
+      "lng": 103.96058,
+      "capturedAt": null,
+      "photos": [
+        {
+          "src": "photos/placeholder-duong-dong-night-market.svg",
+          "width": 1200,
+          "height": 800,
+          "placeholder": true,
+          "alt": {
+            "en": "Placeholder illustration for Phú Quốc Night Market, Dương Đông"
+          }
+        }
+      ],
+      "name": {
+        "en": "Phú Quốc Night Market, Dương Đông",
+        "vi": "Chợ đêm Phú Quốc (Dinh Cậu), Dương Đông",
+        "ko": "푸꾸옥 야시장, 즈엉동",
+        "zh-CN": "富国岛夜市（阳东）",
+        "zh-TW": "富國島夜市（陽東）",
+        "ja": "フーコック・ナイトマーケット（ズオンドン）",
+        "hi": "फू क्वोक नाइट मार्केट, Dương Đông",
+        "ru": "Ночной рынок Фукуока, Зыонгдонг"
+      },
+      "guide": {
+        "en": "Stalls of grilled seafood, fresh fruit and local snacks on Bạch Đằng street near Dương Đông town. Pick your seafood and have it cooked on the spot.",
+        "vi": "Các quầy hải sản nướng, trái cây tươi và món ăn vặt địa phương trên đường Bạch Đằng, gần trung tâm Dương Đông. Chọn hải sản và nhờ chế biến tại chỗ.",
+        "ko": "즈엉동 시내 근처 박당(Bạch Đằng) 거리에 해산물 구이, 신선한 과일, 현지 간식 노점이 늘어서 있습니다. 해산물을 골라 그 자리에서 요리해 달라고 할 수 있습니다.",
+        "zh-CN": "位于阳东镇附近的白藤街（Bạch Đằng），有烤海鲜、新鲜水果和当地小吃摊位。挑好海鲜可以现场加工。",
+        "zh-TW": "位於陽東鎮附近的白藤街（Bạch Đằng），有烤海鮮、新鮮水果和在地小吃攤。挑好海鮮可以現場料理。",
+        "ja": "ズオンドンの町に近いバクダン通りに、海鮮焼き、新鮮なフルーツ、地元の軽食の屋台が並びます。海鮮を選んでその場で調理してもらえます。",
+        "hi": "Dương Đông शहर के पास Bạch Đằng स्ट्रीट पर ग्रिल्ड सीफ़ूड, ताज़े फल और स्थानीय स्नैक्स के स्टॉल। अपना सीफ़ूड चुनें और वहीं पकवाएँ।",
+        "ru": "Прилавки с морепродуктами на гриле, свежими фруктами и местными закусками на улице Бачданг рядом с городком Зыонгдонг. Выберите морепродукты — их приготовят на месте."
+      },
+      "tips": {
+        "en": "Confirm the price and weight before seafood is cooked. Carry small notes in cash, and keep an eye on your belongings in the crowd.",
+        "vi": "Hỏi rõ giá và cân trước khi chế biến hải sản. Mang tiền mặt mệnh giá nhỏ và giữ đồ cẩn thận khi đông người.",
+        "ko": "해산물은 요리 전에 가격과 무게를 꼭 확인하세요. 소액권 현금을 준비하고, 사람이 많으니 소지품에 주의하세요.",
+        "zh-CN": "海鲜加工前先确认价格和重量。准备小面额现金，人多时注意看管随身物品。",
+        "zh-TW": "海鮮料理前先確認價格與重量。準備小面額現金，人多時注意隨身物品。",
+        "ja": "海鮮は調理前に値段と重さを確認しましょう。小額の現金を用意し、人混みでは持ち物に注意を。",
+        "hi": "सीफ़ूड पकवाने से पहले दाम और वज़न पक्का कर लें। छोटे नोट नकद रखें और भीड़ में अपने सामान का ध्यान रखें।",
+        "ru": "Уточняйте цену и вес до приготовления морепродуктов. Возьмите наличные мелкими купюрами и следите за вещами в толпе."
+      },
+      "bestTime": {
+        "en": "Evening.",
+        "vi": "Buổi tối.",
+        "ko": "저녁.",
+        "zh-CN": "晚上。",
+        "zh-TW": "晚上。",
+        "ja": "夜。",
+        "hi": "शाम।",
+        "ru": "Вечер."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "seed"
+    },
+    {
+      "id": "sao-beach",
+      "status": "published",
+      "category": "beach",
+      "lat": 10.05247,
+      "lng": 104.03519,
+      "capturedAt": null,
+      "photos": [
+        {
+          "src": "photos/placeholder-sao-beach.svg",
+          "width": 1200,
+          "height": 800,
+          "placeholder": true,
+          "alt": {
+            "en": "Placeholder illustration for Sao Beach"
+          }
+        }
+      ],
+      "name": {
+        "en": "Sao Beach",
+        "vi": "Bãi Sao",
+        "ko": "사오 비치(바이사오)",
+        "zh-CN": "星沙滩（Sao 海滩）",
+        "zh-TW": "星沙灘（Sao 海灘）",
+        "ja": "サオビーチ",
+        "hi": "साओ बीच",
+        "ru": "Пляж Сао"
+      },
+      "guide": {
+        "en": "Powder-white sand and calm turquoise water on the south-east coast — one of the island's best-loved beaches.",
+        "vi": "Cát trắng mịn và nước xanh ngọc êm ả ở bờ đông nam — một trong những bãi biển được yêu thích nhất đảo.",
+        "ko": "남동쪽 해안의 고운 흰 모래와 잔잔한 청록빛 바다 — 섬에서 가장 사랑받는 해변 중 하나입니다.",
+        "zh-CN": "东南海岸的细白沙与平静的碧绿海水——岛上最受欢迎的海滩之一。",
+        "zh-TW": "東南海岸的細白沙與平靜的碧綠海水——島上最受喜愛的海灘之一。",
+        "ja": "南東海岸に広がるパウダーのような白砂と穏やかなターコイズの海——島で最も愛されるビーチのひとつ。",
+        "hi": "दक्षिण-पूर्वी तट पर पाउडर जैसी सफ़ेद रेत और शांत फ़िरोज़ी पानी — द्वीप के सबसे पसंदीदा तटों में से एक।",
+        "ru": "Белоснежный мелкий песок и спокойная бирюзовая вода на юго-восточном побережье — один из самых любимых пляжей острова."
+      },
+      "tips": {
+        "en": "Come early on a weekday for a quieter swim. From April to August, check the jellyfish advice before you go in.",
+        "vi": "Đến sớm vào ngày thường để tắm biển yên tĩnh hơn. Từ tháng 4 đến tháng 8, xem lưu ý về sứa trước khi xuống nước.",
+        "ko": "평일 아침 일찍 가면 한적하게 수영할 수 있습니다. 4–8월에는 물에 들어가기 전에 해파리 주의사항을 확인하세요.",
+        "zh-CN": "工作日早点来，游泳更清静。4 月至 8 月下水前请查看水母提醒。",
+        "zh-TW": "平日早點來，游泳更清靜。4 月至 8 月下水前請先看水母提醒。",
+        "ja": "平日の朝早めに行くと静かに泳げます。4〜8月は海に入る前にクラゲの注意点を確認しましょう。",
+        "hi": "शांति से तैरने के लिए किसी कामकाजी दिन सुबह जल्दी आएँ। अप्रैल से अगस्त तक पानी में जाने से पहले जेलीफ़िश सलाह देखें।",
+        "ru": "Приходите рано утром в будний день — будет спокойнее. С апреля по август перед купанием прочитайте советы о медузах."
+      },
+      "bestTime": {
+        "en": "Morning; dry season (Nov–Apr).",
+        "vi": "Buổi sáng; mùa khô (tháng 11–4).",
+        "ko": "오전, 건기(11–4월).",
+        "zh-CN": "上午；旱季（11–4 月）。",
+        "zh-TW": "上午；乾季（11–4 月）。",
+        "ja": "朝。乾季（11〜4月）。",
+        "hi": "सुबह; सूखा मौसम (नवंबर–अप्रैल)।",
+        "ru": "Утро; сухой сезон (ноябрь–апрель)."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "seed"
+    },
+    {
+      "id": "dinh-cau",
+      "status": "published",
+      "category": "culture",
+      "lat": 10.21722,
+      "lng": 103.95643,
+      "capturedAt": null,
+      "photos": [
+        {
+          "src": "photos/placeholder-dinh-cau.svg",
+          "width": 1200,
+          "height": 800,
+          "placeholder": true,
+          "alt": {
+            "en": "Placeholder illustration for Dinh Cậu Shrine"
+          }
+        }
+      ],
+      "name": {
+        "en": "Dinh Cậu Shrine",
+        "vi": "Dinh Cậu",
+        "ko": "딘꺼우 사당",
+        "zh-CN": "Dinh Cậu 神庙（舅庙）",
+        "zh-TW": "Dinh Cậu 神廟（舅廟）",
+        "ja": "ディンカウ（祠）",
+        "hi": "दिन्ह काउ देवस्थान",
+        "ru": "Святилище Динькау"
+      },
+      "guide": {
+        "en": "A small shrine on the rocks at the mouth of the Dương Đông river, closely tied to the island's fishing community, with views over the river mouth and the boats.",
+        "vi": "Ngôi miếu nhỏ trên ghềnh đá ở cửa sông Dương Đông, gắn bó với cộng đồng làng chài trên đảo, nhìn ra cửa sông và những chiếc thuyền.",
+        "ko": "즈엉동 강 하구 바위 위에 있는 작은 사당으로, 섬의 어촌 공동체와 깊은 관련이 있습니다. 강 하구와 배들이 내려다보입니다.",
+        "zh-CN": "位于阳东河口礁石上的小神庙，与岛上的渔民社区关系密切，可眺望河口和渔船。",
+        "zh-TW": "位於陽東河口礁石上的小廟，與島上漁村社群關係密切，可眺望河口與漁船。",
+        "ja": "ズオンドン川の河口の岩の上に建つ小さな祠。島の漁村の人々と深く結びつき、河口と漁船を見渡せます。",
+        "hi": "Dương Đông नदी के मुहाने पर चट्टानों पर बना एक छोटा देवस्थान, जो द्वीप के मछुआरा समुदाय से गहराई से जुड़ा है; यहाँ से मुहाने और नावों का नज़ारा दिखता है।",
+        "ru": "Небольшое святилище на скалах в устье реки Зыонгдонг, тесно связанное с рыбацкой общиной острова; отсюда видно устье и лодки."
+      },
+      "tips": {
+        "en": "This is a place of worship: dress modestly, keep your voice down and don't climb on altars or rocks marked off-limits. The night market is a short walk away.",
+        "vi": "Đây là nơi thờ tự: ăn mặc kín đáo, giữ trật tự, không trèo lên bàn thờ hay khu vực cấm. Chợ đêm ở ngay gần, đi bộ một đoạn ngắn.",
+        "ko": "예배 장소이니 단정한 옷차림을 하고 조용히 하며, 제단이나 출입 금지 구역에 올라가지 마세요. 야시장은 걸어서 가까운 거리입니다.",
+        "zh-CN": "这里是祭拜场所：请着装得体、保持安静，不要攀爬祭坛或禁入区域。夜市步行即可到达。",
+        "zh-TW": "這裡是祭祀場所：請穿著得體、保持安靜，勿攀爬神桌或禁入區域。夜市步行即可抵達。",
+        "ja": "礼拝の場です。控えめな服装で静かにし、祭壇や立入禁止の岩に登らないでください。ナイトマーケットは歩いてすぐです。",
+        "hi": "यह पूजा स्थल है: शालीन कपड़े पहनें, शांत रहें और वेदी या प्रतिबंधित चट्टानों पर न चढ़ें। नाइट मार्केट पैदल कुछ ही दूरी पर है।",
+        "ru": "Это место поклонения: одевайтесь скромно, не шумите и не забирайтесь на алтари и закрытые скалы. Ночной рынок — в нескольких минутах пешком."
+      },
+      "bestTime": {
+        "en": "Late afternoon to sunset, then dinner at the night market.",
+        "vi": "Chiều muộn đến hoàng hôn, sau đó ăn tối ở chợ đêm.",
+        "ko": "늦은 오후부터 일몰까지, 이후 야시장에서 저녁.",
+        "zh-CN": "傍晚至日落，之后去夜市吃晚饭。",
+        "zh-TW": "傍晚至日落，之後到夜市吃晚餐。",
+        "ja": "夕方〜日没、そのあとナイトマーケットで夕食。",
+        "hi": "देर दोपहर से सूर्यास्त तक, फिर नाइट मार्केट में डिनर।",
+        "ru": "Ближе к вечеру и на закате, потом ужин на ночном рынке."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "seed"
+    },
+    {
+      "id": "grand-world",
+      "status": "published",
+      "category": "nightlife",
+      "lat": 10.32494,
+      "lng": 103.85814,
+      "capturedAt": null,
+      "photos": [
+        {
+          "src": "photos/placeholder-grand-world.svg",
+          "width": 1200,
+          "height": 800,
+          "placeholder": true,
+          "alt": {
+            "en": "Placeholder illustration for Grand World Phú Quốc"
+          }
+        }
+      ],
+      "name": {
+        "en": "Grand World Phú Quốc",
+        "vi": "Grand World Phú Quốc",
+        "ko": "그랜드 월드 푸꾸옥",
+        "zh-CN": "富国岛大世界（Grand World）",
+        "zh-TW": "富國島大世界（Grand World）",
+        "ja": "グランドワールド・フーコック",
+        "hi": "ग्रैंड वर्ल्ड फू क्वोक",
+        "ru": "Гранд Уорлд Фукуок"
+      },
+      "guide": {
+        "en": "A large entertainment and shopping district in the island's north-west, with canals and themed streets that light up in the evening.",
+        "vi": "Khu vui chơi, mua sắm lớn ở phía tây bắc đảo, có kênh đào và những con phố theo chủ đề lên đèn vào buổi tối.",
+        "ko": "섬 북서쪽에 있는 대규모 엔터테인먼트·쇼핑 지구로, 운하와 테마 거리가 저녁이면 불을 밝힙니다.",
+        "zh-CN": "位于岛屿西北部的大型娱乐购物区，运河与主题街道在夜晚亮起灯光。",
+        "zh-TW": "位於島嶼西北部的大型娛樂購物區，運河與主題街道在夜晚點亮燈光。",
+        "ja": "島の北西部にある大規模な娯楽・ショッピング地区。運河とテーマのある街並みが夜にライトアップされます。",
+        "hi": "द्वीप के उत्तर-पश्चिम में एक बड़ा मनोरंजन और शॉपिंग क्षेत्र, जहाँ नहरें और थीम वाली गलियाँ शाम को रोशनी से जगमगाती हैं।",
+        "ru": "Большой развлекательный и торговый квартал на северо-западе острова с каналами и тематическими улицами, которые вечером зажигаются огнями."
+      },
+      "tips": {
+        "en": "It is in the north of the island, far from Dương Đông and the south — plan your ride back, especially late at night.",
+        "vi": "Nằm ở phía bắc đảo, xa Dương Đông và phía nam — hãy tính trước cách về, nhất là khi về khuya.",
+        "ko": "섬 북쪽에 있어 즈엉동이나 남부와 멀리 떨어져 있습니다. 특히 밤늦게는 돌아갈 교통편을 미리 계획하세요.",
+        "zh-CN": "位于岛屿北部，离阳东和南部较远——请提前规划回程，尤其是深夜。",
+        "zh-TW": "位於島嶼北部，離陽東與南部較遠——請先規劃回程，尤其是深夜。",
+        "ja": "島の北部にあり、ズオンドンや南部から離れています。特に夜遅くは帰りの足を事前に考えておきましょう。",
+        "hi": "यह द्वीप के उत्तर में है, Dương Đông और दक्षिण से दूर — वापसी की सवारी पहले से तय करें, ख़ासकर देर रात।",
+        "ru": "Это север острова, далеко от Зыонгдонга и юга — заранее продумайте, как вернуться, особенно поздно вечером."
+      },
+      "bestTime": {
+        "en": "Late afternoon into the evening.",
+        "vi": "Chiều muộn đến tối.",
+        "ko": "늦은 오후부터 저녁까지.",
+        "zh-CN": "傍晚到夜间。",
+        "zh-TW": "傍晚到夜間。",
+        "ja": "夕方から夜にかけて。",
+        "hi": "देर दोपहर से शाम तक।",
+        "ru": "С вечера и до ночи."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "seed"
+    },
+    {
+      "id": "hon-thom-cable-car",
+      "status": "published",
+      "category": "viewpoint",
+      "lat": 9.99201,
+      "lng": 104.01244,
+      "capturedAt": null,
+      "photos": [
+        {
+          "src": "photos/placeholder-hon-thom-cable-car.svg",
+          "width": 1200,
+          "height": 800,
+          "placeholder": true,
+          "alt": {
+            "en": "Placeholder illustration for Hòn Thơm Cable Car (An Thới station)"
+          }
+        }
+      ],
+      "name": {
+        "en": "Hòn Thơm Cable Car (An Thới station)",
+        "vi": "Cáp treo Hòn Thơm (ga An Thới)",
+        "ko": "혼텀 케이블카(안터이 역)",
+        "zh-CN": "香岛缆车（安泰站）",
+        "zh-TW": "香島纜車（安泰站）",
+        "ja": "ホントム・ケーブルカー（アントイ駅）",
+        "hi": "होन थॉम केबल कार (An Thới स्टेशन)",
+        "ru": "Канатная дорога на Хон Тхом (станция Ан Тхой)"
+      },
+      "guide": {
+        "en": "One of the world's longest over-sea cable cars, gliding above fishing villages and islets to Hòn Thơm island. This pin marks the departure station in An Thới.",
+        "vi": "Một trong những tuyến cáp treo vượt biển dài nhất thế giới, lướt qua làng chài và các đảo nhỏ để tới đảo Hòn Thơm. Điểm ghim là ga đi ở An Thới.",
+        "ko": "세계에서 가장 긴 해상 케이블카 중 하나로, 어촌 마을과 작은 섬들 위를 지나 혼텀 섬까지 갑니다. 이 핀은 안터이의 출발역입니다.",
+        "zh-CN": "世界上最长的跨海缆车之一，从渔村和小岛上空滑向香岛（Hòn Thơm）。此标记为安泰的出发站。",
+        "zh-TW": "世界上最長的跨海纜車之一，從漁村與小島上空滑向香島（Hòn Thơm）。此標記為安泰的出發站。",
+        "ja": "世界最長級の海上ケーブルカーのひとつで、漁村や小島の上を越えてホントム島へ。このピンはアントイの出発駅です。",
+        "hi": "दुनिया की सबसे लंबी समुद्र-पार केबल कारों में से एक, जो मछुआरा गाँवों और छोटे द्वीपों के ऊपर से होन थॉम द्वीप तक जाती है। यह पिन An Thới का प्रस्थान स्टेशन है।",
+        "ru": "Одна из самых длинных в мире канатных дорог над морем — над рыбацкими деревнями и островками к острову Хон Тхом. Метка — станция отправления в Ан Тхой."
+      },
+      "tips": {
+        "en": "Check the operator's schedule, tickets and the weather before you go.",
+        "vi": "Kiểm tra lịch chạy, vé và thời tiết từ đơn vị vận hành trước khi đi.",
+        "ko": "가기 전에 운영사의 운행 시간, 티켓, 날씨를 확인하세요.",
+        "zh-CN": "出发前请查看运营方的时刻、票务和天气。",
+        "zh-TW": "出發前請查看營運方的時刻、票務與天氣。",
+        "ja": "出かける前に運営会社の運行時間、チケット、天気を確認しましょう。",
+        "hi": "जाने से पहले ऑपरेटर का समय, टिकट और मौसम ज़रूर देखें।",
+        "ru": "Перед поездкой проверьте расписание и билеты у оператора, а также погоду."
+      },
+      "bestTime": {
+        "en": "Morning on a clear day in the dry season (Nov–Apr).",
+        "vi": "Buổi sáng trời quang, mùa khô (tháng 11–4).",
+        "ko": "건기(11–4월)의 맑은 날 오전.",
+        "zh-CN": "旱季（11–4 月）晴天的上午。",
+        "zh-TW": "乾季（11–4 月）晴天的上午。",
+        "ja": "乾季（11〜4月）の晴れた日の朝。",
+        "hi": "सूखे मौसम (नवंबर–अप्रैल) में साफ़ दिन की सुबह।",
+        "ru": "Ясное утро в сухой сезон (ноябрь–апрель)."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "seed"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://huydoan06-star.github.io/phu-quoc-map/sitemap.xml

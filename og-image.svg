@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f6f1e4"/>
+  <path d="M860 70c40 30 70 90 80 160s0 140-20 200-60 110-90 120-40-30-50-80-20-120-10-190 30-140 60-180 30-40 30-30z" fill="#dce9d6" stroke="#2e7a4f" stroke-width="4"/>
+  <g fill="#1f3a30"><circle cx="880" cy="250" r="12"/><circle cx="905" cy="330" r="12"/><circle cx="845" cy="470" r="12"/><circle cx="870" cy="540" r="12"/><circle cx="820" cy="160" r="12"/></g>
+  <circle cx="880" cy="250" r="22" fill="none" stroke="#2e7a4f" stroke-width="4"/>
+  <text x="80" y="250" font-family="Georgia, serif" font-size="92" font-weight="700" fill="#1f3a30">Phú Quốc Map</text>
+  <text x="80" y="330" font-family="Georgia, serif" font-size="40" fill="#3d544a">Real spots · photo · place · time</text>
+  <text x="80" y="390" font-family="Georgia, serif" font-size="40" fill="#3d544a">+ verified travel tips</text>
+  <rect x="80" y="450" width="140" height="6" fill="#2e7a4f"/>
+</svg>

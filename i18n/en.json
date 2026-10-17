@@ -1,0 +1,129 @@
+{
+  "_meta": {
+    "language": "English",
+    "machineTranslated": false,
+    "needsReview": false
+  },
+  "ui": {
+    "skipToMap": "Skip to the map",
+    "language": "Language",
+    "heroTitle": "Phú Quốc, pinned spot by spot.",
+    "heroLede": "Real places filmed on the island — where they are, when they were shot, and what to know before you go.",
+    "toTips": "Travel tips & reminders",
+    "mapTitle": "Map of spots",
+    "mapLabel": "Interactive map of Phú Quốc",
+    "filterLabel": "Filter by category",
+    "filterAll": "All",
+    "listTitle": "All spots",
+    "noSpots": "No spots in this category yet.",
+    "loadError": "Couldn't load the spots. Refresh the page to try again.",
+    "close": "Close",
+    "guide": "Guide",
+    "tipsReminders": "Tips & reminders",
+    "bestTime": "Best time",
+    "captured": "Captured",
+    "captureSoon": "Capture time: coming soon",
+    "placeholderBadge": "Placeholder image — real photo coming soon",
+    "openMaps": "Open in Google Maps",
+    "watchVideo": "Watch the video",
+    "tipsTitle": "Before you go",
+    "tipsLede": "Travel tips and reminders for Phú Quốc, checked against official and public sources.",
+    "disclaimer": "Rules change — check official sources before you travel. Last checked: 2026-10-17.",
+    "source": "Source",
+    "generalAdvice": "General advice",
+    "planTitle": "Plan your trip",
+    "footerClose": "See you on the island.",
+    "footerSign": "— Phú Quốc Map",
+    "footerPs": "Photos and footage by the site owner. Map data © OpenStreetMap contributors.",
+    "machineNote": "This language is machine-translated and awaiting review by a native speaker."
+  },
+  "categories": {
+    "beach": "Beach",
+    "sunset": "Sunset",
+    "food": "Food",
+    "market": "Market",
+    "nature": "Nature",
+    "viewpoint": "Viewpoint",
+    "culture": "Culture",
+    "nightlife": "Night out",
+    "safety": "Safety"
+  },
+  "tips": {
+    "visa": {
+      "title": "Visa-free for 30 days — Phú Quốc only",
+      "body": [
+        "Foreign visitors can enter and stay on Phú Quốc for up to 30 days without a visa — also if you connect through another Vietnamese international airport and stay in the transit area. Your passport should be valid for at least 6 months, and you may be asked to show a ticket out of Phú Quốc within 30 days.",
+        "The exemption covers Phú Quốc only. To travel on to mainland Vietnam you need a visa; Vietnam's official e-visa (up to 90 days) is at evisa.gov.vn. Some nationalities have longer visa-free stays — check with official sources or your airline before you fly."
+      ]
+    },
+    "weather": {
+      "title": "Dry season Nov–Apr, rainy season May–Oct",
+      "body": [
+        "November to April is dry and sunny with calm, clear seas — the best beach weather. May to October brings rougher seas and short, heavy showers, and a quieter island. It is warm all year (around 27 °C on average); April and May are the hottest months."
+      ]
+    },
+    "jellyfish": {
+      "title": "Jellyfish season: April to August",
+      "body": [
+        "Jellyfish come closer to shore from April to August, especially after rain or at high tide. Local authorities name Gành Dầu, Cửa Cạn, Bãi Thơm, Hàm Ninh and An Thới as areas with more jellyfish. Wear long-sleeved swimwear, stay out of the water if you see jellyfish or unusual foam, and never touch one — even dead jellyfish can sting.",
+        "If you are stung: don't rub. Rinse with seawater, not fresh water; use vinegar if you have it, and lift off stingers with a flat card. Get medical help right away for breathing trouble, dizziness or severe pain."
+      ]
+    },
+    "sea": {
+      "title": "Swim where the lifeguards are",
+      "body": [
+        "In the rainy season the sea gets rougher. Swim at patrolled beaches, follow the flags and the lifeguards, and stay out when the waves are up."
+      ]
+    },
+    "sun": {
+      "title": "Sun and heat",
+      "body": [
+        "It is warm all year and hottest in April and May. Drink water often, use sunscreen, a hat and shade, and plan beach time for the morning or late afternoon."
+      ]
+    },
+    "transport": {
+      "title": "Getting around: Grab and taxis",
+      "body": [
+        "Grab works on Phú Quốc for car and motorbike rides, including airport transfers, and shows the price in the app before you book. Metered taxis are also available — check that the meter is running, or agree on the fare before you set off."
+      ]
+    },
+    "money": {
+      "title": "Money: Vietnamese đồng (VND)",
+      "body": [
+        "Everyday prices are in Vietnamese đồng. Some hotels, resorts and casinos may accept US dollars, and cards are widely accepted at major attractions, restaurants and shopping centres. Keep some cash for markets and small shops."
+      ]
+    },
+    "emergency": {
+      "title": "Emergency numbers",
+      "body": [
+        "Police 113 · Fire 114 · Ambulance 115. Tourist support hotline: 1900 1720 (from abroad: +84 1900 1720)."
+      ]
+    },
+    "power": {
+      "title": "Power plugs",
+      "body": [
+        "220 V, 50 Hz. Sockets take plug types A, C and G; type C (two round pins) is the most common. Bring an adapter if your plug is different."
+      ]
+    },
+    "rules": {
+      "title": "Local rules worth knowing",
+      "body": [
+        "Smoking is banned in enclosed public places such as shopping centres, restaurants and air-conditioned areas — use marked smoking areas.",
+        "E-cigarettes and heated-tobacco devices have been banned in Vietnam since 1 January 2025, and visitors are not exempt: using or carrying them can be fined.",
+        "Tipping is welcome but never required. At shrines and temples such as Dinh Cậu, dress modestly and keep your voice down."
+      ]
+    },
+    "language": {
+      "title": "Language",
+      "body": [
+        "Vietnamese is the main language. English is widely used in hotels, restaurants and tourist areas, and many tourism staff also speak Chinese, Korean or Russian."
+      ]
+    },
+    "zone": {
+      "title": "Good to know: where you are",
+      "body": [
+        "Since 1 July 2025 Phú Quốc has been a special administrative zone of An Giang province; before that it belonged to Kiên Giang province."
+      ]
+    }
+  }
+}
