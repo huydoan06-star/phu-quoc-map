@@ -167,13 +167,18 @@ html[data-theme="night"] .tool__moon { transform: none; opacity: 1; }
 /* Day/night is a tint on the same satellite layer + a NASA city-lights layer — crossfaded together (800ms) */
 .leaflet-pane.leaflet-tile-pane .tiles-base { transition: filter 800ms var(--ease-in-out); filter: saturate(1.2) contrast(1.06) brightness(1.14); }
 html[data-theme="night"] .tiles-base { filter: brightness(0.34) saturate(0.55) contrast(1.15) hue-rotate(12deg); }
+.leaflet-detail-pane { opacity: var(--dz, 0); transition: opacity 260ms linear; pointer-events: none; }
+.leaflet-detail-pane .tiles-detail { filter: saturate(1.08) contrast(1.02); transition: filter 800ms var(--ease-in-out); }
+/* Night: the street map goes dark navy with warm roads, matching the tinted satellite */
+html[data-theme="night"] .leaflet-detail-pane .tiles-detail { filter: invert(1) hue-rotate(185deg) brightness(1.05) contrast(0.95) saturate(0.6) sepia(0.1); }
+.zoom-ge16 .place { display: none; } /* the detail map has its own street-level labels */
 .leaflet-lights-pane { mix-blend-mode: screen; opacity: 0; transition: opacity 800ms var(--ease-in-out); pointer-events: none; }
 .leaflet-lights-pane .tiles-lights { filter: blur(1.6px) saturate(1.5) brightness(1.25); }
 html[data-theme="night"] .leaflet-lights-pane { opacity: var(--lo, 0.95); }
 .fx { position: absolute; left: 0; top: 0; pointer-events: none; overflow: hidden; }
 .fx > * { position: absolute; inset: 0; transition: opacity 800ms var(--ease-in-out); }
 .fx-veil { background: radial-gradient(120% 90% at 50% 40%, oklch(25% 0.09 262 / 0.35), oklch(14% 0.05 262 / 0.62)); opacity: 0; mix-blend-mode: multiply; }
-html[data-theme="night"] .fx-veil { opacity: 1; }
+html[data-theme="night"] .fx-veil { opacity: calc(1 - var(--dz, 0) * 0.65); }
 .fx-sun { background: radial-gradient(80% 60% at 85% 0%, oklch(96% 0.08 85 / 0.32), transparent 60%), linear-gradient(to bottom, oklch(97% 0.03 90 / 0.12), transparent 40%); mix-blend-mode: soft-light; }
 html[data-theme="night"] .fx-sun { opacity: 0; }
 /* drifting cloud shadows (day) */

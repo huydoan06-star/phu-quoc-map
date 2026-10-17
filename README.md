@@ -6,6 +6,7 @@ Live: https://huydoan06-star.github.io/phu-quoc-map/
 
 - Static site, **no build step, no backend, no paid services**. Hosted on GitHub Pages.
 - Map: [Leaflet](https://leafletjs.com) 1.9.4 + Leaflet.markercluster 1.5.3 (vendored) on Sentinel-2 cloudless satellite imagery by EOX (day) + NASA GIBS VIIRS Black Marble (night lights). No API keys. Terms: `SOURCES.md`.
+- Close zoom: map goes to z19; from z15.5 to z17 the satellite crossfades into OpenStreetMap's standard map (sharp street detail; dark-tinted at night). Opening a spot flies to ~z16.75.
 - Smooth scrolling: Lenis 1.3.27 (vendored, only when Motion is on).
 - Fonts self-hosted (`fonts/`, Fraunces + Newsreader, SIL OFL) — no Google Fonts call, so the page also loads where Google is blocked.
 - 8 languages: English (default), Tiếng Việt, 한국어, 简体中文, 繁體中文（台灣）, 日本語, हिन्दी, Русский. Choice is based on 2025 arrival data — see `SOURCES.md`.

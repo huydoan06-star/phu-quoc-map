@@ -17,6 +17,8 @@ const EOX_URL = `https://tiles.maps.eox.at/wmts/1.0.0/${IMAGERY.layer}/default/g
 const GIBS_URL = 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_Black_Marble/default/default/GoogleMapsCompatible_Level8/{z}/{y}/{x}.png';
 const ATTR_DAY = `<a href="https://s2maps.eu" target="_blank" rel="noopener">Sentinel-2 cloudless – s2maps.eu</a> by <a href="https://eox.at" target="_blank" rel="noopener">EOX IT Services GmbH</a> (contains modified Copernicus Sentinel data ${IMAGERY.year}), <a href="${IMAGERY.licenseUrl}" target="_blank" rel="noopener">${IMAGERY.license}</a>`;
 const ATTR_NIGHT = 'Night lights: <a href="https://earthobservatory.nasa.gov/features/NightLights" target="_blank" rel="noopener">NASA Earth Observatory</a> / <a href="https://www.earthdata.nasa.gov/gibs" target="_blank" rel="noopener">GIBS</a> (VIIRS Black Marble)';
+const DETAIL_URL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+const ATTR_DETAIL = 'Close-up map © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors';
 const ATTR_OSM = 'Places © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors';
 
 const PLACES = [
@@ -38,7 +40,7 @@ export const theme = () => root.dataset.theme || 'day';
 
 export function createMap(el, { bounds, maxBounds, interactiveWheel, animate }) {
   map = L.map(el, {
-    zoomControl: false, zoomSnap: 0.25, zoomDelta: 0.5, minZoom: 9, maxZoom: 17,
+    zoomControl: false, zoomSnap: 0.25, zoomDelta: 0.5, minZoom: 9, maxZoom: 19,
     maxBounds, maxBoundsViscosity: 0.85, scrollWheelZoom: false, wheelPxPerZoomLevel: 90,
     fadeAnimation: animate, zoomAnimation: animate, markerZoomAnimation: animate,
   });
@@ -51,10 +53,10 @@ export function createMap(el, { bounds, maxBounds, interactiveWheel, animate }) 
   map.attributionControl.setPrefix('<a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>');
   L.control.zoom({ position: 'topright' }).addTo(map);
 
-  for (const [name, z] of [['fx', 230], ['lights', 260], ['glow', 380], ['labels', 390]]) {
+  for (const [name, z] of [['detail', 215], ['fx', 230], ['lights', 260], ['glow', 380], ['labels', 390]]) {
     const p = map.createPane(name); p.style.zIndex = String(z); p.style.pointerEvents = 'none';
   }
-  const base = L.tileLayer(EOX_URL, { maxNativeZoom: 15, maxZoom: 17, className: 'tiles-base', attribution: ATTR_DAY, keepBuffer: 3 }).addTo(map);
+  const base = L.tileLayer(EOX_URL, { maxNativeZoom: 15, maxZoom: 19, className: 'tiles-base', attribution: ATTR_DAY, keepBuffer: 3 }).addTo(map);
   // Fallback: if the imagery host is unreachable, show OpenStreetMap instead of an empty sea.
   let ok = 0, bad = 0;
   base.on('tileload', () => { ok++; });
@@ -65,6 +67,15 @@ export function createMap(el, { bounds, maxBounds, interactiveWheel, animate }) 
     }
   });
   map.attributionControl.addAttribution(ATTR_OSM);
+
+  // Close-zoom detail: Sentinel-2 is 10 m/pixel, so from z15.5 to z17 we crossfade into OpenStreetMap's
+  // standard map, which stays sharp to z19. Tiles are only requested from z15.5 up (tile usage policy:
+  // browser referer, no prefetch, small keepBuffer, no requests while zooming).
+  const detail = L.tileLayer(DETAIL_URL, {
+    pane: 'detail', minZoom: 16, maxZoom: 19, maxNativeZoom: 19, className: 'tiles-detail', attribution: ATTR_DETAIL,
+    keepBuffer: 1, updateWhenZooming: false, updateWhenIdle: true, crossOrigin: false,
+  }).addTo(map);
+  detail.on('tileerror', () => {});
 
   // Ambient FX layer lives in its own pane (above imagery, below pins) and is pinned to the viewport.
   fxEl = document.getElementById('fx');
@@ -91,13 +102,17 @@ export function createMap(el, { bounds, maxBounds, interactiveWheel, animate }) 
     c.style.setProperty('--gz', Math.min(1.8, Math.pow(2, (z - 11) * 0.5)).toFixed(3));
     c.style.setProperty('--go', z >= 14 ? '0.18' : z >= 12.5 ? '0.45' : '0.9');
     // NASA lights are only ~500 m/pixel: fade them as we zoom past their native detail
-    c.style.setProperty('--lo', z >= 14 ? '0.25' : z >= 12.5 ? '0.55' : '0.95');
+    c.style.setProperty('--lo', z >= 14 ? '0' : z >= 13 ? '0.3' : z >= 12 ? '0.6' : '0.95');
+    // satellite → street-detail crossfade between z15.5 and z17
+    c.style.setProperty('--dz', Math.min(1, Math.max(0, (z - 15.5) / 1.5)).toFixed(3));
+    c.classList.toggle('zoom-ge16', z >= 16);
     map.getContainer().classList.toggle('zoom-lt11', z < 11);
   };
-  map.on('zoomend', syncZoom);
+  map.on('zoom zoomend', syncZoom);
   map.fitBounds(bounds.b, bounds.pad);
   syncZoom(); syncFx();
   if (theme() === 'night') ensureLights();
+  if (new URLSearchParams(location.search).has('debug')) window.__pqmap = map; // test hook only
   return map;
 }
 

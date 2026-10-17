@@ -41,7 +41,7 @@ const HOME = [[9.995, 103.935], [10.235, 104.06]];
 const spotBounds = (spots) => L.latLngBounds(spots.map((s) => [s.lat, s.lng]));
 
 // Place the spot in the centre of the part of the map that the panel / sheet / rail does not cover.
-function flyToSpot(spot, zoom = 15) {
+function flyToSpot(spot, zoom = 16.75) {
   const map = state.map; const size = map.getSize(); const panel = $('spot-panel');
   const open = panel.dataset.state === 'open';
   let cx = size.x / 2, cy;
@@ -56,7 +56,7 @@ function flyToSpot(spot, zoom = 15) {
   const z = Math.max(map.getZoom(), zoom);
   const target = map.unproject(map.project([spot.lat, spot.lng], z).add(off), z);
   if (!motionOn()) { map.setView(target, z, { animate: false }); return; }
-  map.flyTo(target, z, { duration: 1.3, easeLinearity: 0.18 });
+  map.flyTo(target, z, { duration: 1.6, easeLinearity: 0.18 });
 }
 
 function flyToFilter() {
@@ -85,7 +85,7 @@ function clusterIcon(cluster) {
 
 function initPins() {
   state.cluster = L.markerClusterGroup({
-    showCoverageOnHover: false, maxClusterRadius: 52, spiderfyOnMaxZoom: true, disableClusteringAtZoom: 15,
+    showCoverageOnHover: false, maxClusterRadius: 52, spiderfyOnMaxZoom: true, disableClusteringAtZoom: 16,
     animate: motionOn(), animateAddingMarkers: false, iconCreateFunction: clusterIcon, chunkedLoading: true,
   });
   state.spots.forEach((spot, i) => {
@@ -412,7 +412,7 @@ async function main() {
   renderFilters();
   initRail({
     onOpen: (id, card) => { state.lastTrigger = card; openSpot(id, { from: card.querySelector('img') }); },
-    onSettle: (id) => { const s = spotById(id); if (!s) return; if ($('spot-panel').dataset.state === 'open') return; state.activeId = null; flyToSpot(s, 14); highlight(id); },
+    onSettle: (id) => { const s = spotById(id); if (!s) return; if ($('spot-panel').dataset.state === 'open') return; state.activeId = null; flyToSpot(s, 15); highlight(id); },
   });
   renderRail(visibleSpots());
   state.map = createMap('map', {
