@@ -1,4 +1,4 @@
-/* Hallmark · redesign · theme: custom (vibe: "sunlit island, sea-glass, field guide")
+/* Hallmark · redesign · theme: custom (vibe: "sunlit tropical — turquoise sea, sand, sunset coral" (v3))
  * paper oklch(97.7% 0.013 236) · accent oklch(64.6% 0.194 41) adventure-orange + sky oklch(68.5% 0.148 237)
  * display: Fraunces (roman) · body/UI: Be Vietnam Pro · axes: light / high-contrast roman serif / warm-orange on cool-sky
  * Palette + font pairing from UI UX Pro Max: "Travel/Tourism Agency" palette (sky blue + adventure orange),
@@ -44,41 +44,46 @@
 
 :root {
   /* Colour — surfaces */
-  --color-paper: oklch(97.7% 0.013 236);          /* #F0F9FF */
-  --color-paper-2: oklch(95.2% 0.02 236);
-  --color-card: oklch(99.4% 0.004 236);
-  --color-glass: oklch(99% 0.006 236 / 0.74);
-  --color-glass-strong: oklch(99% 0.006 236 / 0.9);
-  --color-glass-edge: oklch(100% 0 0 / 0.55);
-  --color-border: oklch(90.1% 0.058 230);         /* #BAE6FD */
-  --color-rule: oklch(88% 0.03 236);
-  /* Colour — text */
-  --color-ink: oklch(29.3% 0.066 243);            /* #082F49 headings */
-  --color-ink-2: oklch(39.1% 0.09 240);           /* #0C4A6E body */
-  --color-muted: oklch(44.6% 0.037 257);          /* #475569 */
-  /* Colour — brand */
-  --color-sky: oklch(68.5% 0.148 237);            /* #0EA5E9 decorative / fills */
-  --color-sky-ink: oklch(50% 0.134 242);          /* #0369A1 text-safe sky (≥4.5:1) */
-  --color-sky-soft: oklch(93% 0.04 230);
-  --color-accent: oklch(64.6% 0.194 41);          /* #EA580C CTA fill */
-  --color-accent-ink: oklch(55.3% 0.195 38.4);    /* #C2410C text-safe orange */
-  --color-accent-press: oklch(50% 0.18 38);
+  /* v3 palette — sunlit tropical: turquoise sea, warm sand, sunset coral (all text pairs ≥ 4.5:1) */
+  --color-paper: oklch(98.4% 0.012 85);           /* warm sand white */
+  --color-paper-2: oklch(95.6% 0.03 82);          /* sand */
+  --color-card: oklch(99.6% 0.004 90);
+  --color-glass: oklch(99% 0.008 90 / 0.72);
+  --color-glass-strong: oklch(99% 0.008 90 / 0.9);
+  --color-glass-edge: oklch(100% 0 0 / 0.6);
+  --color-border: oklch(89% 0.035 190);
+  --color-rule: oklch(89% 0.025 85);
+
+  --color-ink: oklch(27% 0.06 230);               /* deep lagoon navy — headings */
+  --color-ink-2: oklch(36% 0.06 225);             /* body */
+  --color-muted: oklch(45% 0.04 225);
+
+  --color-sky: oklch(74% 0.13 195);               /* turquoise sea (decorative) */
+  --color-sky-ink: oklch(47% 0.1 205);            /* text-safe teal */
+  --color-sky-soft: oklch(94% 0.045 190);
+  --color-accent: oklch(68% 0.17 33);             /* sunset coral (fills) */
+  --color-accent-ink: oklch(55% 0.19 32);         /* text-safe coral / CTA bg with white text */
+  --color-accent-press: oklch(49% 0.18 32);
   --color-on-accent: oklch(99% 0.01 60);
+  --color-sun: oklch(85% 0.16 85);                /* golden sun highlight */
   --color-warn: oklch(50.5% 0.19 30);
   --color-warn-soft: oklch(95% 0.035 50);
-  --color-focus: oklch(29.3% 0.066 243);
-  --color-shadow: oklch(29% 0.07 243 / 0.16);
-  --color-shadow-strong: oklch(29% 0.07 243 / 0.28);
-  --color-scrim: oklch(29% 0.07 243 / 0.32);
-  /* Category pins (white glyph on fill ≥ 3:1) */
-  --cat-beach: oklch(58.8% 0.158 242);
-  --cat-sunset: oklch(64.6% 0.194 41);
-  --cat-food: oklch(58.6% 0.222 17.6);
-  --cat-market: oklch(55.5% 0.146 49);
-  --cat-nature: oklch(50.8% 0.118 165.6);
-  --cat-viewpoint: oklch(51.1% 0.086 186.4);
-  --cat-culture: oklch(49.1% 0.241 292.6);
-  --cat-nightlife: oklch(39.8% 0.195 277.4);
+  --color-focus: oklch(27% 0.06 230);
+  --color-shadow: oklch(27% 0.06 230 / 0.14);
+  --color-shadow-strong: oklch(27% 0.06 230 / 0.26);
+  --color-scrim: oklch(20% 0.05 230 / 0.45);
+  --color-night: oklch(17% 0.045 260);            /* midnight navy */
+  --color-night-2: oklch(23% 0.05 258);
+  --color-lantern: oklch(82% 0.15 70);            /* warm lantern glow */
+
+  --cat-beach: oklch(62% 0.12 205);
+  --cat-sunset: oklch(66% 0.18 40);
+  --cat-food: oklch(60% 0.2 20);
+  --cat-market: oklch(58% 0.15 55);
+  --cat-nature: oklch(56% 0.13 155);
+  --cat-viewpoint: oklch(55% 0.11 190);
+  --cat-culture: oklch(52% 0.2 300);
+  --cat-nightlife: oklch(45% 0.19 275);
   --cat-safety: oklch(50.5% 0.213 27.5);
   --color-on-pin: oklch(99% 0.005 236);
 

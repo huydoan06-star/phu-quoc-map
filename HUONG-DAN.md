@@ -36,8 +36,8 @@ Chạy thử không ghi gì: `.\them-anh.bat --dry-run`.
 ## Ảnh thiếu GPS
 Mục đó có `"lat": null, "lng": null, "needsLocation": true` và **không hiện trên bản đồ**. Cách sửa: mở Google Maps → nhấn giữ đúng vị trí → bấm vào dãy số toạ độ để chép (ví dụ `10.05247, 104.03519`) → số đầu điền vào `lat`, số sau vào `lng` → xoá dòng `"needsLocation": true`.
 
-## Thay ảnh tạm (placeholder) của 6 điểm mẫu
-6 điểm mẫu đang dùng ảnh minh hoạ ghi chữ PLACEHOLDER. Khi có ảnh thật: thêm ảnh như trên, rồi chép phần `photos` và `capturedAt` của mục mới sang điểm mẫu tương ứng (hoặc xoá điểm mẫu và giữ mục mới).
+## Ảnh của đại nhân luôn được ưu tiên
+Tất cả 18 điểm hiện dùng ảnh thật từ Wikimedia Commons (có ghi tác giả + giấy phép, xem `CREDITS.md`). Ảnh do đại nhân thêm bằng `them-anh` (không có trường `credit`) luôn hiện trước: đứng đầu trong thẻ, trong ảnh bìa trang chủ, và điểm có ảnh của đại nhân được xếp lên đầu danh sách. Muốn thay ảnh cho một điểm có sẵn: chép mục ảnh mới (trong `photos`) lên **đầu** mảng `photos` của điểm đó, và sửa `capturedAt` nếu cần.
 
 ## Link affiliate (sau này)
 Chưa có link nào. Khi cần, mỗi điểm có ô `"links": []`, ví dụ:

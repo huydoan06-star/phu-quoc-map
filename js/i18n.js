@@ -70,13 +70,14 @@ export async function setLang(code) {
 // inside one View Transition (a short cross-fade). Falls back to an instant swap; reduced motion = instant.
 export async function switchLang(code) {
   try { await loadDict(code); } catch {}
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!document.startViewTransition || reduce) return setLang(code);
+  const reduce = document.documentElement.dataset.motion === 'off';
+  if (!document.startViewTransition || reduce || document.hidden) return setLang(code);
   const root = document.documentElement;
   root.dataset.vt = 'lang';
   const vt = document.startViewTransition(() => setLang(code));
-  vt.finished.finally(() => { delete root.dataset.vt; });
-  return vt.updateCallbackDone;
+  vt.ready.catch(() => {});
+  vt.finished.catch(() => {}).finally(() => { delete root.dataset.vt; });
+  return vt.updateCallbackDone.catch(() => {});
 }
 
 function pickInitial() {

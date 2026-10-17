@@ -2,144 +2,65 @@
   "_doc": "See docs/DATA.md. Only status=published entries with lat/lng are shown.",
   "spots": [
     {
-      "id": "kiss-bridge",
-      "status": "published",
-      "category": "sunset",
-      "lat": 10.02826,
-      "lng": 104.00419,
-      "capturedAt": null,
-      "photos": [
-        {
-          "src": "photos/placeholder-kiss-bridge.svg",
-          "width": 1200,
-          "height": 800,
-          "placeholder": true,
-          "alt": {
-            "en": "Placeholder illustration for Kiss Bridge, Sunset Town"
-          }
-        }
-      ],
-      "name": {
-        "en": "Kiss Bridge, Sunset Town",
-        "vi": "Cầu Hôn, Sunset Town (An Thới)",
-        "ko": "키스 브리지, 선셋타운",
-        "zh-CN": "亲吻桥（日落小镇）",
-        "zh-TW": "親吻橋（日落小鎮）",
-        "ja": "キスブリッジ（サンセットタウン）",
-        "hi": "किस ब्रिज, सनसेट टाउन",
-        "ru": "Мост Поцелуев, Сансет-Таун"
-      },
-      "guide": {
-        "en": "Two halves of a bridge reach out over the sea at Sunset Town in An Thới, in the far south of the island, and almost meet in the middle — a favourite place to watch the sun go down.",
-        "vi": "Hai nửa cây cầu vươn ra biển ở Sunset Town, An Thới, cực nam đảo, gần chạm nhau ở giữa — nơi nhiều người chọn để ngắm hoàng hôn.",
-        "ko": "섬 최남단 안터이의 선셋타운에서 다리 두 개가 바다 위로 뻗어 나와 가운데에서 거의 맞닿습니다. 해 지는 모습을 보기 좋은 인기 장소입니다.",
-        "zh-CN": "在岛屿最南端安泰（An Thới）的日落小镇，两段桥身伸向海面，在中间几乎相触——是看日落的热门地点。",
-        "zh-TW": "在島嶼最南端安泰（An Thới）的日落小鎮，兩段橋身伸向海面，在中間幾乎相碰——是看夕陽的熱門地點。",
-        "ja": "島の最南端アントイのサンセットタウンで、二つの橋が海へ伸び、中央でほとんど触れ合います。夕日を眺める人気スポットです。",
-        "hi": "द्वीप के दक्षिणी छोर पर An Thới के सनसेट टाउन में पुल के दो हिस्से समुद्र के ऊपर बढ़ते हैं और बीच में लगभग मिल जाते हैं — सूर्यास्त देखने की पसंदीदा जगह।",
-        "ru": "В Сансет-Тауне в Ан Тхой, на самом юге острова, две половины моста тянутся над морем и почти соприкасаются посередине — любимое место для встречи заката."
-      },
-      "tips": {
-        "en": "It gets crowded around sunset — arrive early for a clear view. Sunset Town is a large resort area; follow local signs for access.",
-        "vi": "Gần giờ hoàng hôn rất đông — đến sớm để có chỗ đẹp. Sunset Town là khu nghỉ dưỡng rộng, hãy theo biển chỉ dẫn tại chỗ.",
-        "ko": "일몰 무렵에는 붐비니 일찍 도착하세요. 선셋타운은 넓은 리조트 단지이므로 현장 안내 표지판을 따르세요.",
-        "zh-CN": "日落前后人很多，建议提早到达。日落小镇是大型度假区，请按现场指示牌前往。",
-        "zh-TW": "夕陽前後人潮多，建議提早抵達。日落小鎮是大型度假區，請依現場指標前往。",
-        "ja": "夕日の時間帯は混み合うので早めに到着を。サンセットタウンは広いリゾートエリアなので、現地の案内表示に従ってください。",
-        "hi": "सूर्यास्त के समय भीड़ होती है — अच्छी जगह के लिए जल्दी पहुँचें। सनसेट टाउन एक बड़ा रिसॉर्ट क्षेत्र है; वहाँ लगे संकेतों का पालन करें।",
-        "ru": "К закату здесь многолюдно — приходите заранее. Сансет-Таун — большой курортный район, ориентируйтесь по местным указателям."
-      },
-      "bestTime": {
-        "en": "Late afternoon to sunset; dry season (Nov–Apr) for clearer skies.",
-        "vi": "Chiều muộn đến hoàng hôn; mùa khô (tháng 11–4) trời trong hơn.",
-        "ko": "늦은 오후부터 일몰까지. 하늘이 맑은 건기(11–4월) 추천.",
-        "zh-CN": "傍晚至日落；旱季（11–4 月）天空更晴朗。",
-        "zh-TW": "傍晚至日落；乾季（11–4 月）天空較晴朗。",
-        "ja": "夕方〜日没。空が澄む乾季（11〜4月）がおすすめ。",
-        "hi": "देर दोपहर से सूर्यास्त तक; साफ़ आसमान के लिए सूखा मौसम (नवंबर–अप्रैल)।",
-        "ru": "Ближе к вечеру и на закате; в сухой сезон (ноябрь–апрель) небо чище."
-      },
-      "links": [],
-      "youtube": null,
-      "source": "seed"
-    },
-    {
-      "id": "duong-dong-night-market",
-      "status": "published",
-      "category": "food",
-      "lat": 10.2163,
-      "lng": 103.96058,
-      "capturedAt": null,
-      "photos": [
-        {
-          "src": "photos/placeholder-duong-dong-night-market.svg",
-          "width": 1200,
-          "height": 800,
-          "placeholder": true,
-          "alt": {
-            "en": "Placeholder illustration for Phú Quốc Night Market, Dương Đông"
-          }
-        }
-      ],
-      "name": {
-        "en": "Phú Quốc Night Market, Dương Đông",
-        "vi": "Chợ đêm Phú Quốc (Dinh Cậu), Dương Đông",
-        "ko": "푸꾸옥 야시장, 즈엉동",
-        "zh-CN": "富国岛夜市（阳东）",
-        "zh-TW": "富國島夜市（陽東）",
-        "ja": "フーコック・ナイトマーケット（ズオンドン）",
-        "hi": "फू क्वोक नाइट मार्केट, Dương Đông",
-        "ru": "Ночной рынок Фукуока, Зыонгдонг"
-      },
-      "guide": {
-        "en": "Stalls of grilled seafood, fresh fruit and local snacks on Bạch Đằng street near Dương Đông town. Pick your seafood and have it cooked on the spot.",
-        "vi": "Các quầy hải sản nướng, trái cây tươi và món ăn vặt địa phương trên đường Bạch Đằng, gần trung tâm Dương Đông. Chọn hải sản và nhờ chế biến tại chỗ.",
-        "ko": "즈엉동 시내 근처 박당(Bạch Đằng) 거리에 해산물 구이, 신선한 과일, 현지 간식 노점이 늘어서 있습니다. 해산물을 골라 그 자리에서 요리해 달라고 할 수 있습니다.",
-        "zh-CN": "位于阳东镇附近的白藤街（Bạch Đằng），有烤海鲜、新鲜水果和当地小吃摊位。挑好海鲜可以现场加工。",
-        "zh-TW": "位於陽東鎮附近的白藤街（Bạch Đằng），有烤海鮮、新鮮水果和在地小吃攤。挑好海鮮可以現場料理。",
-        "ja": "ズオンドンの町に近いバクダン通りに、海鮮焼き、新鮮なフルーツ、地元の軽食の屋台が並びます。海鮮を選んでその場で調理してもらえます。",
-        "hi": "Dương Đông शहर के पास Bạch Đằng स्ट्रीट पर ग्रिल्ड सीफ़ूड, ताज़े फल और स्थानीय स्नैक्स के स्टॉल। अपना सीफ़ूड चुनें और वहीं पकवाएँ।",
-        "ru": "Прилавки с морепродуктами на гриле, свежими фруктами и местными закусками на улице Бачданг рядом с городком Зыонгдонг. Выберите морепродукты — их приготовят на месте."
-      },
-      "tips": {
-        "en": "Confirm the price and weight before seafood is cooked. Carry small notes in cash, and keep an eye on your belongings in the crowd.",
-        "vi": "Hỏi rõ giá và cân trước khi chế biến hải sản. Mang tiền mặt mệnh giá nhỏ và giữ đồ cẩn thận khi đông người.",
-        "ko": "해산물은 요리 전에 가격과 무게를 꼭 확인하세요. 소액권 현금을 준비하고, 사람이 많으니 소지품에 주의하세요.",
-        "zh-CN": "海鲜加工前先确认价格和重量。准备小面额现金，人多时注意看管随身物品。",
-        "zh-TW": "海鮮料理前先確認價格與重量。準備小面額現金，人多時注意隨身物品。",
-        "ja": "海鮮は調理前に値段と重さを確認しましょう。小額の現金を用意し、人混みでは持ち物に注意を。",
-        "hi": "सीफ़ूड पकवाने से पहले दाम और वज़न पक्का कर लें। छोटे नोट नकद रखें और भीड़ में अपने सामान का ध्यान रखें।",
-        "ru": "Уточняйте цену и вес до приготовления морепродуктов. Возьмите наличные мелкими купюрами и следите за вещами в толпе."
-      },
-      "bestTime": {
-        "en": "Evening.",
-        "vi": "Buổi tối.",
-        "ko": "저녁.",
-        "zh-CN": "晚上。",
-        "zh-TW": "晚上。",
-        "ja": "夜。",
-        "hi": "शाम।",
-        "ru": "Вечер."
-      },
-      "links": [],
-      "youtube": null,
-      "source": "seed"
-    },
-    {
       "id": "sao-beach",
       "status": "published",
       "category": "beach",
       "lat": 10.05247,
       "lng": 104.03519,
-      "capturedAt": null,
+      "capturedAt": "2021-05-01T13:10:16+07:00",
       "photos": [
         {
-          "src": "photos/placeholder-sao-beach.svg",
-          "width": 1200,
-          "height": 800,
-          "placeholder": true,
+          "src": "photos/commons/sao-beach-1-1600.webp",
+          "card": "photos/commons/sao-beach-1-800.webp",
+          "pin": "photos/commons/sao-beach-1-pin.webp",
+          "width": 1600,
+          "height": 900,
+          "credit": {
+            "author": "Trantuonglam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Bai-sao-phu-quoc-tuonglamphotos.jpg",
+            "title": "Bai-sao-phu-quoc-tuonglamphotos.jpg",
+            "takenAt": "2021-05-01T13:10:16+07:00"
+          },
           "alt": {
-            "en": "Placeholder illustration for Sao Beach"
+            "en": "Sao Beach — photo by Trantuonglam"
+          }
+        },
+        {
+          "src": "photos/commons/sao-beach-2-1600.webp",
+          "card": "photos/commons/sao-beach-2-800.webp",
+          "pin": "photos/commons/sao-beach-2-pin.webp",
+          "width": 1600,
+          "height": 1064,
+          "credit": {
+            "author": "Dan Searle from London, England",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Bai_Sao,_Ph%C3%BA_Qu%E1%BB%91c,_Vietnam_(3870300491).jpg",
+            "title": "Bai Sao, Phú Quốc, Vietnam (3870300491).jpg",
+            "takenAt": "2009-03-21T13:54:51+07:00"
+          },
+          "alt": {
+            "en": "Sao Beach — photo by Dan Searle from London, England"
+          }
+        },
+        {
+          "src": "photos/commons/sao-beach-3-1600.webp",
+          "card": "photos/commons/sao-beach-3-800.webp",
+          "pin": "photos/commons/sao-beach-3-pin.webp",
+          "width": 1500,
+          "height": 1000,
+          "credit": {
+            "author": "ntt",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Phu_quoc_plage_sao.jpg",
+            "title": "Phu quoc plage sao.jpg",
+            "takenAt": "2006-08-23T06:08:16+07:00"
+          },
+          "alt": {
+            "en": "Sao Beach — photo by ntt"
           }
         }
       ],
@@ -185,131 +106,203 @@
       },
       "links": [],
       "youtube": null,
-      "source": "seed"
+      "source": "commons"
     },
     {
-      "id": "dinh-cau",
+      "id": "kiss-bridge",
       "status": "published",
-      "category": "culture",
-      "lat": 10.21722,
-      "lng": 103.95643,
-      "capturedAt": null,
+      "category": "sunset",
+      "lat": 10.02826,
+      "lng": 104.00419,
+      "capturedAt": "2023-04-07T17:03:19+07:00",
       "photos": [
         {
-          "src": "photos/placeholder-dinh-cau.svg",
-          "width": 1200,
-          "height": 800,
-          "placeholder": true,
+          "src": "photos/commons/kiss-bridge-1-1600.webp",
+          "card": "photos/commons/kiss-bridge-1-800.webp",
+          "pin": "photos/commons/kiss-bridge-1-pin.webp",
+          "width": 1600,
+          "height": 899,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiss_Bridge_at_sunset_Phu_Quoc_Island_Vietnam.jpg",
+            "title": "Kiss Bridge at sunset Phu Quoc Island Vietnam.jpg",
+            "takenAt": "2023-04-07T17:03:19+07:00"
+          },
           "alt": {
-            "en": "Placeholder illustration for Dinh Cậu Shrine"
+            "en": "Kiss Bridge, Sunset Town — photo by Vivu Vietnam"
+          }
+        },
+        {
+          "src": "photos/commons/kiss-bridge-2-1600.webp",
+          "card": "photos/commons/kiss-bridge-2-800.webp",
+          "pin": "photos/commons/kiss-bridge-2-pin.webp",
+          "width": 1600,
+          "height": 1067,
+          "credit": {
+            "author": "Kevin Rutherford from United States",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiss_Bridge,_Phu_Quoc_(52681182204).jpg",
+            "title": "Kiss Bridge, Phu Quoc (52681182204).jpg",
+            "takenAt": "2023-01-25T11:03:31+07:00"
+          },
+          "alt": {
+            "en": "Kiss Bridge, Sunset Town — photo by Kevin Rutherford from United States"
+          }
+        },
+        {
+          "src": "photos/commons/kiss-bridge-3-1600.webp",
+          "card": "photos/commons/kiss-bridge-3-800.webp",
+          "pin": "photos/commons/kiss-bridge-3-pin.webp",
+          "width": 1600,
+          "height": 1066,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiss_Bridge_Phu_Quoc_aerial_sunset_view.jpg",
+            "title": "Kiss Bridge Phu Quoc aerial sunset view.jpg",
+            "takenAt": "2023-02-08T18:24:14+07:00"
+          },
+          "alt": {
+            "en": "Kiss Bridge, Sunset Town — photo by Vivu Vietnam"
           }
         }
       ],
       "name": {
-        "en": "Dinh Cậu Shrine",
-        "vi": "Dinh Cậu",
-        "ko": "딘꺼우 사당",
-        "zh-CN": "Dinh Cậu 神庙（舅庙）",
-        "zh-TW": "Dinh Cậu 神廟（舅廟）",
-        "ja": "ディンカウ（祠）",
-        "hi": "दिन्ह काउ देवस्थान",
-        "ru": "Святилище Динькау"
+        "en": "Kiss Bridge, Sunset Town",
+        "vi": "Cầu Hôn, Sunset Town (An Thới)",
+        "ko": "키스 브리지, 선셋타운",
+        "zh-CN": "亲吻桥（日落小镇）",
+        "zh-TW": "親吻橋（日落小鎮）",
+        "ja": "キスブリッジ（サンセットタウン）",
+        "hi": "किस ब्रिज, सनसेट टाउन",
+        "ru": "Мост Поцелуев, Сансет-Таун"
       },
       "guide": {
-        "en": "A small shrine on the rocks at the mouth of the Dương Đông river, closely tied to the island's fishing community, with views over the river mouth and the boats.",
-        "vi": "Ngôi miếu nhỏ trên ghềnh đá ở cửa sông Dương Đông, gắn bó với cộng đồng làng chài trên đảo, nhìn ra cửa sông và những chiếc thuyền.",
-        "ko": "즈엉동 강 하구 바위 위에 있는 작은 사당으로, 섬의 어촌 공동체와 깊은 관련이 있습니다. 강 하구와 배들이 내려다보입니다.",
-        "zh-CN": "位于阳东河口礁石上的小神庙，与岛上的渔民社区关系密切，可眺望河口和渔船。",
-        "zh-TW": "位於陽東河口礁石上的小廟，與島上漁村社群關係密切，可眺望河口與漁船。",
-        "ja": "ズオンドン川の河口の岩の上に建つ小さな祠。島の漁村の人々と深く結びつき、河口と漁船を見渡せます。",
-        "hi": "Dương Đông नदी के मुहाने पर चट्टानों पर बना एक छोटा देवस्थान, जो द्वीप के मछुआरा समुदाय से गहराई से जुड़ा है; यहाँ से मुहाने और नावों का नज़ारा दिखता है।",
-        "ru": "Небольшое святилище на скалах в устье реки Зыонгдонг, тесно связанное с рыбацкой общиной острова; отсюда видно устье и лодки."
+        "en": "Two halves of a bridge reach out over the sea at Sunset Town in An Thới, in the far south of the island, and almost meet in the middle — a favourite place to watch the sun go down.",
+        "vi": "Hai nửa cây cầu vươn ra biển ở Sunset Town, An Thới, cực nam đảo, gần chạm nhau ở giữa — nơi nhiều người chọn để ngắm hoàng hôn.",
+        "ko": "섬 최남단 안터이의 선셋타운에서 다리 두 개가 바다 위로 뻗어 나와 가운데에서 거의 맞닿습니다. 해 지는 모습을 보기 좋은 인기 장소입니다.",
+        "zh-CN": "在岛屿最南端安泰（An Thới）的日落小镇，两段桥身伸向海面，在中间几乎相触——是看日落的热门地点。",
+        "zh-TW": "在島嶼最南端安泰（An Thới）的日落小鎮，兩段橋身伸向海面，在中間幾乎相碰——是看夕陽的熱門地點。",
+        "ja": "島の最南端アントイのサンセットタウンで、二つの橋が海へ伸び、中央でほとんど触れ合います。夕日を眺める人気スポットです。",
+        "hi": "द्वीप के दक्षिणी छोर पर An Thới के सनसेट टाउन में पुल के दो हिस्से समुद्र के ऊपर बढ़ते हैं और बीच में लगभग मिल जाते हैं — सूर्यास्त देखने की पसंदीदा जगह।",
+        "ru": "В Сансет-Тауне в Ан Тхой, на самом юге острова, две половины моста тянутся над морем и почти соприкасаются посередине — любимое место для встречи заката."
       },
       "tips": {
-        "en": "This is a place of worship: dress modestly, keep your voice down and don't climb on altars or rocks marked off-limits. The night market is a short walk away.",
-        "vi": "Đây là nơi thờ tự: ăn mặc kín đáo, giữ trật tự, không trèo lên bàn thờ hay khu vực cấm. Chợ đêm ở ngay gần, đi bộ một đoạn ngắn.",
-        "ko": "예배 장소이니 단정한 옷차림을 하고 조용히 하며, 제단이나 출입 금지 구역에 올라가지 마세요. 야시장은 걸어서 가까운 거리입니다.",
-        "zh-CN": "这里是祭拜场所：请着装得体、保持安静，不要攀爬祭坛或禁入区域。夜市步行即可到达。",
-        "zh-TW": "這裡是祭祀場所：請穿著得體、保持安靜，勿攀爬神桌或禁入區域。夜市步行即可抵達。",
-        "ja": "礼拝の場です。控えめな服装で静かにし、祭壇や立入禁止の岩に登らないでください。ナイトマーケットは歩いてすぐです。",
-        "hi": "यह पूजा स्थल है: शालीन कपड़े पहनें, शांत रहें और वेदी या प्रतिबंधित चट्टानों पर न चढ़ें। नाइट मार्केट पैदल कुछ ही दूरी पर है।",
-        "ru": "Это место поклонения: одевайтесь скромно, не шумите и не забирайтесь на алтари и закрытые скалы. Ночной рынок — в нескольких минутах пешком."
+        "en": "It gets crowded around sunset — arrive early for a clear view. Sunset Town is a large resort area; follow local signs for access.",
+        "vi": "Gần giờ hoàng hôn rất đông — đến sớm để có chỗ đẹp. Sunset Town là khu nghỉ dưỡng rộng, hãy theo biển chỉ dẫn tại chỗ.",
+        "ko": "일몰 무렵에는 붐비니 일찍 도착하세요. 선셋타운은 넓은 리조트 단지이므로 현장 안내 표지판을 따르세요.",
+        "zh-CN": "日落前后人很多，建议提早到达。日落小镇是大型度假区，请按现场指示牌前往。",
+        "zh-TW": "夕陽前後人潮多，建議提早抵達。日落小鎮是大型度假區，請依現場指標前往。",
+        "ja": "夕日の時間帯は混み合うので早めに到着を。サンセットタウンは広いリゾートエリアなので、現地の案内表示に従ってください。",
+        "hi": "सूर्यास्त के समय भीड़ होती है — अच्छी जगह के लिए जल्दी पहुँचें। सनसेट टाउन एक बड़ा रिसॉर्ट क्षेत्र है; वहाँ लगे संकेतों का पालन करें।",
+        "ru": "К закату здесь многолюдно — приходите заранее. Сансет-Таун — большой курортный район, ориентируйтесь по местным указателям."
       },
       "bestTime": {
-        "en": "Late afternoon to sunset, then dinner at the night market.",
-        "vi": "Chiều muộn đến hoàng hôn, sau đó ăn tối ở chợ đêm.",
-        "ko": "늦은 오후부터 일몰까지, 이후 야시장에서 저녁.",
-        "zh-CN": "傍晚至日落，之后去夜市吃晚饭。",
-        "zh-TW": "傍晚至日落，之後到夜市吃晚餐。",
-        "ja": "夕方〜日没、そのあとナイトマーケットで夕食。",
-        "hi": "देर दोपहर से सूर्यास्त तक, फिर नाइट मार्केट में डिनर।",
-        "ru": "Ближе к вечеру и на закате, потом ужин на ночном рынке."
+        "en": "Late afternoon to sunset; dry season (Nov–Apr) for clearer skies.",
+        "vi": "Chiều muộn đến hoàng hôn; mùa khô (tháng 11–4) trời trong hơn.",
+        "ko": "늦은 오후부터 일몰까지. 하늘이 맑은 건기(11–4월) 추천.",
+        "zh-CN": "傍晚至日落；旱季（11–4 月）天空更晴朗。",
+        "zh-TW": "傍晚至日落；乾季（11–4 月）天空較晴朗。",
+        "ja": "夕方〜日没。空が澄む乾季（11〜4月）がおすすめ。",
+        "hi": "देर दोपहर से सूर्यास्त तक; साफ़ आसमान के लिए सूखा मौसम (नवंबर–अप्रैल)।",
+        "ru": "Ближе к вечеру и на закате; в сухой сезон (ноябрь–апрель) небо чище."
       },
       "links": [],
       "youtube": null,
-      "source": "seed"
+      "source": "commons"
     },
     {
-      "id": "grand-world",
+      "id": "khem-beach",
       "status": "published",
-      "category": "nightlife",
-      "lat": 10.32494,
-      "lng": 103.85814,
-      "capturedAt": null,
+      "category": "beach",
+      "lat": 10.03577,
+      "lng": 104.03063,
+      "capturedAt": "2026-02-12T14:30:37+07:00",
       "photos": [
         {
-          "src": "photos/placeholder-grand-world.svg",
-          "width": 1200,
-          "height": 800,
-          "placeholder": true,
+          "src": "photos/commons/khem-beach-1-1600.webp",
+          "card": "photos/commons/khem-beach-1-800.webp",
+          "pin": "photos/commons/khem-beach-1-pin.webp",
+          "width": 1600,
+          "height": 1200,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Bai-kem-dong-khach-1.jpg",
+            "title": "Bai-kem-dong-khach-1.jpg",
+            "takenAt": "2026-02-12T14:30:37+07:00"
+          },
           "alt": {
-            "en": "Placeholder illustration for Grand World Phú Quốc"
+            "en": "Khem Beach (Bãi Khem) — photo by Vivu Vietnam"
+          }
+        },
+        {
+          "src": "photos/commons/khem-beach-2-1600.webp",
+          "card": "photos/commons/khem-beach-2-800.webp",
+          "pin": "photos/commons/khem-beach-2-pin.webp",
+          "width": 1600,
+          "height": 1200,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kem_Beach_aerial_view_Phu_Quoc_Island_Vietnam.jpg",
+            "title": "Kem Beach aerial view Phu Quoc Island Vietnam.jpg",
+            "takenAt": "2024-04-17T13:08:29+07:00"
+          },
+          "alt": {
+            "en": "Khem Beach (Bãi Khem) — photo by Vivu Vietnam"
           }
         }
       ],
       "name": {
-        "en": "Grand World Phú Quốc",
-        "vi": "Grand World Phú Quốc",
-        "ko": "그랜드 월드 푸꾸옥",
-        "zh-CN": "富国岛大世界（Grand World）",
-        "zh-TW": "富國島大世界（Grand World）",
-        "ja": "グランドワールド・フーコック",
-        "hi": "ग्रैंड वर्ल्ड फू क्वोक",
-        "ru": "Гранд Уорлд Фукуок"
+        "en": "Khem Beach (Bãi Khem)",
+        "vi": "Bãi Khem (Bãi Kem)",
+        "ko": "켐 비치(바이켐)",
+        "zh-CN": "Khem 海滩（Bãi Khem）",
+        "zh-TW": "Khem 海灘（Bãi Khem）",
+        "ja": "ケムビーチ（バイケム）",
+        "hi": "खेम बीच (बाई खेम)",
+        "ru": "Пляж Кхем (Бай Кхем)"
       },
       "guide": {
-        "en": "A large entertainment and shopping district in the island's north-west, with canals and themed streets that light up in the evening.",
-        "vi": "Khu vui chơi, mua sắm lớn ở phía tây bắc đảo, có kênh đào và những con phố theo chủ đề lên đèn vào buổi tối.",
-        "ko": "섬 북서쪽에 있는 대규모 엔터테인먼트·쇼핑 지구로, 운하와 테마 거리가 저녁이면 불을 밝힙니다.",
-        "zh-CN": "位于岛屿西北部的大型娱乐购物区，运河与主题街道在夜晚亮起灯光。",
-        "zh-TW": "位於島嶼西北部的大型娛樂購物區，運河與主題街道在夜晚點亮燈光。",
-        "ja": "島の北西部にある大規模な娯楽・ショッピング地区。運河とテーマのある街並みが夜にライトアップされます。",
-        "hi": "द्वीप के उत्तर-पश्चिम में एक बड़ा मनोरंजन और शॉपिंग क्षेत्र, जहाँ नहरें और थीम वाली गलियाँ शाम को रोशनी से जगमगाती हैं।",
-        "ru": "Большой развлекательный и торговый квартал на северо-западе острова с каналами и тематическими улицами, которые вечером зажигаются огнями."
+        "en": "A curve of fine white sand on the south-east coast, just south of Sao Beach, backed by palms and resorts.",
+        "vi": "Bãi cát trắng mịn uốn cong ở bờ đông nam, ngay phía nam Bãi Sao, phía sau là hàng dừa và các khu nghỉ dưỡng.",
+        "ko": "사오 비치 바로 남쪽, 남동쪽 해안에 고운 흰 모래가 활처럼 휘어 있고 뒤로는 야자수와 리조트가 있습니다.",
+        "zh-CN": "位于东南海岸、星沙滩以南的一弯细白沙滩，背后是椰林和度假村。",
+        "zh-TW": "位於東南海岸、星沙灘以南的一彎細白沙灘，後方是椰林與度假村。",
+        "ja": "サオビーチのすぐ南、南東海岸に弧を描く白砂のビーチ。背後にはヤシの木とリゾートが並びます。",
+        "hi": "दक्षिण-पूर्वी तट पर, साओ बीच के ठीक दक्षिण में महीन सफ़ेद रेत का घुमावदार तट, पीछे ताड़ के पेड़ और रिसॉर्ट।",
+        "ru": "Дуга мелкого белого песка на юго-восточном побережье, чуть южнее пляжа Сао, с пальмами и курортами позади."
       },
       "tips": {
-        "en": "It is in the north of the island, far from Dương Đông and the south — plan your ride back, especially late at night.",
-        "vi": "Nằm ở phía bắc đảo, xa Dương Đông và phía nam — hãy tính trước cách về, nhất là khi về khuya.",
-        "ko": "섬 북쪽에 있어 즈엉동이나 남부와 멀리 떨어져 있습니다. 특히 밤늦게는 돌아갈 교통편을 미리 계획하세요.",
-        "zh-CN": "位于岛屿北部，离阳东和南部较远——请提前规划回程，尤其是深夜。",
-        "zh-TW": "位於島嶼北部，離陽東與南部較遠——請先規劃回程，尤其是深夜。",
-        "ja": "島の北部にあり、ズオンドンや南部から離れています。特に夜遅くは帰りの足を事前に考えておきましょう。",
-        "hi": "यह द्वीप के उत्तर में है, Dương Đông और दक्षिण से दूर — वापसी की सवारी पहले से तय करें, ख़ासकर देर रात।",
-        "ru": "Это север острова, далеко от Зыонгдонга и юга — заранее продумайте, как вернуться, особенно поздно вечером."
+        "en": "Parts of the beach front resorts; use public access points and follow local signs.",
+        "vi": "Một phần bãi nằm trước các khu nghỉ dưỡng; hãy đi qua lối công cộng và theo biển chỉ dẫn.",
+        "ko": "해변 일부는 리조트 앞에 있습니다. 공용 출입로를 이용하고 현장 표지판을 따르세요.",
+        "zh-CN": "部分海滩位于度假村前，请走公共通道并遵循现场指示。",
+        "zh-TW": "部分海灘位於度假村前，請走公共通道並依現場指標。",
+        "ja": "ビーチの一部はリゾートの前にあります。公共の入口を使い、現地の案内に従ってください。",
+        "hi": "तट का कुछ हिस्सा रिसॉर्ट्स के सामने है; सार्वजनिक रास्तों का उपयोग करें और स्थानीय संकेतों का पालन करें।",
+        "ru": "Часть пляжа находится перед курортами — пользуйтесь общественными проходами и следуйте указателям."
       },
       "bestTime": {
-        "en": "Late afternoon into the evening.",
-        "vi": "Chiều muộn đến tối.",
-        "ko": "늦은 오후부터 저녁까지.",
-        "zh-CN": "傍晚到夜间。",
-        "zh-TW": "傍晚到夜間。",
-        "ja": "夕方から夜にかけて。",
-        "hi": "देर दोपहर से शाम तक।",
-        "ru": "С вечера и до ночи."
+        "en": "Morning to early afternoon; dry season (Nov–Apr).",
+        "vi": "Sáng đến đầu giờ chiều; mùa khô (tháng 11–4).",
+        "ko": "오전~이른 오후, 건기(11–4월).",
+        "zh-CN": "上午至午后；旱季（11–4 月）。",
+        "zh-TW": "上午至午後；乾季（11–4 月）。",
+        "ja": "午前〜昼過ぎ。乾季（11〜4月）。",
+        "hi": "सुबह से दोपहर तक; सूखा मौसम (नवंबर–अप्रैल)।",
+        "ru": "Утро — начало дня; сухой сезон (ноябрь–апрель)."
       },
       "links": [],
       "youtube": null,
-      "source": "seed"
+      "source": "commons"
     },
     {
       "id": "hon-thom-cable-car",
@@ -317,15 +310,60 @@
       "category": "viewpoint",
       "lat": 9.99201,
       "lng": 104.01244,
-      "capturedAt": null,
+      "capturedAt": "2019-02-27T14:40:09+07:00",
       "photos": [
         {
-          "src": "photos/placeholder-hon-thom-cable-car.svg",
-          "width": 1200,
-          "height": 800,
-          "placeholder": true,
+          "src": "photos/commons/hon-thom-cable-car-1-1600.webp",
+          "card": "photos/commons/hon-thom-cable-car-1-800.webp",
+          "pin": "photos/commons/hon-thom-cable-car-1-pin.webp",
+          "width": 1600,
+          "height": 1067,
+          "credit": {
+            "author": "Klientos",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:H%C3%B2n_Th%C6%A1m_cable_car_above_the_An_Th%E1%BB%9Bi_township.jpg",
+            "title": "Hòn Thơm cable car above the An Thới township.jpg",
+            "takenAt": "2019-02-27T14:40:09+07:00"
+          },
           "alt": {
-            "en": "Placeholder illustration for Hòn Thơm Cable Car (An Thới station)"
+            "en": "Hòn Thơm Cable Car (An Thới station) — photo by Klientos"
+          }
+        },
+        {
+          "src": "photos/commons/hon-thom-cable-car-2-1600.webp",
+          "card": "photos/commons/hon-thom-cable-car-2-800.webp",
+          "pin": "photos/commons/hon-thom-cable-car-2-pin.webp",
+          "width": 1600,
+          "height": 744,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Sun_World_Hon_Thom_aerial_view_panorama_sunset_Phu_Quoc.jpg",
+            "title": "Sun World Hon Thom aerial view panorama sunset Phu Quoc.jpg",
+            "takenAt": "2022-04-23T17:54:28+07:00"
+          },
+          "alt": {
+            "en": "Hòn Thơm Cable Car (An Thới station) — photo by Vivu Vietnam"
+          }
+        },
+        {
+          "src": "photos/commons/hon-thom-cable-car-3-1600.webp",
+          "card": "photos/commons/hon-thom-cable-car-3-800.webp",
+          "pin": "photos/commons/hon-thom-cable-car-3-pin.webp",
+          "width": 1600,
+          "height": 1068,
+          "credit": {
+            "author": "Klientos",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:H%C3%B2n_Th%C6%A1m_cable_car_station.jpg",
+            "title": "Hòn Thơm cable car station.jpg",
+            "takenAt": "2019-02-27T15:02:57+07:00"
+          },
+          "alt": {
+            "en": "Hòn Thơm Cable Car (An Thới station) — photo by Klientos"
           }
         }
       ],
@@ -371,7 +409,1343 @@
       },
       "links": [],
       "youtube": null,
-      "source": "seed"
+      "source": "commons"
+    },
+    {
+      "id": "an-thoi-harbour",
+      "status": "published",
+      "category": "culture",
+      "lat": 10.0135,
+      "lng": 104.014,
+      "capturedAt": "2023-02-17T16:10:38+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/an-thoi-harbour-1-1600.webp",
+          "card": "photos/commons/an-thoi-harbour-1-800.webp",
+          "pin": "photos/commons/an-thoi-harbour-1-pin.webp",
+          "width": 1600,
+          "height": 899,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:An_Thoi_fishing_harbour_Sunset_Town_Sun_World_Phu_Quoc_Vietnam.jpg",
+            "title": "An Thoi fishing harbour Sunset Town Sun World Phu Quoc Vietnam.jpg",
+            "takenAt": "2023-02-17T16:10:38+07:00"
+          },
+          "alt": {
+            "en": "An Thới fishing harbour — photo by Vivu Vietnam"
+          }
+        },
+        {
+          "src": "photos/commons/an-thoi-harbour-2-1600.webp",
+          "card": "photos/commons/an-thoi-harbour-2-800.webp",
+          "pin": "photos/commons/an-thoi-harbour-2-pin.webp",
+          "width": 1600,
+          "height": 1067,
+          "credit": {
+            "author": "Alexey Komarov",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:An_Thoi,_Phu_Quoc,_Vietnam,_5_March_2019.jpg",
+            "title": "An Thoi, Phu Quoc, Vietnam, 5 March 2019.jpg",
+            "takenAt": "2019-03-05T09:46:14+07:00"
+          },
+          "alt": {
+            "en": "An Thới fishing harbour — photo by Alexey Komarov"
+          }
+        },
+        {
+          "src": "photos/commons/an-thoi-harbour-3-1600.webp",
+          "card": "photos/commons/an-thoi-harbour-3-800.webp",
+          "pin": "photos/commons/an-thoi-harbour-3-pin.webp",
+          "width": 1600,
+          "height": 548,
+          "credit": {
+            "author": "trungydang",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:L%C3%A0ng_Ch%C3%A0i_An_Th%E1%BB%9Bi,_Ph%C3%BA_qu%E1%BB%91c,_vietnam_-_panoramio.jpg",
+            "title": "Làng Chài An Thới, Phú quốc, vietnam - panoramio.jpg",
+            "takenAt": "2013-09-14T15:11:13+07:00"
+          },
+          "alt": {
+            "en": "An Thới fishing harbour — photo by trungydang"
+          }
+        }
+      ],
+      "name": {
+        "en": "An Thới fishing harbour",
+        "vi": "Cảng cá An Thới",
+        "ko": "안터이 어항",
+        "zh-CN": "安泰渔港",
+        "zh-TW": "安泰漁港",
+        "ja": "アントイ漁港",
+        "hi": "An Thới मछली बंदरगाह",
+        "ru": "Рыбацкая гавань Ан Тхой"
+      },
+      "guide": {
+        "en": "Rows of brightly painted fishing boats crowd the harbour in the island's southern town, facing the An Thới islands.",
+        "vi": "Những hàng thuyền đánh cá sơn màu rực rỡ neo kín cảng ở thị trấn phía nam đảo, nhìn ra quần đảo An Thới.",
+        "ko": "섬 남쪽 마을의 항구에 알록달록한 어선들이 빼곡히 정박해 있고, 앞바다에는 안터이 군도가 보입니다.",
+        "zh-CN": "岛屿南部小镇的港口停满色彩鲜艳的渔船，面朝安泰群岛。",
+        "zh-TW": "島嶼南部小鎮的港口停滿色彩鮮豔的漁船，面向安泰群島。",
+        "ja": "島の南の町の港には色鮮やかな漁船がずらりと並び、沖にはアントイ諸島が見えます。",
+        "hi": "द्वीप के दक्षिणी कस्बे के बंदरगाह में चमकीले रंगों वाली मछली नावों की कतारें, सामने An Thới द्वीपसमूह।",
+        "ru": "Ряды ярко раскрашенных рыбацких лодок в гавани южного городка острова, напротив островов Ан Тхой."
+      },
+      "tips": {
+        "en": "It is a working port: stay clear of boats being loaded and ask before photographing people.",
+        "vi": "Đây là cảng đang hoạt động: tránh xa khu bốc dỡ và hỏi ý trước khi chụp ảnh người dân.",
+        "ko": "실제로 운영되는 항구입니다. 하역 중인 배에서 떨어져 있고, 사람을 찍기 전에 양해를 구하세요.",
+        "zh-CN": "这是作业中的港口：远离装卸中的船只，拍人之前先征得同意。",
+        "zh-TW": "這是作業中的港口：遠離裝卸中的船隻，拍人前先徵得同意。",
+        "ja": "稼働中の港です。荷役中の船には近づかず、人を撮る前に一声かけましょう。",
+        "hi": "यह चालू बंदरगाह है: माल चढ़ाती नावों से दूर रहें और लोगों की फ़ोटो लेने से पहले पूछ लें।",
+        "ru": "Это рабочий порт: держитесь подальше от погрузки и спрашивайте разрешения, прежде чем фотографировать людей."
+      },
+      "bestTime": {
+        "en": "Early morning or late afternoon.",
+        "vi": "Sáng sớm hoặc chiều muộn.",
+        "ko": "이른 아침 또는 늦은 오후.",
+        "zh-CN": "清晨或傍晚。",
+        "zh-TW": "清晨或傍晚。",
+        "ja": "早朝か夕方。",
+        "hi": "सुबह जल्दी या देर दोपहर।",
+        "ru": "Раннее утро или ближе к вечеру."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "long-beach",
+      "status": "published",
+      "category": "sunset",
+      "lat": 10.19495,
+      "lng": 103.96364,
+      "capturedAt": "2019-03-05T18:30:15+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/long-beach-1-1600.webp",
+          "card": "photos/commons/long-beach-1-800.webp",
+          "pin": "photos/commons/long-beach-1-pin.webp",
+          "width": 1600,
+          "height": 1068,
+          "credit": {
+            "author": "Alexey Komarov",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Sunset_on_the_Long_Beach_in_Phu_Quoc_Island,_Vietnam,_5_March_2019.jpg",
+            "title": "Sunset on the Long Beach in Phu Quoc Island, Vietnam, 5 March 2019.jpg",
+            "takenAt": "2019-03-05T18:30:15+07:00"
+          },
+          "alt": {
+            "en": "Long Beach (Bãi Trường) — photo by Alexey Komarov"
+          }
+        },
+        {
+          "src": "photos/commons/long-beach-2-1600.webp",
+          "card": "photos/commons/long-beach-2-800.webp",
+          "pin": "photos/commons/long-beach-2-pin.webp",
+          "width": 1600,
+          "height": 2435,
+          "credit": {
+            "author": "Dan Searle from London, England",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Bai_Truong_(Long_Beach)_Ph%C3%BA_Qu%E1%BB%91c,_Vietnam_(3859473907).jpg",
+            "title": "Bai Truong (Long Beach) Phú Quốc, Vietnam (3859473907).jpg",
+            "takenAt": "2009-03-20T15:17:26+07:00"
+          },
+          "alt": {
+            "en": "Long Beach (Bãi Trường) — photo by Dan Searle from London, England"
+          }
+        }
+      ],
+      "name": {
+        "en": "Long Beach (Bãi Trường)",
+        "vi": "Bãi Trường",
+        "ko": "롱비치(바이쯔엉)",
+        "zh-CN": "长滩（Bãi Trường）",
+        "zh-TW": "長灘（Bãi Trường）",
+        "ja": "ロングビーチ（バイチュオン）",
+        "hi": "लॉन्ग बीच (बाई त्रुओंग)",
+        "ru": "Лонг-Бич (Бай Чыонг)"
+      },
+      "guide": {
+        "en": "The island's long west-coast beach, running south from Dương Đông town. It faces the sunset, so evenings here glow orange.",
+        "vi": "Bãi biển dài ở bờ tây, trải về phía nam từ thị trấn Dương Đông. Bãi hướng về phía mặt trời lặn nên chiều tối rực màu cam.",
+        "ko": "즈엉동 시내에서 남쪽으로 이어지는 섬 서해안의 긴 해변입니다. 해 지는 방향을 향해 있어 저녁이면 주황빛으로 물듭니다.",
+        "zh-CN": "岛屿西海岸的长滩，从阳东镇向南延伸。面向日落，傍晚一片橙色。",
+        "zh-TW": "島嶼西海岸的長灘，從陽東鎮向南延伸。面向夕陽，傍晚一片橘紅。",
+        "ja": "ズオンドンの町から南へ続く、島の西海岸の長いビーチ。夕日の方角を向いているので、夕方はオレンジ色に染まります。",
+        "hi": "द्वीप के पश्चिमी तट का लंबा समुद्र तट, जो Dương Đông शहर से दक्षिण की ओर फैला है। यह सूर्यास्त की ओर है, इसलिए शाम को नारंगी रोशनी छा जाती है।",
+        "ru": "Длинный пляж западного побережья, тянущийся на юг от городка Зыонгдонг. Он смотрит на закат, поэтому вечером всё становится оранжевым."
+      },
+      "tips": {
+        "en": "Waves can be rougher in the rainy season (May–Oct); swim only where it is calm and patrolled.",
+        "vi": "Mùa mưa (tháng 5–10) sóng có thể lớn; chỉ tắm ở nơi sóng êm và có cứu hộ.",
+        "ko": "우기(5–10월)에는 파도가 거칠 수 있습니다. 잔잔하고 안전요원이 있는 곳에서만 수영하세요.",
+        "zh-CN": "雨季（5–10 月）浪可能较大，只在风平浪静且有救生员的区域游泳。",
+        "zh-TW": "雨季（5–10 月）浪可能較大，只在風平浪靜且有救生員的區域游泳。",
+        "ja": "雨季（5〜10月）は波が荒くなることがあります。穏やかで監視員のいる場所でのみ泳ぎましょう。",
+        "hi": "बरसात (मई–अक्टूबर) में लहरें तेज़ हो सकती हैं; केवल शांत और निगरानी वाले हिस्से में तैरें।",
+        "ru": "В сезон дождей (май–октябрь) волны бывают сильнее — купайтесь только там, где спокойно и есть спасатели."
+      },
+      "bestTime": {
+        "en": "Sunset; dry season (Nov–Apr).",
+        "vi": "Hoàng hôn; mùa khô (tháng 11–4).",
+        "ko": "일몰, 건기(11–4월).",
+        "zh-CN": "日落；旱季（11–4 月）。",
+        "zh-TW": "日落；乾季（11–4 月）。",
+        "ja": "夕暮れ。乾季（11〜4月）。",
+        "hi": "सूर्यास्त; सूखा मौसम (नवंबर–अप्रैल)।",
+        "ru": "Закат; сухой сезон (ноябрь–апрель)."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "duong-dong-night-market",
+      "status": "published",
+      "category": "food",
+      "lat": 10.2163,
+      "lng": 103.96058,
+      "capturedAt": "2025-12-28T20:56:29+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/duong-dong-night-market-1-1600.webp",
+          "card": "photos/commons/duong-dong-night-market-1-800.webp",
+          "pin": "photos/commons/duong-dong-night-market-1-pin.webp",
+          "width": 1600,
+          "height": 2133,
+          "credit": {
+            "author": "FrogsLegs71",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Making_ice_cream_rolls_in_Phu_Quoc_night_market_Vietnam.jpg",
+            "title": "Making ice cream rolls in Phu Quoc night market Vietnam.jpg",
+            "takenAt": "2025-12-28T20:56:29+07:00"
+          },
+          "alt": {
+            "en": "Phú Quốc Night Market, Dương Đông — photo by FrogsLegs71"
+          }
+        },
+        {
+          "src": "photos/commons/duong-dong-night-market-2-1600.webp",
+          "card": "photos/commons/duong-dong-night-market-2-800.webp",
+          "pin": "photos/commons/duong-dong-night-market-2-pin.webp",
+          "width": 1600,
+          "height": 1101,
+          "credit": {
+            "author": "trungydang",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ch%E1%BB%A3_%C4%90%C3%AAm_Ph%C3%BA_qu%E1%BB%91c,_Duong_Dong_Vietnam_-_panoramio.jpg",
+            "title": "Chợ Đêm Phú quốc, Duong Dong Vietnam - panoramio.jpg",
+            "takenAt": "2013-09-15T11:18:29+07:00"
+          },
+          "alt": {
+            "en": "Phú Quốc Night Market, Dương Đông — photo by trungydang"
+          }
+        }
+      ],
+      "name": {
+        "en": "Phú Quốc Night Market, Dương Đông",
+        "vi": "Chợ đêm Phú Quốc (Dinh Cậu), Dương Đông",
+        "ko": "푸꾸옥 야시장, 즈엉동",
+        "zh-CN": "富国岛夜市（阳东）",
+        "zh-TW": "富國島夜市（陽東）",
+        "ja": "フーコック・ナイトマーケット（ズオンドン）",
+        "hi": "फू क्वोक नाइट मार्केट, Dương Đông",
+        "ru": "Ночной рынок Фукуока, Зыонгдонг"
+      },
+      "guide": {
+        "en": "Stalls of grilled seafood, fresh fruit and local snacks on Bạch Đằng street near Dương Đông town. Pick your seafood and have it cooked on the spot.",
+        "vi": "Các quầy hải sản nướng, trái cây tươi và món ăn vặt địa phương trên đường Bạch Đằng, gần trung tâm Dương Đông. Chọn hải sản và nhờ chế biến tại chỗ.",
+        "ko": "즈엉동 시내 근처 박당(Bạch Đằng) 거리에 해산물 구이, 신선한 과일, 현지 간식 노점이 늘어서 있습니다. 해산물을 골라 그 자리에서 요리해 달라고 할 수 있습니다.",
+        "zh-CN": "位于阳东镇附近的白藤街（Bạch Đằng），有烤海鲜、新鲜水果和当地小吃摊位。挑好海鲜可以现场加工。",
+        "zh-TW": "位於陽東鎮附近的白藤街（Bạch Đằng），有烤海鮮、新鮮水果和在地小吃攤。挑好海鮮可以現場料理。",
+        "ja": "ズオンドンの町に近いバクダン通りに、海鮮焼き、新鮮なフルーツ、地元の軽食の屋台が並びます。海鮮を選んでその場で調理してもらえます。",
+        "hi": "Dương Đông शहर के पास Bạch Đằng स्ट्रीट पर ग्रिल्ड सीफ़ूड, ताज़े फल और स्थानीय स्नैक्स के स्टॉल। अपना सीफ़ूड चुनें और वहीं पकवाएँ।",
+        "ru": "Прилавки с морепродуктами на гриле, свежими фруктами и местными закусками на улице Бачданг рядом с городком Зыонгдонг. Выберите морепродукты — их приготовят на месте."
+      },
+      "tips": {
+        "en": "Confirm the price and weight before seafood is cooked. Carry small notes in cash, and keep an eye on your belongings in the crowd.",
+        "vi": "Hỏi rõ giá và cân trước khi chế biến hải sản. Mang tiền mặt mệnh giá nhỏ và giữ đồ cẩn thận khi đông người.",
+        "ko": "해산물은 요리 전에 가격과 무게를 꼭 확인하세요. 소액권 현금을 준비하고, 사람이 많으니 소지품에 주의하세요.",
+        "zh-CN": "海鲜加工前先确认价格和重量。准备小面额现金，人多时注意看管随身物品。",
+        "zh-TW": "海鮮料理前先確認價格與重量。準備小面額現金，人多時注意隨身物品。",
+        "ja": "海鮮は調理前に値段と重さを確認しましょう。小額の現金を用意し、人混みでは持ち物に注意を。",
+        "hi": "सीफ़ूड पकवाने से पहले दाम और वज़न पक्का कर लें। छोटे नोट नकद रखें और भीड़ में अपने सामान का ध्यान रखें।",
+        "ru": "Уточняйте цену и вес до приготовления морепродуктов. Возьмите наличные мелкими купюрами и следите за вещами в толпе."
+      },
+      "bestTime": {
+        "en": "Evening.",
+        "vi": "Buổi tối.",
+        "ko": "저녁.",
+        "zh-CN": "晚上。",
+        "zh-TW": "晚上。",
+        "ja": "夜。",
+        "hi": "शाम।",
+        "ru": "Вечер."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "dinh-cau",
+      "status": "published",
+      "category": "culture",
+      "lat": 10.21722,
+      "lng": 103.95643,
+      "capturedAt": "2017-10-10T17:15:08+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/dinh-cau-1-1600.webp",
+          "card": "photos/commons/dinh-cau-1-800.webp",
+          "pin": "photos/commons/dinh-cau-1-pin.webp",
+          "width": 1600,
+          "height": 1062,
+          "credit": {
+            "author": "Sketyl none",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Dinh_C%E1%BA%ADu_(37111073673).jpg",
+            "title": "Dinh Cậu (37111073673).jpg",
+            "takenAt": "2017-10-10T17:15:08+07:00"
+          },
+          "alt": {
+            "en": "Dinh Cậu Shrine — photo by Sketyl none"
+          }
+        },
+        {
+          "src": "photos/commons/dinh-cau-2-1600.webp",
+          "card": "photos/commons/dinh-cau-2-800.webp",
+          "pin": "photos/commons/dinh-cau-2-pin.webp",
+          "width": 1400,
+          "height": 933,
+          "credit": {
+            "author": "Fox Travels",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Dinh_Cau_-_panoramio_(1).jpg",
+            "title": "Dinh Cau - panoramio (1).jpg",
+            "takenAt": null
+          },
+          "alt": {
+            "en": "Dinh Cậu Shrine — photo by Fox Travels"
+          }
+        },
+        {
+          "src": "photos/commons/dinh-cau-3-1600.webp",
+          "card": "photos/commons/dinh-cau-3-800.webp",
+          "pin": "photos/commons/dinh-cau-3-pin.webp",
+          "width": 1591,
+          "height": 2122,
+          "credit": {
+            "author": "trungydang",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ng%E1%BB%8Dn_H%E1%BA%A3i_%C4%90%C4%83ng,_D%C6%B0%C6%A1ng_%C4%91%C3%B4ng_Ph%C3%BA_Qu%E1%BB%91c_,_ki%C3%AAn_Giang,_Vietnam_-_panoramio.jpg",
+            "title": "Ngọn Hải Đăng, Dương đông Phú Quốc , kiên Giang, Vietnam - panoramio.jpg",
+            "takenAt": "2013-09-15T11:33:24+07:00"
+          },
+          "alt": {
+            "en": "Dinh Cậu Shrine — photo by trungydang"
+          }
+        }
+      ],
+      "name": {
+        "en": "Dinh Cậu Shrine",
+        "vi": "Dinh Cậu",
+        "ko": "딘꺼우 사당",
+        "zh-CN": "Dinh Cậu 神庙（舅庙）",
+        "zh-TW": "Dinh Cậu 神廟（舅廟）",
+        "ja": "ディンカウ（祠）",
+        "hi": "दिन्ह काउ देवस्थान",
+        "ru": "Святилище Динькау"
+      },
+      "guide": {
+        "en": "A small shrine on the rocks at the mouth of the Dương Đông river, closely tied to the island's fishing community, with views over the river mouth and the boats.",
+        "vi": "Ngôi miếu nhỏ trên ghềnh đá ở cửa sông Dương Đông, gắn bó với cộng đồng làng chài trên đảo, nhìn ra cửa sông và những chiếc thuyền.",
+        "ko": "즈엉동 강 하구 바위 위에 있는 작은 사당으로, 섬의 어촌 공동체와 깊은 관련이 있습니다. 강 하구와 배들이 내려다보입니다.",
+        "zh-CN": "位于阳东河口礁石上的小神庙，与岛上的渔民社区关系密切，可眺望河口和渔船。",
+        "zh-TW": "位於陽東河口礁石上的小廟，與島上漁村社群關係密切，可眺望河口與漁船。",
+        "ja": "ズオンドン川の河口の岩の上に建つ小さな祠。島の漁村の人々と深く結びつき、河口と漁船を見渡せます。",
+        "hi": "Dương Đông नदी के मुहाने पर चट्टानों पर बना एक छोटा देवस्थान, जो द्वीप के मछुआरा समुदाय से गहराई से जुड़ा है; यहाँ से मुहाने और नावों का नज़ारा दिखता है।",
+        "ru": "Небольшое святилище на скалах в устье реки Зыонгдонг, тесно связанное с рыбацкой общиной острова; отсюда видно устье и лодки."
+      },
+      "tips": {
+        "en": "This is a place of worship: dress modestly, keep your voice down and don't climb on altars or rocks marked off-limits. The night market is a short walk away.",
+        "vi": "Đây là nơi thờ tự: ăn mặc kín đáo, giữ trật tự, không trèo lên bàn thờ hay khu vực cấm. Chợ đêm ở ngay gần, đi bộ một đoạn ngắn.",
+        "ko": "예배 장소이니 단정한 옷차림을 하고 조용히 하며, 제단이나 출입 금지 구역에 올라가지 마세요. 야시장은 걸어서 가까운 거리입니다.",
+        "zh-CN": "这里是祭拜场所：请着装得体、保持安静，不要攀爬祭坛或禁入区域。夜市步行即可到达。",
+        "zh-TW": "這裡是祭祀場所：請穿著得體、保持安靜，勿攀爬神桌或禁入區域。夜市步行即可抵達。",
+        "ja": "礼拝の場です。控えめな服装で静かにし、祭壇や立入禁止の岩に登らないでください。ナイトマーケットは歩いてすぐです。",
+        "hi": "यह पूजा स्थल है: शालीन कपड़े पहनें, शांत रहें और वेदी या प्रतिबंधित चट्टानों पर न चढ़ें। नाइट मार्केट पैदल कुछ ही दूरी पर है।",
+        "ru": "Это место поклонения: одевайтесь скромно, не шумите и не забирайтесь на алтари и закрытые скалы. Ночной рынок — в нескольких минутах пешком."
+      },
+      "bestTime": {
+        "en": "Late afternoon to sunset, then dinner at the night market.",
+        "vi": "Chiều muộn đến hoàng hôn, sau đó ăn tối ở chợ đêm.",
+        "ko": "늦은 오후부터 일몰까지, 이후 야시장에서 저녁.",
+        "zh-CN": "傍晚至日落，之后去夜市吃晚饭。",
+        "zh-TW": "傍晚至日落，之後到夜市吃晚餐。",
+        "ja": "夕方〜日没、そのあとナイトマーケットで夕食。",
+        "hi": "देर दोपहर से सूर्यास्त तक, फिर नाइट मार्केट में डिनर।",
+        "ru": "Ближе к вечеру и на закате, потом ужин на ночном рынке."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "ham-ninh",
+      "status": "published",
+      "category": "food",
+      "lat": 10.1814,
+      "lng": 104.051,
+      "capturedAt": "2013-09-15T09:57:27+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/ham-ninh-1-1600.webp",
+          "card": "photos/commons/ham-ninh-1-800.webp",
+          "pin": "photos/commons/ham-ninh-1-pin.webp",
+          "width": 1600,
+          "height": 1200,
+          "credit": {
+            "author": "trungydang",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:C%E1%BA%A7u_t%E1%BA%A7u_H%C3%A0m_Ninh,_Ph%C3%BA_qu%E1%BB%91c,_Vi%E1%BB%87t_nam_-_panoramio.jpg",
+            "title": "Cầu tầu Hàm Ninh, Phú quốc, Việt nam - panoramio.jpg",
+            "takenAt": "2013-09-15T09:57:27+07:00"
+          },
+          "alt": {
+            "en": "Hàm Ninh fishing village — photo by trungydang"
+          }
+        },
+        {
+          "src": "photos/commons/ham-ninh-2-1600.webp",
+          "card": "photos/commons/ham-ninh-2-800.webp",
+          "pin": "photos/commons/ham-ninh-2-pin.webp",
+          "width": 1600,
+          "height": 740,
+          "credit": {
+            "author": "trungydang",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Bi%E1%BB%83n_h%C3%A0m_Ninh,_C%E1%BA%A7u_t%E1%BA%A7u,_Ph%C3%BA_Qu%E1%BB%91c,_Vi%E1%BB%87t_nam_-_panoramio.jpg",
+            "title": "Biển hàm Ninh, Cầu tầu, Phú Quốc, Việt nam - panoramio.jpg",
+            "takenAt": "2013-09-15T09:30:19+07:00"
+          },
+          "alt": {
+            "en": "Hàm Ninh fishing village — photo by trungydang"
+          }
+        },
+        {
+          "src": "photos/commons/ham-ninh-3-1600.webp",
+          "card": "photos/commons/ham-ninh-3-800.webp",
+          "pin": "photos/commons/ham-ninh-3-pin.webp",
+          "width": 1600,
+          "height": 782,
+          "credit": {
+            "author": "trungydang",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ch%E1%BB%A3_H%C3%A0m_Ninh,_Ph%C3%BA_Qu%E1%BB%91c,_Ki%C3%AAn_Giang,_Vi%E1%BB%87t_nam_-_panoramio.jpg",
+            "title": "Chợ Hàm Ninh, Phú Quốc, Kiên Giang, Việt nam - panoramio.jpg",
+            "takenAt": "2013-09-15T10:04:00+07:00"
+          },
+          "alt": {
+            "en": "Hàm Ninh fishing village — photo by trungydang"
+          }
+        }
+      ],
+      "name": {
+        "en": "Hàm Ninh fishing village",
+        "vi": "Làng chài Hàm Ninh",
+        "ko": "함닌 어촌",
+        "zh-CN": "咸宁渔村",
+        "zh-TW": "咸寧漁村",
+        "ja": "ハムニン漁村",
+        "hi": "हाम निन्ह मछुआरा गाँव",
+        "ru": "Рыбацкая деревня Хамнинь"
+      },
+      "guide": {
+        "en": "A fishing village on the calm east coast with a long pier into shallow water and seafood restaurants on stilts.",
+        "vi": "Làng chài ở bờ đông êm sóng, có cầu tàu dài vươn ra vùng nước cạn và các nhà hàng hải sản trên cọc.",
+        "ko": "잔잔한 동해안의 어촌으로, 얕은 바다로 길게 뻗은 부두와 수상 가옥 해산물 식당이 있습니다.",
+        "zh-CN": "位于平静东海岸的渔村，有伸入浅海的长码头和高脚海鲜餐厅。",
+        "zh-TW": "位於平靜東海岸的漁村，有伸入淺海的長碼頭與高腳海鮮餐廳。",
+        "ja": "穏やかな東海岸の漁村。遠浅の海へ延びる長い桟橋と、高床式のシーフード店があります。",
+        "hi": "शांत पूर्वी तट पर मछुआरों का गाँव, उथले पानी में दूर तक जाता लंबा घाट और खंभों पर बने सीफ़ूड रेस्तराँ।",
+        "ru": "Рыбацкая деревня на спокойном восточном побережье: длинный пирс над мелководьем и рыбные рестораны на сваях."
+      },
+      "tips": {
+        "en": "Agree on seafood prices and weights before ordering.",
+        "vi": "Thống nhất giá và cân hải sản trước khi gọi món.",
+        "ko": "주문 전에 해산물 가격과 무게를 확인하세요.",
+        "zh-CN": "点海鲜前先谈好价格和重量。",
+        "zh-TW": "點海鮮前先談好價格和重量。",
+        "ja": "注文前に海鮮の値段と重さを確認しましょう。",
+        "hi": "ऑर्डर करने से पहले सीफ़ूड का दाम और वज़न तय कर लें।",
+        "ru": "Договоритесь о цене и весе морепродуктов до заказа."
+      },
+      "bestTime": {
+        "en": "Morning for the village; lunch for seafood.",
+        "vi": "Buổi sáng để dạo làng; buổi trưa để ăn hải sản.",
+        "ko": "마을 구경은 오전, 해산물은 점심.",
+        "zh-CN": "上午逛渔村，中午吃海鲜。",
+        "zh-TW": "上午逛漁村，中午吃海鮮。",
+        "ja": "村の散策は朝、海鮮は昼。",
+        "hi": "गाँव के लिए सुबह; सीफ़ूड के लिए दोपहर।",
+        "ru": "Утро — для деревни, обед — для морепродуктов."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "grand-world",
+      "status": "published",
+      "category": "nightlife",
+      "lat": 10.32494,
+      "lng": 103.85814,
+      "capturedAt": "2023-07-30T19:55:18+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/grand-world-1-1600.webp",
+          "card": "photos/commons/grand-world-1-800.webp",
+          "pin": "photos/commons/grand-world-1-pin.webp",
+          "width": 1600,
+          "height": 900,
+          "credit": {
+            "author": "松岡明芳",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:2023-07-30_Grand_World_Ph%C3%BA_Qu%E1%BB%91c_195519.jpg",
+            "title": "2023-07-30 Grand World Phú Quốc 195519.jpg",
+            "takenAt": "2023-07-30T19:55:18+07:00"
+          },
+          "alt": {
+            "en": "Grand World Phú Quốc — photo by 松岡明芳"
+          }
+        },
+        {
+          "src": "photos/commons/grand-world-2-1600.webp",
+          "card": "photos/commons/grand-world-2-800.webp",
+          "pin": "photos/commons/grand-world-2-pin.webp",
+          "width": 1600,
+          "height": 900,
+          "credit": {
+            "author": "松岡明芳",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:2023-07-30_Grand_World_Ph%C3%BA_Qu%E1%BB%91c_212311.jpg",
+            "title": "2023-07-30 Grand World Phú Quốc 212311.jpg",
+            "takenAt": "2023-07-30T21:23:11+07:00"
+          },
+          "alt": {
+            "en": "Grand World Phú Quốc — photo by 松岡明芳"
+          }
+        },
+        {
+          "src": "photos/commons/grand-world-3-1600.webp",
+          "card": "photos/commons/grand-world-3-800.webp",
+          "pin": "photos/commons/grand-world-3-pin.webp",
+          "width": 1600,
+          "height": 1200,
+          "credit": {
+            "author": "Daeva Trạc",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Grand_World%E2%80%99s_Italian-style_area_in_western_side_of_Ph%C3%BA_Qu%E1%BB%91c_(July_2022).jpg",
+            "title": "Grand World’s Italian-style area in western side of Phú Quốc (July 2022).jpg",
+            "takenAt": "2022-07-26T10:55:14+07:00"
+          },
+          "alt": {
+            "en": "Grand World Phú Quốc — photo by Daeva Trạc"
+          }
+        }
+      ],
+      "name": {
+        "en": "Grand World Phú Quốc",
+        "vi": "Grand World Phú Quốc",
+        "ko": "그랜드 월드 푸꾸옥",
+        "zh-CN": "富国岛大世界（Grand World）",
+        "zh-TW": "富國島大世界（Grand World）",
+        "ja": "グランドワールド・フーコック",
+        "hi": "ग्रैंड वर्ल्ड फू क्वोक",
+        "ru": "Гранд Уорлд Фукуок"
+      },
+      "guide": {
+        "en": "A large entertainment and shopping district in the island's north-west, with canals and themed streets that light up in the evening.",
+        "vi": "Khu vui chơi, mua sắm lớn ở phía tây bắc đảo, có kênh đào và những con phố theo chủ đề lên đèn vào buổi tối.",
+        "ko": "섬 북서쪽에 있는 대규모 엔터테인먼트·쇼핑 지구로, 운하와 테마 거리가 저녁이면 불을 밝힙니다.",
+        "zh-CN": "位于岛屿西北部的大型娱乐购物区，运河与主题街道在夜晚亮起灯光。",
+        "zh-TW": "位於島嶼西北部的大型娛樂購物區，運河與主題街道在夜晚點亮燈光。",
+        "ja": "島の北西部にある大規模な娯楽・ショッピング地区。運河とテーマのある街並みが夜にライトアップされます。",
+        "hi": "द्वीप के उत्तर-पश्चिम में एक बड़ा मनोरंजन और शॉपिंग क्षेत्र, जहाँ नहरें और थीम वाली गलियाँ शाम को रोशनी से जगमगाती हैं।",
+        "ru": "Большой развлекательный и торговый квартал на северо-западе острова с каналами и тематическими улицами, которые вечером зажигаются огнями."
+      },
+      "tips": {
+        "en": "It is in the north of the island, far from Dương Đông and the south — plan your ride back, especially late at night.",
+        "vi": "Nằm ở phía bắc đảo, xa Dương Đông và phía nam — hãy tính trước cách về, nhất là khi về khuya.",
+        "ko": "섬 북쪽에 있어 즈엉동이나 남부와 멀리 떨어져 있습니다. 특히 밤늦게는 돌아갈 교통편을 미리 계획하세요.",
+        "zh-CN": "位于岛屿北部，离阳东和南部较远——请提前规划回程，尤其是深夜。",
+        "zh-TW": "位於島嶼北部，離陽東與南部較遠——請先規劃回程，尤其是深夜。",
+        "ja": "島の北部にあり、ズオンドンや南部から離れています。特に夜遅くは帰りの足を事前に考えておきましょう。",
+        "hi": "यह द्वीप के उत्तर में है, Dương Đông और दक्षिण से दूर — वापसी की सवारी पहले से तय करें, ख़ासकर देर रात।",
+        "ru": "Это север острова, далеко от Зыонгдонга и юга — заранее продумайте, как вернуться, особенно поздно вечером."
+      },
+      "bestTime": {
+        "en": "Late afternoon into the evening.",
+        "vi": "Chiều muộn đến tối.",
+        "ko": "늦은 오후부터 저녁까지.",
+        "zh-CN": "傍晚到夜间。",
+        "zh-TW": "傍晚到夜間。",
+        "ja": "夕方から夜にかけて。",
+        "hi": "देर दोपहर से शाम तक।",
+        "ru": "С вечера и до ночи."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "kiss-of-the-sea",
+      "status": "published",
+      "category": "nightlife",
+      "lat": 10.02965,
+      "lng": 104.00788,
+      "capturedAt": "2023-02-17T19:25:30+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/kiss-of-the-sea-1-1600.webp",
+          "card": "photos/commons/kiss-of-the-sea-1-800.webp",
+          "pin": "photos/commons/kiss-of-the-sea-1-pin.webp",
+          "width": 1600,
+          "height": 899,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiss_of_the_Sea_fireworks_show_Sunset_Town_Sun_World_Phu_Quoc_night_Vietnam.jpg",
+            "title": "Kiss of the Sea fireworks show Sunset Town Sun World Phu Quoc night Vietnam.jpg",
+            "takenAt": "2023-02-17T19:25:30+07:00"
+          },
+          "alt": {
+            "en": "Kiss of the Sea show, Sunset Town — photo by Vivu Vietnam"
+          }
+        },
+        {
+          "src": "photos/commons/kiss-of-the-sea-2-1600.webp",
+          "card": "photos/commons/kiss-of-the-sea-2-800.webp",
+          "pin": "photos/commons/kiss-of-the-sea-2-pin.webp",
+          "width": 1600,
+          "height": 1067,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Phao-hoa-sunset-town.jpg",
+            "title": "Phao-hoa-sunset-town.jpg",
+            "takenAt": "2026-02-17T00:08:23+07:00"
+          },
+          "alt": {
+            "en": "Kiss of the Sea show, Sunset Town — photo by Vivu Vietnam"
+          }
+        },
+        {
+          "src": "photos/commons/kiss-of-the-sea-3-1600.webp",
+          "card": "photos/commons/kiss-of-the-sea-3-800.webp",
+          "pin": "photos/commons/kiss-of-the-sea-3-pin.webp",
+          "width": 1600,
+          "height": 1198,
+          "credit": {
+            "author": "Vivu Vietnam",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Sunset_Town_Phu_Quoc_at_night.jpg",
+            "title": "Sunset Town Phu Quoc at night.jpg",
+            "takenAt": "2025-01-29T18:42:50+07:00"
+          },
+          "alt": {
+            "en": "Kiss of the Sea show, Sunset Town — photo by Vivu Vietnam"
+          }
+        }
+      ],
+      "name": {
+        "en": "Kiss of the Sea show, Sunset Town",
+        "vi": "Show Nụ hôn của biển, Sunset Town",
+        "ko": "키스 오브 더 시 쇼, 선셋타운",
+        "zh-CN": "“海之吻”表演（日落小镇）",
+        "zh-TW": "「海之吻」表演（日落小鎮）",
+        "ja": "キス・オブ・ザ・シー（サンセットタウン）",
+        "hi": "किस ऑफ़ द सी शो, सनसेट टाउन",
+        "ru": "Шоу «Поцелуй моря», Сансет-Таун"
+      },
+      "guide": {
+        "en": "An evening show on the water at Sunset Town in An Thới, combining water effects, light, music and fireworks.",
+        "vi": "Chương trình biểu diễn buổi tối trên mặt nước tại Sunset Town, An Thới, kết hợp hiệu ứng nước, ánh sáng, âm nhạc và pháo hoa.",
+        "ko": "안터이 선셋타운에서 물 위에서 펼쳐지는 저녁 공연으로, 물 효과·조명·음악·불꽃놀이가 어우러집니다.",
+        "zh-CN": "在安泰日落小镇水上上演的夜间表演，结合水幕特效、灯光、音乐和烟花。",
+        "zh-TW": "在安泰日落小鎮水上演出的夜間表演，結合水幕特效、燈光、音樂與煙火。",
+        "ja": "アントイのサンセットタウンで行われる水上の夜のショー。水の演出、光、音楽、花火が組み合わされます。",
+        "hi": "An Thới के सनसेट टाउन में पानी पर होने वाला शाम का शो, जिसमें पानी के प्रभाव, रोशनी, संगीत और आतिशबाज़ी होती है।",
+        "ru": "Вечернее шоу на воде в Сансет-Тауне (Ан Тхой): водные эффекты, свет, музыка и фейерверк."
+      },
+      "tips": {
+        "en": "Show days, times and tickets change — check the operator's official channels before you go.",
+        "vi": "Ngày diễn, giờ diễn và vé có thể thay đổi — xem kênh chính thức của đơn vị vận hành trước khi đi.",
+        "ko": "공연 요일·시간·티켓은 바뀔 수 있으니 방문 전 운영사 공식 채널을 확인하세요.",
+        "zh-CN": "演出日期、时间和门票会变动，出发前请查看运营方官方渠道。",
+        "zh-TW": "演出日期、時間與門票會變動，出發前請查看營運方官方管道。",
+        "ja": "公演日・時間・チケットは変わることがあります。出かける前に運営会社の公式情報を確認してください。",
+        "hi": "शो के दिन, समय और टिकट बदलते रहते हैं — जाने से पहले संचालक के आधिकारिक चैनल देखें।",
+        "ru": "Дни, время и билеты могут меняться — проверьте официальные каналы организатора перед поездкой."
+      },
+      "bestTime": {
+        "en": "Evening.",
+        "vi": "Buổi tối.",
+        "ko": "저녁.",
+        "zh-CN": "晚上。",
+        "zh-TW": "晚上。",
+        "ja": "夜。",
+        "hi": "शाम।",
+        "ru": "Вечер."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "starfish-beach",
+      "status": "published",
+      "category": "nature",
+      "lat": 10.37304,
+      "lng": 103.93723,
+      "capturedAt": "2019-03-05T13:57:46+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/starfish-beach-1-1600.webp",
+          "card": "photos/commons/starfish-beach-1-800.webp",
+          "pin": "photos/commons/starfish-beach-1-pin.webp",
+          "width": 1600,
+          "height": 1066,
+          "credit": {
+            "author": "Alexey Komarov",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Starfishes_on_the_Starfish_Beach,_Phu_Quoc,_Vietnam.jpg",
+            "title": "Starfishes on the Starfish Beach, Phu Quoc, Vietnam.jpg",
+            "takenAt": "2019-03-05T13:57:46+07:00"
+          },
+          "alt": {
+            "en": "Starfish Beach, Rạch Vẹm — photo by Alexey Komarov"
+          }
+        }
+      ],
+      "name": {
+        "en": "Starfish Beach, Rạch Vẹm",
+        "vi": "Bãi Rạch Vẹm (biển sao biển)",
+        "ko": "불가사리 해변, 락뱀",
+        "zh-CN": "海星沙滩（Rạch Vẹm）",
+        "zh-TW": "海星沙灘（Rạch Vẹm）",
+        "ja": "スターフィッシュビーチ（ラックヴェム）",
+        "hi": "स्टारफ़िश बीच, राच वेम",
+        "ru": "Пляж морских звёзд, Рачвем"
+      },
+      "guide": {
+        "en": "Clear, shallow water on the quiet north coast where starfish rest on the sandy seabed.",
+        "vi": "Nước trong, cạn ở bờ bắc yên tĩnh, nơi sao biển nằm trên nền cát.",
+        "ko": "조용한 북쪽 해안의 맑고 얕은 바다로, 모래 바닥에 불가사리가 있습니다.",
+        "zh-CN": "宁静的北海岸，海水清澈而浅，海星静卧在沙底。",
+        "zh-TW": "寧靜的北海岸，海水清澈而淺，海星靜臥在沙底。",
+        "ja": "静かな北海岸の澄んだ遠浅の海。砂地の海底にヒトデが見られます。",
+        "hi": "शांत उत्तरी तट पर साफ़, उथला पानी, जहाँ रेतीले तल पर स्टारफ़िश दिखती हैं।",
+        "ru": "Прозрачная мелкая вода на тихом северном побережье, где на песчаном дне лежат морские звёзды."
+      },
+      "tips": {
+        "en": "Look, don't lift: taking starfish out of the water harms them.",
+        "vi": "Chỉ ngắm, đừng nhấc lên: đưa sao biển ra khỏi nước sẽ làm chúng chết.",
+        "ko": "보기만 하고 들어 올리지 마세요. 물 밖으로 꺼내면 불가사리가 해를 입습니다.",
+        "zh-CN": "只看不拿：把海星拿出水面会伤害它们。",
+        "zh-TW": "只看不拿：把海星拿出水面會傷害牠們。",
+        "ja": "見るだけにして持ち上げないで。水から出すとヒトデが傷みます。",
+        "hi": "सिर्फ़ देखें, उठाएँ नहीं: पानी से बाहर निकालने पर स्टारफ़िश को नुकसान होता है।",
+        "ru": "Смотрите, но не поднимайте: вне воды морские звёзды гибнут."
+      },
+      "bestTime": {
+        "en": "Calm, sunny mornings; dry season (Nov–Apr).",
+        "vi": "Buổi sáng nắng, biển lặng; mùa khô (tháng 11–4).",
+        "ko": "잔잔하고 맑은 오전, 건기(11–4월).",
+        "zh-CN": "风平浪静的晴朗上午；旱季（11–4 月）。",
+        "zh-TW": "風平浪靜的晴朗上午；乾季（11–4 月）。",
+        "ja": "穏やかな晴れの朝。乾季（11〜4月）。",
+        "hi": "शांत, धूप वाली सुबह; सूखा मौसम (नवंबर–अप्रैल)।",
+        "ru": "Тихое солнечное утро; сухой сезон (ноябрь–апрель)."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "ho-quoc-pagoda",
+      "status": "published",
+      "category": "culture",
+      "lat": 10.10918,
+      "lng": 104.0275,
+      "capturedAt": "2023-01-25T13:29:39+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/ho-quoc-pagoda-1-1600.webp",
+          "card": "photos/commons/ho-quoc-pagoda-1-800.webp",
+          "pin": "photos/commons/ho-quoc-pagoda-1-pin.webp",
+          "width": 1600,
+          "height": 1067,
+          "credit": {
+            "author": "Kevin Rutherford from United States",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%B9a_H%E1%BB%99_Qu%E1%BB%91c_(52681168609).jpg",
+            "title": "Chùa Hộ Quốc (52681168609).jpg",
+            "takenAt": "2023-01-25T13:29:39+07:00"
+          },
+          "alt": {
+            "en": "Hộ Quốc Pagoda (Trúc Lâm Zen Monastery) — photo by Kevin Rutherford from United States"
+          }
+        },
+        {
+          "src": "photos/commons/ho-quoc-pagoda-2-1600.webp",
+          "card": "photos/commons/ho-quoc-pagoda-2-800.webp",
+          "pin": "photos/commons/ho-quoc-pagoda-2-pin.webp",
+          "width": 1600,
+          "height": 1200,
+          "credit": {
+            "author": "Phương Huy",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%B9a_H%E1%BB%99_Qu%E1%BB%91c_(c%E1%BB%95ng_ch%C3%ADnh,_nh%C3%ACn_bao_qu%C3%A1t)_(1).jpg",
+            "title": "Chùa Hộ Quốc (cổng chính, nhìn bao quát) (1).jpg",
+            "takenAt": "2022-07-25T16:09:05+07:00"
+          },
+          "alt": {
+            "en": "Hộ Quốc Pagoda (Trúc Lâm Zen Monastery) — photo by Phương Huy"
+          }
+        }
+      ],
+      "name": {
+        "en": "Hộ Quốc Pagoda (Trúc Lâm Zen Monastery)",
+        "vi": "Thiền viện Trúc Lâm Hộ Quốc",
+        "ko": "호꾸옥 사원(쭉럼 선원)",
+        "zh-CN": "护国寺（竹林禅院）",
+        "zh-TW": "護國寺（竹林禪院）",
+        "ja": "ホークオック寺（チュックラム禅院）",
+        "hi": "हो क्वोक पगोडा (ट्रुक लाम ज़ेन मठ)",
+        "ru": "Пагода Хокуок (дзен-монастырь Чуклам)"
+      },
+      "guide": {
+        "en": "A large Buddhist monastery on a hillside of the south-east coast, with temple roofs and stairways looking out to sea.",
+        "vi": "Thiền viện Phật giáo lớn trên sườn đồi bờ đông nam, với mái chùa và bậc thang nhìn ra biển.",
+        "ko": "남동쪽 해안 언덕에 자리한 큰 불교 사원으로, 사원 지붕과 계단 너머로 바다가 보입니다.",
+        "zh-CN": "坐落在东南海岸山坡上的大型佛教禅院，殿顶与台阶面朝大海。",
+        "zh-TW": "坐落在東南海岸山坡上的大型佛教禪院，殿頂與台階面向大海。",
+        "ja": "南東海岸の丘の中腹にある大きな仏教寺院。屋根や石段の先に海が広がります。",
+        "hi": "दक्षिण-पूर्वी तट की पहाड़ी पर बड़ा बौद्ध मठ, जिसकी छतों और सीढ़ियों से समुद्र दिखता है।",
+        "ru": "Большой буддийский монастырь на склоне холма у юго-восточного побережья: крыши храмов и лестницы с видом на море."
+      },
+      "tips": {
+        "en": "An active place of worship: cover shoulders and knees, and keep your voice low.",
+        "vi": "Đây là nơi tu tập: mặc kín vai và gối, giữ trật tự.",
+        "ko": "수행 중인 사찰입니다. 어깨와 무릎을 가리고 조용히 해 주세요.",
+        "zh-CN": "这是修行场所：请遮住肩膀和膝盖，保持安静。",
+        "zh-TW": "這是修行場所：請遮住肩膀與膝蓋，保持安靜。",
+        "ja": "修行の場です。肩と膝を隠す服装で、静かに過ごしましょう。",
+        "hi": "यह सक्रिय पूजा स्थल है: कंधे और घुटने ढकें और धीरे बोलें।",
+        "ru": "Действующий монастырь: закрывайте плечи и колени и говорите тихо."
+      },
+      "bestTime": {
+        "en": "Early morning or late afternoon.",
+        "vi": "Sáng sớm hoặc chiều muộn.",
+        "ko": "이른 아침 또는 늦은 오후.",
+        "zh-CN": "清晨或傍晚。",
+        "zh-TW": "清晨或傍晚。",
+        "ja": "早朝か夕方。",
+        "hi": "सुबह जल्दी या देर दोपहर।",
+        "ru": "Раннее утро или ближе к вечеру."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "suoi-tranh",
+      "status": "published",
+      "category": "nature",
+      "lat": 10.18378,
+      "lng": 104.01534,
+      "capturedAt": "2005-07-21T17:14:15+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/suoi-tranh-1-1600.webp",
+          "card": "photos/commons/suoi-tranh-1-800.webp",
+          "pin": "photos/commons/suoi-tranh-1-pin.webp",
+          "width": 1500,
+          "height": 1125,
+          "credit": {
+            "author": "ntt",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Phu_quoc_suoi_tranh.jpg",
+            "title": "Phu quoc suoi tranh.jpg",
+            "takenAt": "2005-07-21T17:14:15+07:00"
+          },
+          "alt": {
+            "en": "Suối Tranh stream & waterfall — photo by ntt"
+          }
+        },
+        {
+          "src": "photos/commons/suoi-tranh-2-1600.webp",
+          "card": "photos/commons/suoi-tranh-2-800.webp",
+          "pin": "photos/commons/suoi-tranh-2-pin.webp",
+          "width": 533,
+          "height": 800,
+          "credit": {
+            "author": "Stefan from Dresden, Germany",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Th%C3%A1c_Su%E1%BB%91i_Tranh.jpg",
+            "title": "Thác Suối Tranh.jpg",
+            "takenAt": "2006-11-20T10:27:41+07:00"
+          },
+          "alt": {
+            "en": "Suối Tranh stream & waterfall — photo by Stefan from Dresden, Germany"
+          }
+        }
+      ],
+      "name": {
+        "en": "Suối Tranh stream & waterfall",
+        "vi": "Suối Tranh",
+        "ko": "쑤오이짠 계곡·폭포",
+        "zh-CN": "Tranh 溪瀑布（Suối Tranh）",
+        "zh-TW": "Tranh 溪瀑布（Suối Tranh）",
+        "ja": "スオイチャン渓流と滝",
+        "hi": "सुओई त्रान्ह झरना",
+        "ru": "Ручей и водопад Суойчань"
+      },
+      "guide": {
+        "en": "A forest stream with small cascades over boulders in the hills east of Dương Đông.",
+        "vi": "Dòng suối trong rừng với những thác nhỏ chảy qua các tảng đá, trên vùng đồi phía đông Dương Đông.",
+        "ko": "즈엉동 동쪽 언덕의 숲속 계곡으로, 바위 위로 작은 폭포가 흐릅니다.",
+        "zh-CN": "阳东以东山丘上的林间溪流，水流越过巨石形成小瀑布。",
+        "zh-TW": "陽東以東山丘上的林間溪流，水流越過巨石形成小瀑布。",
+        "ja": "ズオンドンの東の丘にある森の渓流。岩の間を小さな滝が流れます。",
+        "hi": "Dương Đông के पूर्व की पहाड़ियों में जंगल की धारा, जहाँ चट्टानों पर छोटे-छोटे झरने गिरते हैं।",
+        "ru": "Лесной ручей с небольшими каскадами по валунам на холмах к востоку от Зыонгдонга."
+      },
+      "tips": {
+        "en": "The flow depends on rain and can be low in the dry season. Rocks are slippery — wear shoes with grip.",
+        "vi": "Lượng nước tùy mưa, mùa khô có thể ít nước. Đá trơn — nên mang giày bám tốt.",
+        "ko": "수량은 비에 따라 달라 건기에는 적을 수 있습니다. 바위가 미끄러우니 접지력 좋은 신발을 신으세요.",
+        "zh-CN": "水量取决于降雨，旱季可能很小。岩石湿滑，请穿防滑鞋。",
+        "zh-TW": "水量取決於降雨，乾季可能很小。岩石濕滑，請穿防滑鞋。",
+        "ja": "水量は雨次第で、乾季は少ないことがあります。岩は滑りやすいので滑りにくい靴を。",
+        "hi": "पानी बारिश पर निर्भर है और सूखे मौसम में कम हो सकता है। चट्टानें फिसलन भरी हैं — अच्छी पकड़ वाले जूते पहनें।",
+        "ru": "Воды много только после дождей, в сухой сезон её может быть мало. Камни скользкие — нужна обувь с хорошим сцеплением."
+      },
+      "bestTime": {
+        "en": "Rainy season (May–Oct), on a dry morning.",
+        "vi": "Mùa mưa (tháng 5–10), vào buổi sáng không mưa.",
+        "ko": "우기(5–10월) 중 비 없는 오전.",
+        "zh-CN": "雨季（5–10 月）不下雨的上午。",
+        "zh-TW": "雨季（5–10 月）不下雨的上午。",
+        "ja": "雨季（5〜10月）の雨の降っていない朝。",
+        "hi": "बरसात (मई–अक्टूबर) में बिना बारिश वाली सुबह।",
+        "ru": "Сезон дождей (май–октябрь), утром без дождя."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "vinpearl-safari",
+      "status": "published",
+      "category": "nature",
+      "lat": 10.3394,
+      "lng": 103.89501,
+      "capturedAt": "2020-11-22T14:32:58+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/vinpearl-safari-1-1600.webp",
+          "card": "photos/commons/vinpearl-safari-1-800.webp",
+          "pin": "photos/commons/vinpearl-safari-1-pin.webp",
+          "width": 1600,
+          "height": 686,
+          "credit": {
+            "author": "Khoitran1957",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Vinpearl_Safari_Ph%C3%BA_Qu%E1%BB%91c.jpg",
+            "title": "Vinpearl Safari Phú Quốc.jpg",
+            "takenAt": "2020-11-22T14:32:58+07:00"
+          },
+          "alt": {
+            "en": "Vinpearl Safari — photo by Khoitran1957"
+          }
+        },
+        {
+          "src": "photos/commons/vinpearl-safari-2-1600.webp",
+          "card": "photos/commons/vinpearl-safari-2-800.webp",
+          "pin": "photos/commons/vinpearl-safari-2-pin.webp",
+          "width": 1600,
+          "height": 687,
+          "credit": {
+            "author": "Khoitran1957",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:H%E1%BB%95.jpg",
+            "title": "Hổ.jpg",
+            "takenAt": "2020-11-22T09:07:59+07:00"
+          },
+          "alt": {
+            "en": "Vinpearl Safari — photo by Khoitran1957"
+          }
+        },
+        {
+          "src": "photos/commons/vinpearl-safari-3-1600.webp",
+          "card": "photos/commons/vinpearl-safari-3-800.webp",
+          "pin": "photos/commons/vinpearl-safari-3-pin.webp",
+          "width": 1446,
+          "height": 1107,
+          "credit": {
+            "author": "Khoitran1957",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%A0_v%C3%A1_ch%C3%A2n_%C4%91en_(cropped).jpg",
+            "title": "Chà vá chân đen (cropped).jpg",
+            "takenAt": "2020-11-22T13:58:16+07:00"
+          },
+          "alt": {
+            "en": "Vinpearl Safari — photo by Khoitran1957"
+          }
+        }
+      ],
+      "name": {
+        "en": "Vinpearl Safari",
+        "vi": "Vinpearl Safari Phú Quốc",
+        "ko": "빈펄 사파리",
+        "zh-CN": "珍珠岛野生动物园（Vinpearl Safari）",
+        "zh-TW": "珍珠島野生動物園（Vinpearl Safari）",
+        "ja": "ヴィンパール・サファリ",
+        "hi": "विनपर्ल सफ़ारी",
+        "ru": "Сафари-парк Vinpearl"
+      },
+      "guide": {
+        "en": "A large open-air wildlife park in the island's north-west, with walking areas and a bus safari zone.",
+        "vi": "Công viên động vật bán hoang dã rộng lớn ở tây bắc đảo, có khu đi bộ và khu tham quan bằng xe buýt.",
+        "ko": "섬 북서쪽의 대형 야외 동물원으로, 도보 구역과 버스 사파리 구역이 있습니다.",
+        "zh-CN": "岛屿西北部的大型开放式野生动物园，有步行区和巴士游览区。",
+        "zh-TW": "島嶼西北部的大型開放式野生動物園，有步行區與巴士遊覽區。",
+        "ja": "島の北西にある大きな屋外動物公園。徒歩エリアとバスで回るサファリエリアがあります。",
+        "hi": "द्वीप के उत्तर-पश्चिम में बड़ा खुला वन्यजीव पार्क, जिसमें पैदल क्षेत्र और बस सफ़ारी क्षेत्र हैं।",
+        "ru": "Большой парк дикой природы под открытым небом на северо-западе острова: пешеходные зоны и автобусное сафари."
+      },
+      "tips": {
+        "en": "Check opening hours and tickets on the official website. Bring water and sun protection.",
+        "vi": "Xem giờ mở cửa và vé trên trang chính thức. Mang theo nước và đồ chống nắng.",
+        "ko": "운영 시간과 티켓은 공식 웹사이트에서 확인하세요. 물과 자외선 차단 용품을 챙기세요.",
+        "zh-CN": "开放时间和门票请以官网为准。带上饮用水和防晒用品。",
+        "zh-TW": "開放時間與門票請以官網為準。帶上飲用水與防曬用品。",
+        "ja": "営業時間とチケットは公式サイトで確認を。水と日焼け対策を忘れずに。",
+        "hi": "खुलने का समय और टिकट आधिकारिक वेबसाइट पर देखें। पानी और धूप से बचाव साथ रखें।",
+        "ru": "Часы работы и билеты уточняйте на официальном сайте. Возьмите воду и защиту от солнца."
+      },
+      "bestTime": {
+        "en": "Morning, when animals are more active.",
+        "vi": "Buổi sáng, khi thú hoạt động nhiều hơn.",
+        "ko": "동물들이 활발한 오전.",
+        "zh-CN": "上午，动物较活跃。",
+        "zh-TW": "上午，動物較活躍。",
+        "ja": "動物が活発な午前中。",
+        "hi": "सुबह, जब जानवर ज़्यादा सक्रिय होते हैं।",
+        "ru": "Утром, когда животные активнее."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "phu-quoc-prison",
+      "status": "published",
+      "category": "culture",
+      "lat": 10.04345,
+      "lng": 104.01879,
+      "capturedAt": "2013-09-14T14:24:49+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/phu-quoc-prison-1-1600.webp",
+          "card": "photos/commons/phu-quoc-prison-1-800.webp",
+          "pin": "photos/commons/phu-quoc-prison-1-pin.webp",
+          "width": 1600,
+          "height": 1200,
+          "credit": {
+            "author": "trungydang",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Nh%C3%A0_t%C3%B9_Ph%C3%BA_Qu%E1%BB%91c,_An_th%E1%BB%9Bi,_Ki%C3%AAn_Giang,_Vietnam_-_panoramio.jpg",
+            "title": "Nhà tù Phú Quốc, An thới, Kiên Giang, Vietnam - panoramio.jpg",
+            "takenAt": "2013-09-14T14:24:49+07:00"
+          },
+          "alt": {
+            "en": "Phú Quốc Prison (Coconut Tree Prison) — photo by trungydang"
+          }
+        },
+        {
+          "src": "photos/commons/phu-quoc-prison-2-1600.webp",
+          "card": "photos/commons/phu-quoc-prison-2-800.webp",
+          "pin": "photos/commons/phu-quoc-prison-2-pin.webp",
+          "width": 1600,
+          "height": 1064,
+          "credit": {
+            "author": "Mrfly911",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Phu_Quoc_Prison_DSC_0606.jpg",
+            "title": "Phu Quoc Prison DSC 0606.jpg",
+            "takenAt": "2017-01-12T21:28:02+07:00"
+          },
+          "alt": {
+            "en": "Phú Quốc Prison (Coconut Tree Prison) — photo by Mrfly911"
+          }
+        }
+      ],
+      "name": {
+        "en": "Phú Quốc Prison (Coconut Tree Prison)",
+        "vi": "Di tích Nhà tù Phú Quốc (Nhà lao Cây Dừa)",
+        "ko": "푸꾸옥 감옥(코코넛 나무 감옥)",
+        "zh-CN": "富国监狱（椰树监狱）",
+        "zh-TW": "富國監獄（椰樹監獄）",
+        "ja": "フーコック刑務所（ココナッツツリー刑務所）",
+        "hi": "फू क्वोक जेल (कोकोनट ट्री जेल)",
+        "ru": "Тюрьма Фукуок («Кокосовая тюрьма»)"
+      },
+      "guide": {
+        "en": "A historic prison camp in An Thới used during the wars of the 20th century, now a memorial site with reconstructed barracks and exhibits.",
+        "vi": "Di tích nhà tù ở An Thới từng được sử dụng trong các cuộc chiến tranh thế kỷ 20, nay là khu tưởng niệm với các dãy trại và hiện vật được phục dựng.",
+        "ko": "20세기 전쟁 시기에 사용된 안터이의 수용소 유적으로, 지금은 복원된 막사와 전시가 있는 추모 장소입니다.",
+        "zh-CN": "位于安泰的历史监狱遗址，曾在 20 世纪的战争中使用，现为纪念地，有复原的营房与展品。",
+        "zh-TW": "位於安泰的歷史監獄遺址，曾在 20 世紀的戰爭中使用，現為紀念地，有復原的營房與展品。",
+        "ja": "20世紀の戦争中に使われたアントイの収容所跡。現在は復元された兵舎と展示がある追悼の場です。",
+        "hi": "An Thới का ऐतिहासिक जेल शिविर, जो 20वीं सदी के युद्धों में इस्तेमाल हुआ; अब यह पुनर्निर्मित बैरकों और प्रदर्शनियों वाला स्मारक स्थल है।",
+        "ru": "Исторический лагерь-тюрьма в Ан Тхой, использовавшийся во время войн XX века; сейчас мемориал с восстановленными бараками и экспозицией."
+      },
+      "tips": {
+        "en": "Some displays show torture realistically and may upset children. Dress and behave respectfully.",
+        "vi": "Một số mô hình tái hiện cảnh tra tấn rất chân thực, có thể không phù hợp với trẻ nhỏ. Ăn mặc và cư xử trang nghiêm.",
+        "ko": "일부 전시는 고문 장면을 사실적으로 재현해 어린이에게 충격을 줄 수 있습니다. 단정한 복장과 태도를 지켜 주세요.",
+        "zh-CN": "部分展示逼真再现酷刑场景，可能令儿童不适。请注意衣着和举止庄重。",
+        "zh-TW": "部分展示逼真重現酷刑場景，可能讓兒童不適。請注意衣著與舉止莊重。",
+        "ja": "拷問を写実的に再現した展示があり、子どもには刺激が強い場合があります。服装と振る舞いに配慮を。",
+        "hi": "कुछ प्रदर्शनों में यातना को यथार्थ रूप से दिखाया गया है, जो बच्चों को परेशान कर सकता है। सम्मानजनक कपड़े पहनें और शालीन रहें।",
+        "ru": "Некоторые экспозиции реалистично изображают пытки и могут напугать детей. Одевайтесь и ведите себя уважительно."
+      },
+      "bestTime": {
+        "en": "Morning, before the midday heat.",
+        "vi": "Buổi sáng, trước khi trời nắng gắt.",
+        "ko": "한낮 더위 전, 오전.",
+        "zh-CN": "上午，避开正午炎热。",
+        "zh-TW": "上午，避開正午炎熱。",
+        "ja": "日中の暑さの前、午前中。",
+        "hi": "सुबह, दोपहर की गर्मी से पहले।",
+        "ru": "Утром, до дневной жары."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "duong-dong-harbour",
+      "status": "published",
+      "category": "culture",
+      "lat": 10.21982,
+      "lng": 103.96007,
+      "capturedAt": "2024-05-05T09:40:07+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/duong-dong-harbour-1-1600.webp",
+          "card": "photos/commons/duong-dong-harbour-1-800.webp",
+          "pin": "photos/commons/duong-dong-harbour-1-pin.webp",
+          "width": 1600,
+          "height": 1202,
+          "credit": {
+            "author": "Vano111ru",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:R%E1%BA%A1ch_D%C6%B0%C6%A1ng_D%C3%B3ng.jpg",
+            "title": "Rạch Dương Dóng.jpg",
+            "takenAt": "2024-05-05T09:40:07+07:00"
+          },
+          "alt": {
+            "en": "Dương Đông river harbour — photo by Vano111ru"
+          }
+        },
+        {
+          "src": "photos/commons/duong-dong-harbour-2-1600.webp",
+          "card": "photos/commons/duong-dong-harbour-2-800.webp",
+          "pin": "photos/commons/duong-dong-harbour-2-pin.webp",
+          "width": 1600,
+          "height": 1013,
+          "credit": {
+            "author": "trungydang",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:L%C3%A0ng_Ch%C3%A0i,_Ch%E1%BB%A3_D%C6%B0%C6%A1ng_%C4%90%C3%B4ng,Ph%C3%BA_Qu%E1%BB%91c_Ki%C3%AAn_Giang_-_panoramio.jpg",
+            "title": "Làng Chài, Chợ Dương Đông,Phú Quốc Kiên Giang - panoramio.jpg",
+            "takenAt": "2013-09-15T11:32:57+07:00"
+          },
+          "alt": {
+            "en": "Dương Đông river harbour — photo by trungydang"
+          }
+        }
+      ],
+      "name": {
+        "en": "Dương Đông river harbour",
+        "vi": "Cửa sông Dương Đông",
+        "ko": "즈엉동 강 포구",
+        "zh-CN": "阳东河港",
+        "zh-TW": "陽東河港",
+        "ja": "ズオンドン川の港",
+        "hi": "Dương Đông नदी बंदरगाह",
+        "ru": "Речная гавань Зыонгдонг"
+      },
+      "guide": {
+        "en": "Fishing boats moor along the Dương Đông river where it meets the sea, a few minutes' walk from Dinh Cậu and the night market.",
+        "vi": "Thuyền đánh cá neo dọc sông Dương Đông nơi đổ ra biển, cách Dinh Cậu và chợ đêm vài phút đi bộ.",
+        "ko": "즈엉동 강이 바다와 만나는 곳을 따라 어선들이 정박해 있으며, 딘꺼우와 야시장에서 걸어서 몇 분 거리입니다.",
+        "zh-CN": "渔船停泊在阳东河入海口一带，步行到 Dinh Cậu 和夜市只需几分钟。",
+        "zh-TW": "漁船停泊在陽東河出海口一帶，步行到 Dinh Cậu 和夜市只要幾分鐘。",
+        "ja": "ズオンドン川が海に注ぐあたりに漁船が停泊しています。ディンカウやナイトマーケットから歩いて数分です。",
+        "hi": "Dương Đông नदी के समुद्र से मिलने वाली जगह पर मछली नावें खड़ी रहती हैं, Dinh Cậu और रात के बाज़ार से कुछ मिनट पैदल।",
+        "ru": "Рыбацкие лодки стоят вдоль реки Зыонгдонг у её впадения в море, в нескольких минутах ходьбы от Динькау и ночного рынка."
+      },
+      "tips": {
+        "en": "Combine it with Dinh Cậu at sunset and the night market after dark.",
+        "vi": "Kết hợp ghé Dinh Cậu lúc hoàng hôn và chợ đêm khi trời tối.",
+        "ko": "일몰 무렵 딘꺼우, 해 진 뒤 야시장과 함께 둘러보세요.",
+        "zh-CN": "可与日落时的 Dinh Cậu、天黑后的夜市一起游览。",
+        "zh-TW": "可與夕陽時的 Dinh Cậu、天黑後的夜市一起走。",
+        "ja": "夕暮れのディンカウ、日没後のナイトマーケットと合わせて回りましょう。",
+        "hi": "सूर्यास्त पर Dinh Cậu और अंधेरा होने पर रात के बाज़ार के साथ घूमें।",
+        "ru": "Совместите с Динькау на закате и ночным рынком после темноты."
+      },
+      "bestTime": {
+        "en": "Morning or late afternoon.",
+        "vi": "Buổi sáng hoặc chiều muộn.",
+        "ko": "오전 또는 늦은 오후.",
+        "zh-CN": "上午或傍晚。",
+        "zh-TW": "上午或傍晚。",
+        "ja": "朝か夕方。",
+        "hi": "सुबह या देर दोपहर।",
+        "ru": "Утро или ближе к вечеру."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
+    },
+    {
+      "id": "nguyen-trung-truc-temple",
+      "status": "published",
+      "category": "culture",
+      "lat": 10.37336,
+      "lng": 103.84278,
+      "capturedAt": "2015-11-09T11:24:16+07:00",
+      "photos": [
+        {
+          "src": "photos/commons/nguyen-trung-truc-temple-1-1600.webp",
+          "card": "photos/commons/nguyen-trung-truc-temple-1-800.webp",
+          "pin": "photos/commons/nguyen-trung-truc-temple-1-pin.webp",
+          "width": 1600,
+          "height": 1200,
+          "credit": {
+            "author": "Tokeisan",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81n_th%E1%BB%9D_Nguy%E1%BB%85n_Trung_Tr%E1%BB%B1c_%E1%BB%9F_Ph%C3%BA_Qu%E1%BB%91c.JPG",
+            "title": "Đền thờ Nguyễn Trung Trực ở Phú Quốc.JPG",
+            "takenAt": "2015-11-09T11:24:16+07:00"
+          },
+          "alt": {
+            "en": "Nguyễn Trung Trực Temple, Gành Dầu — photo by Tokeisan"
+          }
+        },
+        {
+          "src": "photos/commons/nguyen-trung-truc-temple-2-1600.webp",
+          "card": "photos/commons/nguyen-trung-truc-temple-2-800.webp",
+          "pin": "photos/commons/nguyen-trung-truc-temple-2-pin.webp",
+          "width": 1280,
+          "height": 2276,
+          "credit": {
+            "author": "Lê Thy (thảo luận)",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Nguyentrungtrucphuquoc.JPG",
+            "title": "Nguyentrungtrucphuquoc.JPG",
+            "takenAt": "2013-04-16T10:01:55+07:00"
+          },
+          "alt": {
+            "en": "Nguyễn Trung Trực Temple, Gành Dầu — photo by Lê Thy (thảo luận)"
+          }
+        }
+      ],
+      "name": {
+        "en": "Nguyễn Trung Trực Temple, Gành Dầu",
+        "vi": "Đền thờ Nguyễn Trung Trực (Gành Dầu)",
+        "ko": "응우옌쭝쯕 사당, 가인저우",
+        "zh-CN": "阮忠直祠（Gành Dầu）",
+        "zh-TW": "阮忠直祠（Gành Dầu）",
+        "ja": "グエン・チュン・チュック廟（ガインザウ）",
+        "hi": "न्गुयेन चुंग चुक मंदिर, गान्ह दाउ",
+        "ru": "Храм Нгуен Чунг Чыка, Ганьзау"
+      },
+      "guide": {
+        "en": "A temple in the far north-west honouring Nguyễn Trung Trực, a 19th-century leader of resistance against French rule who took refuge on Phú Quốc.",
+        "vi": "Đền thờ ở cực tây bắc đảo, tưởng nhớ Nguyễn Trung Trực, thủ lĩnh kháng Pháp thế kỷ 19 từng lánh về Phú Quốc.",
+        "ko": "섬 북서쪽 끝에 있는 사당으로, 푸꾸옥으로 피신했던 19세기 항불 지도자 응우옌쭝쯕을 기립니다.",
+        "zh-CN": "位于岛屿西北端的祠庙，纪念 19 世纪抗法领袖阮忠直，他曾退守富国岛。",
+        "zh-TW": "位於島嶼西北端的祠廟，紀念 19 世紀抗法領袖阮忠直，他曾退守富國島。",
+        "ja": "島の北西端にある廟。フーコックに逃れた19世紀の抗仏指導者グエン・チュン・チュックを祀っています。",
+        "hi": "द्वीप के सुदूर उत्तर-पश्चिम में मंदिर, जो 19वीं सदी के फ़्रांसीसी शासन-विरोधी नेता न्गुयेन चुंग चुक को समर्पित है, जिन्होंने फू क्वोक में शरण ली थी।",
+        "ru": "Храм на крайнем северо-западе в честь Нгуен Чунг Чыка — лидера сопротивления французам в XIX веке, укрывавшегося на Фукуоке."
+      },
+      "tips": {
+        "en": "A place of worship: dress modestly. Combine it with the Gành Dầu coast nearby.",
+        "vi": "Nơi thờ tự: ăn mặc kín đáo. Có thể kết hợp ngắm biển Gành Dầu gần đó.",
+        "ko": "참배 장소이니 단정하게 입으세요. 근처 가인저우 해안과 함께 둘러보세요.",
+        "zh-CN": "这是祭祀场所，请穿着得体。可顺道游览附近的 Gành Dầu 海岸。",
+        "zh-TW": "這是祭祀場所，請穿著得體。可順道遊覽附近的 Gành Dầu 海岸。",
+        "ja": "参拝の場なので控えめな服装で。近くのガインザウの海岸と合わせてどうぞ。",
+        "hi": "यह पूजा स्थल है: शालीन कपड़े पहनें। पास के गान्ह दाउ तट के साथ घूमें।",
+        "ru": "Это место поклонения — одевайтесь скромно. Можно совместить с побережьем Ганьзау рядом."
+      },
+      "bestTime": {
+        "en": "Morning or late afternoon.",
+        "vi": "Buổi sáng hoặc chiều muộn.",
+        "ko": "오전 또는 늦은 오후.",
+        "zh-CN": "上午或傍晚。",
+        "zh-TW": "上午或傍晚。",
+        "ja": "朝か夕方。",
+        "hi": "सुबह या देर दोपहर।",
+        "ru": "Утро или ближе к вечеру."
+      },
+      "links": [],
+      "youtube": null,
+      "source": "commons"
     }
   ]
 }

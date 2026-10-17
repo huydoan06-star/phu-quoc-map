@@ -2,6 +2,25 @@
   {
     "date": "2026-10-17",
     "verb": "redesign",
+    "scope": "index.html v3 (photo-led, satellite day/night atlas, rich motion)",
+    "genre": "atmospheric / photo-led travel",
+    "macrostructure": "Cinematic photo story → full-bleed satellite atlas (Scroll-Triggered Storytelling)",
+    "theme": "custom: sunlit tropical — turquoise sea, sand, sunset coral (paper oklch(98.4% 0.012 85), accent oklch(55% 0.19 32)); night = midnight navy + lantern amber",
+    "enrichment": "real licensed photography (Wikimedia Commons) + Sentinel-2 satellite imagery + NASA night lights",
+    "nav": "N4 Transparent overlay bar → solid glass on scroll",
+    "footer": "Ft3 Dark colophon band with credits",
+    "fonts": [
+      "Fraunces (display)",
+      "Be Vietnam Pro (body/UI)",
+      "native CJK/Devanagari/Cyrillic fallbacks via :lang()"
+    ],
+    "motion": "Ken Burns hero crossfade, scroll-driven hero push-in, Lenis inertia, reveal + parallax, momentum rail → map flyTo, shared-element photo→panel (View Transitions), cluster split, lightbox swipe, day↔night 800ms crossfade, ambient clouds/shimmer/stars/halos/lanterns; Motion toggle (defaults to OS) disables all",
+    "uiuxpromax": "Scroll-Triggered Storytelling, Liquid Glass controls, dark-mode-OLED night, motion-sensitivity + contained horizontal scroll rules",
+    "critique": "P5 H4 E4 S5 R4 V5"
+  },
+  {
+    "date": "2026-10-17",
+    "verb": "redesign",
     "scope": "index.html (single page, visual + motion layer)",
     "genre": "editorial / atmospheric-light hybrid",
     "macrostructure": "Map / Diagram — full-bleed hero map",

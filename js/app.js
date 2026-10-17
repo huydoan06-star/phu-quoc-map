@@ -1,20 +1,26 @@
-// Phú Quốc Map — v2. Static ES modules, no build step. Data: data/spots.json, data/tips.json, i18n/*.json
-// Motion rules: transform/opacity only, exit faster than enter, every transition interruptible,
-// prefers-reduced-motion = instant state changes (no flyTo, no view transitions, no stagger).
+// Phú Quốc Map — v3. Static ES modules, no build step. Data: data/spots.json, data/tips.json, i18n/*.json
+// Motion: transform/opacity only, exits faster than entrances, everything interruptible. One visible
+// "Motion" switch (defaults to the OS reduced-motion setting) turns off Lenis, Ken Burns, ambient FX,
+// fly animations, view transitions and parallax together.
 import { initI18n, t, tx, onLangChange, formatDateTime } from './i18n.js';
 import { icon } from './icons.js';
+import { initMotion, motionOn, onMotionChange, reveal, revealAll, watchParallax, scrollToEl } from './motion.js';
+import { createMap, initTheme, resolveTheme, onThemeChange } from './mapfx.js';
+import { initHero, rebuildHero } from './hero.js';
+import { initRail, renderRail, setRailCurrent } from './rail.js';
+import { initLightbox, openLightbox } from './lightbox.js';
+import { sortedPhotos, cardSrc, pinSrc, srcset, creditHTML, creditText, isOwner } from './photo.js';
 
-const CENTER = [10.2, 103.96];
-const ISLAND = [[9.94, 103.84], [10.46, 104.09]]; // Phú Quốc main island, initial view
-const BOUNDS = [[9.70, 103.55], [10.62, 104.30]];
+const MAX_BOUNDS = [[9.70, 103.55], [10.62, 104.30]];
 const EXIT_MS = 200;
+const TOP_UI = 136; // top bar + filter chips
+const LIVELY = new Set(['nightlife', 'market']);
 
-const state = { spots: [], tips: null, filter: 'all', activeId: null, markers: new Map(), leaving: new Map(), lastTrigger: null, map: null, filterToken: 0 };
+const state = { spots: [], tips: null, filter: 'all', activeId: null, markers: new Map(), cluster: null, map: null, lastTrigger: null, filterToken: 0, parkTimer: 0 };
 const $ = (id) => document.getElementById(id);
-const mq = (q) => matchMedia(q).matches;
-const reduced = () => mq('(prefers-reduced-motion: reduce)');
-const wide = () => mq('(min-width: 900px)');
+const wide = () => matchMedia('(min-width: 900px)').matches;
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const root = document.documentElement;
 
 async function loadJSON(path) {
   const res = await fetch(path, { cache: 'no-cache' });
@@ -22,121 +28,92 @@ async function loadJSON(path) {
   return res.json();
 }
 const visibleSpots = () => state.spots.filter((s) => state.filter === 'all' || s.category === state.filter);
-
-/* ---------- Reveal on scroll (IntersectionObserver, one stagger per batch) ---------- */
-const io = 'IntersectionObserver' in window
-  ? new IntersectionObserver((entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.08 })
-  : null;
-function reveal(node, i, instant) {
-  node.classList.add('reveal'); node.style.setProperty('--i', String(Math.min(i, 10)));
-  if (instant || !io) node.classList.add('is-in'); else io.observe(node);
-}
-
-/* ---------- Media with blur-up ---------- */
-function setMedia(wrap, img, photo, altText) {
-  wrap.classList.add('media');
-  let blur = wrap.querySelector('.media__blur');
-  if (!blur) { blur = el('span', 'media__blur'); blur.setAttribute('aria-hidden', 'true'); wrap.prepend(blur); }
-  img.classList.remove('is-loaded');
-  img.onload = null;
-  if (!photo) { img.removeAttribute('src'); img.alt = ''; blur.style.backgroundImage = ''; return; }
-  blur.style.backgroundImage = `url("${photo.thumb || photo.src}")`;
-  img.width = photo.width || 1600; img.height = photo.height || 1067;
-  img.alt = altText;
-  const done = () => requestAnimationFrame(() => img.classList.add('is-loaded'));
-  img.onload = done;
-  img.src = photo.src;
-  if (img.complete && img.naturalWidth) done();
-}
+const spotById = (id) => state.spots.find((s) => s.id === id);
 
 /* ---------- Map ---------- */
+function railHeight() { const r = $('rail-wrap'); return r && r.offsetParent ? r.offsetHeight : 0; }
 function fitPadding() {
-  const card = $('hero-card');
-  const top = 150;
-  if (wide()) return { paddingTopLeft: [card.offsetLeft + card.offsetWidth + 24, top], paddingBottomRight: [48, 32] };
-  return { paddingTopLeft: [16, top], paddingBottomRight: [16, card.offsetHeight + 28] };
+  const panelW = wide() && state.activeId ? $('spot-panel').offsetWidth + 40 : 0;
+  return { paddingTopLeft: [wide() ? 40 : 16, TOP_UI + 10], paddingBottomRight: [(wide() ? 40 : 16) + panelW, railHeight() + 16] };
 }
+// Default view: the busy south-west corridor (Dương Đông → An Thới) — close enough to read the imagery.
+const HOME = [[9.995, 103.935], [10.235, 104.06]];
+const spotBounds = (spots) => L.latLngBounds(spots.map((s) => [s.lat, s.lng]));
 
-function initMap() {
-  const map = L.map('map', {
-    center: CENTER, zoom: 10, minZoom: 9, maxZoom: 18, zoomControl: false, zoomSnap: 0.25,
-    maxBounds: BOUNDS, maxBoundsViscosity: 0.8, scrollWheelZoom: wide() ? 'center' : false, tap: true,
-    fadeAnimation: !reduced(), zoomAnimation: !reduced(), markerZoomAnimation: !reduced(),
-  });
-  L.control.zoom({ position: 'topright' }).addTo(map);
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
-  map.fitBounds(ISLAND, fitPadding());
-  map.on('click', () => closeSpot());
-  state.map = map;
-}
-
-// Fly so the spot lands in the part of the map the panel/sheet does not cover.
-function flyToSpot(spot) {
-  const map = state.map;
-  const z = Math.max(map.getZoom(), 14);
-  const panel = $('spot-panel');
-  // Put the pin at the centre of the uncovered area (right of nothing / left of the panel on desktop; above the sheet on mobile).
-  const size = map.getSize(); const TOP = 150;
-  const off = wide()
-    ? [size.x / 2 - panel.offsetLeft / 2, size.y / 2 - (TOP + size.y) / 2]
-    : [0, size.y / 2 - (TOP + Math.min(size.y, innerHeight - panel.offsetHeight)) / 2];
+// Place the spot in the centre of the part of the map that the panel / sheet / rail does not cover.
+function flyToSpot(spot, zoom = 15) {
+  const map = state.map; const size = map.getSize(); const panel = $('spot-panel');
+  const open = panel.dataset.state === 'open';
+  let cx = size.x / 2, cy;
+  if (wide()) {
+    if (open) cx = (panel.offsetLeft) / 2;
+    cy = (TOP_UI + size.y - railHeight()) / 2;
+  } else {
+    const bottom = open ? innerHeight - panel.offsetHeight : size.y - railHeight();
+    cy = (TOP_UI + Math.min(size.y, bottom)) / 2;
+  }
+  const off = L.point(size.x / 2 - cx, size.y / 2 - cy);
+  const z = Math.max(map.getZoom(), zoom);
   const target = map.unproject(map.project([spot.lat, spot.lng], z).add(off), z);
-  if (reduced()) { map.setView(target, z, { animate: false }); return; }
-  map.flyTo(target, z, { duration: 1.15, easeLinearity: 0.2 });
+  if (!motionOn()) { map.setView(target, z, { animate: false }); return; }
+  map.flyTo(target, z, { duration: 1.3, easeLinearity: 0.18 });
 }
 
 function flyToFilter() {
-  const map = state.map;
   const spots = visibleSpots();
-  const opts = { ...fitPadding(), maxZoom: 13, animate: !reduced(), duration: 0.9, easeLinearity: 0.2 };
-  if (state.filter === 'all' || !spots.length) {
-    if (reduced()) map.fitBounds(ISLAND, fitPadding()); else map.flyToBounds(ISLAND, opts);
-    return;
-  }
-  const b = L.latLngBounds(spots.map((s) => [s.lat, s.lng]));
-  if (reduced()) map.fitBounds(b, { ...fitPadding(), maxZoom: 13 }); else map.flyToBounds(b, opts);
+  if (!spots.length) return;
+  const opts = { ...fitPadding(), maxZoom: 14 };
+  if (!motionOn()) state.map.fitBounds(spotBounds(spots), opts);
+  else state.map.flyToBounds(spotBounds(spots), { ...opts, duration: 1.0, easeLinearity: 0.2 });
 }
 
 function pinIcon(spot, i) {
+  const p = sortedPhotos(spot)[0];
+  const lively = LIVELY.has(spot.category) || /night|sunset-town|kiss-of-the-sea/.test(spot.id);
   return L.divIcon({
-    className: 'pin',
-    html: `<span class="pin__body" data-cat="${spot.category}" style="--i:${i}"><span class="pin__head">${icon(spot.category)}</span></span>`,
-    iconSize: [40, 48], iconAnchor: [20, 46],
+    className: `ppin${lively ? ' ppin--lively' : ''}`,
+    html: `<span class="ppin__body" data-cat="${spot.category}" style="--i:${i}"><span class="ppin__glow"></span><span class="ppin__ring"><img src="${p ? pinSrc(p) : ''}" alt="" width="50" height="50" decoding="async"></span></span>`,
+    iconSize: [56, 64], iconAnchor: [28, 62],
   });
 }
 
-// Diff markers against the current filter: leaving pins animate out, then are removed; new pins drop in staggered.
+function clusterIcon(cluster) {
+  const kids = cluster.getAllChildMarkers().slice(0, 3);
+  const imgs = kids.map((m) => { const s = spotById(m.options.spotId); const p = s && sortedPhotos(s)[0]; return p ? `<img src="${pinSrc(p)}" alt="" width="50" height="50">` : ''; }).join('');
+  return L.divIcon({ className: 'pcluster', html: `<span class="pcluster__stack">${imgs}</span><span class="pcluster__count">${cluster.getChildCount()}</span>`, iconSize: [66, 62], iconAnchor: [33, 31] });
+}
+
+function initPins() {
+  state.cluster = L.markerClusterGroup({
+    showCoverageOnHover: false, maxClusterRadius: 52, spiderfyOnMaxZoom: true, disableClusteringAtZoom: 15,
+    animate: motionOn(), animateAddingMarkers: false, iconCreateFunction: clusterIcon, chunkedLoading: true,
+  });
+  state.spots.forEach((spot, i) => {
+    const m = L.marker([spot.lat, spot.lng], { icon: pinIcon(spot, i), title: tx(spot.name), alt: tx(spot.name), keyboard: true, riseOnHover: true, spotId: spot.id });
+    m.on('click', (e) => { L.DomEvent.stopPropagation(e); state.lastTrigger = m.getElement(); openSpot(spot.id, { from: m.getElement()?.querySelector('img') }); });
+    m.on('add', () => syncActivePin());
+    state.markers.set(spot.id, m);
+  });
+  state.cluster.addLayers(visibleSpots().map((s) => state.markers.get(s.id)));
+  state.cluster.on('animationend', syncActivePin);
+  state.map.addLayer(state.cluster);
+  onMotionChange((on) => { state.cluster.options.animate = on; });
+}
+
 function syncMarkers() {
   const want = new Set(visibleSpots().map((s) => s.id));
-  state.markers.forEach((m, id) => {
-    if (want.has(id) || state.leaving.has(id)) return;
-    const node = m.getElement();
-    if (reduced() || !node) { m.remove(); state.markers.delete(id); return; }
-    node.classList.add('is-leaving');
-    state.leaving.set(id, setTimeout(() => { m.remove(); state.markers.delete(id); state.leaving.delete(id); }, EXIT_MS));
-  });
-  let i = 0;
-  for (const spot of visibleSpots()) {
-    if (state.leaving.has(spot.id)) { // re-shown mid-exit: cancel the exit
-      clearTimeout(state.leaving.get(spot.id)); state.leaving.delete(spot.id);
-      state.markers.get(spot.id).getElement()?.classList.remove('is-leaving');
-      continue;
-    }
-    if (state.markers.has(spot.id)) continue;
-    const m = L.marker([spot.lat, spot.lng], { icon: pinIcon(spot, i++), title: tx(spot.name), alt: tx(spot.name), keyboard: true, riseOnHover: true }).addTo(state.map);
-    m.on('click', (e) => { L.DomEvent.stopPropagation(e); state.lastTrigger = m.getElement(); openSpot(spot.id); });
-    state.markers.set(spot.id, m);
-  }
+  const remove = [], add = [];
+  state.markers.forEach((m, id) => { const has = state.cluster.hasLayer(m); if (want.has(id) && !has) add.push(m); if (!want.has(id) && has) remove.push(m); });
+  if (remove.length) state.cluster.removeLayers(remove);
+  if (add.length) state.cluster.addLayers(add);
   syncActivePin();
 }
 
 function relabelMarkers() {
   state.markers.forEach((m, id) => {
-    const s = state.spots.find((x) => x.id === id); const node = m.getElement();
-    if (s && node) { node.title = tx(s.name); node.setAttribute('alt', tx(s.name)); node.setAttribute('aria-label', tx(s.name)); }
+    const s = spotById(id); const node = m.getElement();
+    m.options.title = m.options.alt = tx(s.name);
+    if (node) { node.title = tx(s.name); node.setAttribute('aria-label', tx(s.name)); }
   });
 }
 
@@ -168,16 +145,32 @@ function setFilter(c) {
   document.querySelectorAll('#filters .chip').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === c)));
   if (state.activeId && !visibleSpots().some((s) => s.id === state.activeId)) closeSpot({ restoreFocus: false });
   syncMarkers();
+  renderRail(visibleSpots());
   flyToFilter();
-  // List: current cards exit quickly, new set enters staggered. A newer click cancels a pending swap.
   const token = ++state.filterToken;
   const cards = document.querySelectorAll('#spot-list > li');
-  if (reduced() || !cards.length) { renderList(); return; }
+  if (!motionOn() || !cards.length) { renderList(); return; }
   cards.forEach((n) => n.classList.add('is-out'));
   setTimeout(() => { if (token === state.filterToken) renderList(); }, EXIT_MS);
 }
 
-/* ---------- Spot grid ---------- */
+/* ---------- All-spots grid (large photos, parallax) ---------- */
+function setMedia(wrap, img, photo, alt, sizes) {
+  wrap.classList.add('media');
+  let blur = wrap.querySelector('.media__blur');
+  if (!blur) { blur = el('span', 'media__blur'); blur.setAttribute('aria-hidden', 'true'); wrap.prepend(blur); }
+  img.classList.remove('is-loaded'); img.onload = null;
+  if (!photo) { img.removeAttribute('src'); img.removeAttribute('srcset'); img.alt = ''; blur.style.backgroundImage = ''; return; }
+  blur.style.backgroundImage = `url("${pinSrc(photo)}")`;
+  img.width = photo.width || 1600; img.height = photo.height || 1067; img.alt = alt;
+  const done = () => requestAnimationFrame(() => img.classList.add('is-loaded'));
+  img.onload = done;
+  const ss = srcset(photo);
+  if (ss) { img.sizes = sizes; img.srcset = ss; } else img.removeAttribute('srcset');
+  img.src = cardSrc(photo);
+  if (img.complete && img.naturalWidth) done();
+}
+
 function renderList({ instant = false } = {}) {
   const spots = visibleSpots();
   $('spot-list').replaceChildren(...spots.map((spot, i) => {
@@ -185,40 +178,53 @@ function renderList({ instant = false } = {}) {
     const b = el('button', 'spot-card__btn'); b.type = 'button';
     const media = el('span', 'spot-card__media'); const img = el('img'); img.loading = 'lazy'; img.decoding = 'async';
     media.append(img);
-    const photo = (spot.photos || [])[0];
-    setMedia(media, img, photo, '');
+    const photo = sortedPhotos(spot)[0];
+    setMedia(media, img, photo, '', '(min-width: 1100px) 33vw, (min-width: 640px) 50vw, 100vw');
     const body = el('span', 'spot-card__body');
     const pill = el('span', 'cat-pill'); pill.dataset.cat = spot.category; pill.innerHTML = icon(spot.category); pill.append(el('span', null, t(`categories.${spot.category}`)));
     const name = el('span', 'spot-card__name', tx(spot.name));
     const best = el('span', 'spot-card__best'); best.innerHTML = icon('clock'); best.append(el('span', null, tx(spot.bestTime)));
     body.append(pill, name, best);
     b.append(media, body);
-    b.addEventListener('click', () => {
-      state.lastTrigger = b;
-      window.scrollTo({ top: 0, behavior: reduced() ? 'auto' : 'smooth' });
-      openSpot(spot.id);
-    });
-    li.append(b); reveal(li, i, instant); return li;
+    if (photo) b.append(el('span', 'spot-card__credit', creditText(photo)));
+    b.addEventListener('click', () => { state.lastTrigger = b; openSpot(spot.id, { from: img, scroll: true }); });
+    li.append(b); reveal(li, i % 3, instant); watchParallax(media);
+    return li;
   }));
   $('spot-empty').hidden = spots.length > 0;
 }
 
 /* ---------- Spot panel ---------- */
+let panelPhotos = [];
 function fillPanel(spot) {
-  const photo = (spot.photos || [])[0];
-  setMedia($('panel-figure'), $('panel-img'), photo, photo ? (tx(photo.alt) || tx(spot.name)) : '');
-  $('panel-badge').hidden = !(photo && photo.placeholder);
-  $('panel-badge').textContent = t('ui.placeholderBadge');
+  panelPhotos = sortedPhotos(spot);
+  const photo = panelPhotos[0];
+  const img = $('panel-img');
+  setMedia($('panel-figure'), img, photo, photo ? (tx(photo.alt) || tx(spot.name)) : '', '(min-width: 900px) 440px, 100vw');
+  $('panel-zoom').disabled = !photo;
+  $('panel-credit').innerHTML = creditHTML(photo);
+  $('panel-badge').hidden = !(photo && isOwner(photo));
+  $('panel-badge').textContent = t('ui.ownerPhoto');
+  const thumbs = $('panel-thumbs');
+  thumbs.replaceChildren(...panelPhotos.map((p, k) => {
+    const li = el('li'); const b = el('button'); b.type = 'button';
+    b.setAttribute('aria-label', `${t('ui.gallery')} ${k + 1} / ${panelPhotos.length}`);
+    const im = el('img'); im.src = pinSrc(p); im.alt = ''; im.loading = 'lazy'; im.width = 64; im.height = 48;
+    b.append(im); b.addEventListener('click', () => openLightbox(panelPhotos, k, tx(spot.name), b));
+    li.append(b); return li;
+  }));
+  thumbs.hidden = panelPhotos.length < 2;
   const cat = $('panel-cat'); cat.dataset.cat = spot.category; cat.innerHTML = icon(spot.category); cat.append(el('span', null, t(`categories.${spot.category}`)));
-  const time = $('panel-time'); time.innerHTML = icon('clock');
-  time.append(el('span', null, spot.capturedAt ? `${t('ui.captured')}: ${formatDateTime(spot.capturedAt)}` : t('ui.captureSoon')));
+  const time = $('panel-time');
+  const when = photo && (photo.credit ? photo.credit.takenAt : spot.capturedAt);
+  time.replaceChildren(); time.hidden = !when;
+  if (when) { time.innerHTML = icon('clock'); time.append(el('span', null, `${t('ui.captured')}: ${formatDateTime(when)}`)); }
   $('panel-title').textContent = tx(spot.name);
   $('panel-guide').textContent = tx(spot.guide);
   $('panel-tips').textContent = tx(spot.tips);
   $('panel-best').textContent = tx(spot.bestTime);
   $('panel-directions').href = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
-  const video = $('panel-video');
-  video.hidden = !spot.youtube; if (spot.youtube) video.href = spot.youtube;
+  const video = $('panel-video'); video.hidden = !spot.youtube; if (spot.youtube) video.href = spot.youtube;
   // Affiliate / partner links — only rendered when present in data (none yet).
   const links = $('panel-links');
   const items = (spot.links || []).filter((l) => l && l.url);
@@ -229,27 +235,55 @@ function fillPanel(spot) {
   links.hidden = items.length === 0;
 }
 
-function openSpot(id) {
-  const spot = state.spots.find((s) => s.id === id);
-  if (!spot) return;
+function showPanel(spot) {
   const panel = $('spot-panel');
   const wasOpen = panel.dataset.state === 'open';
-  state.activeId = id;
+  state.activeId = spot.id;
   fillPanel(spot);
-  if (wasOpen) { // swap content without re-running the sheet entrance; restart the content stagger
-    const body = panel.querySelector('.panel__body');
-    body.querySelectorAll(':scope > *').forEach((n) => { n.style.animation = 'none'; void n.offsetWidth; n.style.animation = ''; });
-  }
+  if (wasOpen) panel.querySelectorAll('.panel__body > *').forEach((n) => { n.style.animation = 'none'; void n.offsetWidth; n.style.animation = ''; });
   $('panel-scroll').scrollTop = 0;
   panel.style.removeProperty('--drag');
   clearTimeout(state.parkTimer);
-  panel.classList.remove('is-parked');
-  panel.removeAttribute('inert');
+  panel.classList.remove('is-parked'); panel.removeAttribute('inert');
   panel.dataset.state = 'open';
   document.body.classList.add('has-spot');
   syncActivePin();
+  setRailCurrent(spot.id);
+  history.replaceState(null, '', `${location.pathname}${location.search}#spot=${encodeURIComponent(spot.id)}`);
+}
+
+const decodeSoon = (img) => Promise.race([img.decode ? img.decode().catch(() => {}) : Promise.resolve(), new Promise((r) => setTimeout(r, 350))]);
+
+// Open a spot. With motion on, the tapped photo morphs into the panel photo (View Transitions shared element).
+async function openSpot(id, { from = null, scroll = false } = {}) {
+  const spot = spotById(id);
+  if (!spot) return;
+  const atlas = $('atlas');
+  const panel = $('spot-panel'); const pimg = $('panel-img');
+  const update = async () => {
+    if (scroll) await scrollToEl(atlas, { immediate: true });
+    showPanel(spot);
+    await decodeSoon(pimg);
+    pimg.classList.add('is-loaded');
+  };
+  const canVT = motionOn() && document.startViewTransition && from && from.complete && from.naturalWidth && document.contains(from);
+  if (!canVT) {
+    if (scroll) await scrollToEl(atlas);
+    showPanel(spot);
+  } else {
+    from.style.viewTransitionName = 'spot-photo';
+    root.dataset.vt = 'spot';
+    panel.classList.add('is-snapping');
+    const vt = document.startViewTransition(async () => {
+      from.style.viewTransitionName = '';
+      await update();
+      pimg.style.viewTransitionName = 'spot-photo';
+    });
+    vt.ready.catch(() => {});
+    vt.finished.catch(() => {}).finally(() => { pimg.style.viewTransitionName = ''; delete root.dataset.vt; panel.classList.remove('is-snapping'); });
+    await vt.updateCallbackDone.catch(() => {});
+  }
   flyToSpot(spot);
-  history.replaceState(null, '', `${location.pathname}${location.search}#spot=${encodeURIComponent(id)}`);
   $('panel-title').focus({ preventScroll: true });
 }
 
@@ -273,23 +307,24 @@ function initDrag() {
   let start = null, prevY = 0, prevT = 0, vel = 0, dy = 0;
   const down = (e) => {
     if (wide() || panel.dataset.state !== 'open' || $('panel-scroll').scrollTop > 0 || e.button > 0) return;
-    if (e.target.closest('button, a')) return;
+    if (e.target.closest('a') || (e.target.closest('button') && e.currentTarget !== $('panel-figure'))) return;
     start = e.clientY; prevY = e.clientY; prevT = e.timeStamp; vel = 0; dy = 0;
-    e.currentTarget.setPointerCapture(e.pointerId);
   };
   const move = (e) => {
     if (start == null) return;
     const raw = e.clientY - start;
-    dy = raw > 0 ? raw : raw * 0.15; // light resistance upward
+    if (Math.abs(raw) > 6 && !panel.classList.contains('is-dragging')) { panel.classList.add('is-dragging'); try { e.currentTarget.setPointerCapture(e.pointerId); } catch {} }
+    dy = raw > 0 ? raw : raw * 0.15;
     const dt = Math.max(1, e.timeStamp - prevT); vel = (e.clientY - prevY) / dt; prevY = e.clientY; prevT = e.timeStamp;
-    if (Math.abs(raw) > 4) panel.classList.add('is-dragging');
-    panel.style.setProperty('--drag', `${dy}px`);
+    if (panel.classList.contains('is-dragging')) panel.style.setProperty('--drag', `${dy}px`);
   };
   const up = () => {
     if (start == null) return;
     start = null;
+    if (!panel.classList.contains('is-dragging')) return;
     const dismiss = dy > Math.min(140, panel.offsetHeight * 0.25) || vel > 0.55;
     panel.classList.remove('is-dragging');
+    $('panel-zoom').dataset.dragged = '1'; setTimeout(() => delete $('panel-zoom').dataset.dragged, 60);
     if (dismiss) closeSpot(); else panel.style.setProperty('--drag', '0px');
   };
   for (const zone of [$('panel-grip'), $('panel-figure')]) {
@@ -313,22 +348,25 @@ function renderTips({ instant = false } = {}) {
       item.sources.forEach((u) => { const a = el('a', null, new URL(u).hostname.replace(/^www\./, '')); a.href = u; a.target = '_blank'; a.rel = 'noopener'; src.append(a); });
       li.append(src);
     }
-    reveal(li, i % 2 + Math.floor(i / 2), instant);
+    reveal(li, i % 2, instant);
     return li;
   }));
 }
 
-/* ---------- Section navigation with View Transitions ---------- */
-function navigate(id) {
+/* ---------- Section navigation: Lenis glide to the map, View Transition page-turn to tips ---------- */
+async function navigate(id) {
   const target = $(id);
   if (!target) return;
   const finish = () => target.focus({ preventScroll: true });
-  if (reduced()) { target.scrollIntoView({ behavior: 'auto' }); finish(); return; }
-  if (!document.startViewTransition) { target.scrollIntoView({ behavior: 'smooth' }); finish(); return; }
-  // Reveal everything in the destination first so the new snapshot is complete.
-  target.querySelectorAll('.reveal:not(.is-in)').forEach((n) => { n.classList.add('is-in'); io && io.unobserve(n); });
-  const vt = document.startViewTransition(() => { target.scrollIntoView({ behavior: 'instant', block: 'start' }); });
-  vt.finished.finally(finish);
+  if (!motionOn()) { await scrollToEl(target, { immediate: true }); finish(); return; }
+  if (id === 'tips' && document.startViewTransition) {
+    revealAll(target);
+    const vt = document.startViewTransition(() => scrollToEl(target, { immediate: true }));
+    vt.ready.catch(() => {});
+    vt.finished.catch(() => {}).finally(finish);
+    return;
+  }
+  await scrollToEl(target); finish();
 }
 
 function initNav() {
@@ -344,51 +382,72 @@ function initNav() {
 /* ---------- Boot ---------- */
 function readHash() {
   const m = location.hash.match(/^#spot=(.+)$/);
-  if (m) { const id = decodeURIComponent(m[1]); if (state.spots.some((s) => s.id === id)) openSpot(id); }
+  if (m) { const id = decodeURIComponent(m[1]); if (spotById(id)) { openSpot(id, { scroll: true }); } }
 }
 
 function intro() {
   return new Promise((resolve) => requestAnimationFrame(() => {
-    document.body.classList.remove('is-loading');
-    document.body.classList.add('is-ready');
-    setTimeout(resolve, reduced() ? 0 : 260);
+    document.body.classList.remove('is-loading'); document.body.classList.add('is-ready');
+    setTimeout(resolve, motionOn() ? 260 : 0);
   }));
 }
 
 async function main() {
   const failSafe = setTimeout(() => document.body.classList.replace('is-loading', 'is-ready'), 4000);
   await initI18n();
-  initMap();
+  resolveTheme();
+  initMotion();
   try {
     const [spots, tips] = await Promise.all([loadJSON('data/spots.json'), loadJSON('data/tips.json')]);
-    // Only published spots with coordinates are shown; drafts / photos without GPS stay hidden.
-    state.spots = (spots.spots || spots).filter((s) => s.status === 'published' && Number.isFinite(s.lat) && Number.isFinite(s.lng));
+    // Only published spots with coordinates are shown. Spots with the owner's own photos come first.
+    const list = (spots.spots || spots).filter((s) => s.status === 'published' && Number.isFinite(s.lat) && Number.isFinite(s.lng));
+    state.spots = [...list.filter((s) => (s.photos || []).some(isOwner)), ...list.filter((s) => !(s.photos || []).some(isOwner))];
     state.tips = tips;
   } catch (err) {
     console.error(err);
     $('spot-empty').hidden = false; $('spot-empty').textContent = t('ui.loadError');
   }
   clearTimeout(failSafe);
-  $('panel-directions').insertAdjacentHTML('afterbegin', icon('directions'));
+  initHero(state.spots);
   renderFilters();
+  initRail({
+    onOpen: (id, card) => { state.lastTrigger = card; openSpot(id, { from: card.querySelector('img') }); },
+    onSettle: (id) => { const s = spotById(id); if (!s) return; if ($('spot-panel').dataset.state === 'open') return; state.activeId = null; flyToSpot(s, 14); highlight(id); },
+  });
+  renderRail(visibleSpots());
+  state.map = createMap('map', {
+    bounds: { b: L.latLngBounds(HOME), pad: fitPadding() },
+    maxBounds: MAX_BOUNDS, interactiveWheel: wide(), animate: motionOn(),
+  });
+  state.map.on('click', () => closeSpot());
+  onThemeChange(() => rebuildHero());
+  initTheme();
+  $('panel-directions').insertAdjacentHTML('afterbegin', icon('directions'));
   renderList();
   if (state.tips) renderTips();
+  initLightbox();
   await intro();
-  syncMarkers();
+  initPins();
   readHash();
   $('panel-close').addEventListener('click', () => closeSpot());
+  $('panel-zoom').addEventListener('click', (e) => { if (e.currentTarget.dataset.dragged) return; const s = spotById(state.activeId); if (s) openLightbox(panelPhotos, 0, tx(s.name), e.currentTarget); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSpot(); });
   window.addEventListener('hashchange', readHash);
   initDrag();
   initNav();
   onLangChange(() => {
-    renderFilters();
-    renderList({ instant: true });
+    renderFilters(); renderRail(visibleSpots()); renderList({ instant: true });
     if (state.tips) renderTips({ instant: true });
     relabelMarkers();
-    const s = state.spots.find((x) => x.id === state.activeId);
-    if (s) fillPanel(s);
+    const s = spotById(state.activeId); if (s) fillPanel(s);
   });
+}
+
+// Brief pulse on a pin the rail settled on (without opening the panel).
+function highlight(id) {
+  state.markers.forEach((m, k) => { const n = m.getElement(); if (n) n.classList.toggle('is-active', k === id); });
+  const m = state.markers.get(id);
+  if (m) { m.setZIndexOffset(1000); state.map.once('moveend', () => { const n = m.getElement(); if (n) n.classList.add('is-active'); }); }
 }
 
 main();
