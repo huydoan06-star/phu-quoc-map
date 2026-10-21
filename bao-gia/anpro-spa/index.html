@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Báo Giá Anpro Spa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<style>
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R5 V4 */
+/* Hallmark · macrostructure: Long Document (resort brochure) · nav: N5 floating pill · footer: Ft5 statement · theme: custom (spa + sea) · audience: chủ spa Phú Quốc · use: chốt báo giá qua Zalo · tone: soft */
+:root{
+  --sand:#F4EEE4; --paper:#FBF8F2; --ink:#1E2E33; --muted:#5E6D70;
+  --sea:#14596A; --sea-deep:#0C3A46; --foam:#D7ECE8; --drift:#9A7B5A; --line:#E2D8C8; --brand:#7A1C28;
+  --on-accent:#FFFFFF; --scrim:rgba(0,0,0,.55); --shadow:rgba(0,0,0,.35); --pill:rgba(251,248,242,.86);
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --body:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --sand:#0E1C21; --paper:#13252B; --ink:#ECE6DA; --muted:#A8B5B5; --sea:#6FC1C9; --sea-deep:#9ED8DC; --foam:#173A42; --drift:#C9A87F; --line:#24414A; --brand:#D9707E; --on-accent:#0E1C21; --pill:rgba(19,37,43,.86); color-scheme:dark}}
+:root[data-theme="dark"]{--sand:#0E1C21; --paper:#13252B; --ink:#ECE6DA; --muted:#A8B5B5; --sea:#6FC1C9; --sea-deep:#9ED8DC; --foam:#173A42; --drift:#C9A87F; --line:#24414A; --brand:#D9707E; --on-accent:#0E1C21; --pill:rgba(19,37,43,.86); color-scheme:dark}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+.pillnav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:5;margin:12px auto 0;width:max-content;max-width:100%;display:flex;gap:4px;padding:6px;border:1px solid var(--line);border-radius:999px;background:var(--pill);backdrop-filter:blur(8px);overflow-x:auto}
+.pillnav a{white-space:nowrap;text-decoration:none;color:var(--ink);font-size:.86rem;font-weight:500;padding:6px 12px;border-radius:999px}
+.pillnav a:hover,.pillnav a:focus-visible{background:var(--foam);outline:none}
+.pillnav a.cta{background:var(--sea);color:var(--on-accent)}
+.statement{margin-top:56px;padding-block:48px;border-top:1px solid var(--line);display:grid;gap:14px;justify-items:start}
+.statement h2{font-size:clamp(2rem,5vw,3.2rem)}
+.statement .zalo{display:inline-flex;gap:10px;align-items:center;background:var(--sea);color:var(--on-accent);padding:12px 22px;border-radius:999px;font-weight:600;white-space:nowrap}
+body{background:var(--sand);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+.wrap{max-width:980px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4rem);color:var(--sea-deep);overflow-wrap:anywhere;min-width:0}
+h2{overflow-wrap:anywhere;min-width:0}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);color:var(--sea-deep)}
+h3{font-size:1.5rem}
+p{margin:0}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--drift);font-weight:600}
+.hero{padding-block:56px 28px;display:grid;gap:18px}
+.hero p.lead{font-size:1.12rem;color:var(--muted);max-width:60ch}
+.tide{display:block;width:100%;height:28px;color:var(--sea);opacity:.55;margin:36px 0}
+section{display:grid;gap:22px;padding-block:8px}
+.num{font-family:var(--display);color:var(--drift);font-size:1.15rem;font-weight:600}
+.sec-head{display:grid;gap:6px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:10px;min-width:0}
+ul.check{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+ul.check li{padding-left:28px;position:relative}
+ul.check li::before{content:"";position:absolute;left:4px;top:.55em;width:12px;height:12px;border-radius:50%;border:2px solid var(--sea);background:var(--foam)}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px}
+.old{color:var(--muted);text-decoration:line-through;font-size:1.1rem}
+.new{font-family:var(--display);font-size:3rem;font-weight:700;color:var(--sea);line-height:1}
+.tag{display:inline-block;background:var(--brand);color:var(--on-accent);font-size:.78rem;font-weight:600;letter-spacing:.06em;padding:4px 10px;border-radius:999px}
+.note{font-size:.92rem;color:var(--muted)}
+figure{margin:0;display:grid;gap:8px;min-width:0}
+figure img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid var(--line)}
+figcaption{font-size:.88rem;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (min-width:768px){.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.gallery img{aspect-ratio:3/4;object-fit:cover}
+/* before / after */
+.ba{position:relative;max-width:420px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:619/1100;touch-action:none;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;border-radius:0}
+.ba .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:var(--paper);box-shadow:0 0 8px var(--shadow)}
+.ba .knob{position:absolute;top:50%;left:var(--pos,50%);transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:var(--paper);color:var(--sea);display:grid;place-items:center;font-weight:700;box-shadow:0 2px 10px var(--shadow)}
+.ba .lbl{position:absolute;top:12px;font-size:.75rem;font-weight:600;letter-spacing:.1em;background:var(--scrim);color:var(--paper);padding:4px 8px;border-radius:6px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba input:focus-visible + .knob{outline:3px solid var(--sea);outline-offset:3px}
+.free{display:flex;gap:10px;align-items:center;background:var(--foam);border-radius:10px;padding:12px 14px;font-weight:500}
+.free b{color:var(--sea-deep)}
+/* hub diagram */
+.hub{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;overflow-x:auto}
+.hub svg{display:block;width:100%;min-width:560px;height:auto}
+.hub text{font-family:var(--body);fill:var(--ink)}
+.langs{display:flex;flex-wrap:wrap;gap:8px}
+.langs span{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:4px 12px;font-size:.92rem}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+th,td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--drift)}
+td.r,th.r{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.foot{margin-top:40px;text-align:center;color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion: no-preference){.hero h1{animation:rise .8s ease both}@keyframes rise{from{opacity:.4;transform:translateY(8px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+
+
+<nav class="pillnav" aria-label="Mục lục"><a href="#decor">Thiết kế</a><a href="#ads">Quảng cáo</a><a href="#web">Website</a><a href="#tong">Tổng</a><a class="cta" href="#lienhe">Liên hệ</a></nav>
+<div class="wrap">
+  <header class="hero">
+    <span class="eyebrow">Báo giá · Anpro Spa · Phú Quốc</span>
+    <h1>Làm mới Anpro Spa,<br>sang hơn mà không tốn kém</h1>
+    <p class="lead">Trọn bộ thiết kế decor, bộ nhận diện và menu đã làm cho quán, cùng hai dịch vụ giúp tăng khách: quảng cáo RedNote, Google Maps và website riêng của quán.</p>
+  </header>
+
+  <svg class="tide" viewBox="0 0 400 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 2 50 14 T100 14 T150 14 T200 14 T250 14 T300 14 T350 14 T400 14" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+
+  <!-- 1 -->
+  <section id="decor">
+    <div class="sec-head"><span class="num">01</span><h2>Gói thiết kế decor &amp; nhận diện</h2></div>
+    <div class="ba" id="ba" style="--pos:50%">
+      <img src="img/before.jpg" alt="Mặt tiền hiện tại">
+      <img class="after" src="img/after.jpg" alt="Mặt tiền sau khi làm mới">
+      <span class="lbl" style="left:12px">HIỆN TẠI</span><span class="lbl" style="right:12px">ĐỀ XUẤT</span>
+      <div class="bar"></div>
+      <input id="baRange" type="range" min="0" max="100" value="50" aria-label="Kéo để so sánh trước và sau">
+      <div class="knob" aria-hidden="true">⇆</div>
+    </div>
+    <p class="note" style="text-align:center">Kéo thanh giữa ảnh để so sánh mặt tiền hiện tại và sau khi làm mới.</p>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Gói gồm những gì</h3>
+        <ul class="check">
+          <li>Phương án decor đồng bộ cả quán: mặt tiền, sảnh, hành lang, phòng massage</li>
+          <li>Ảnh phối cảnh trước / sau, ban ngày và buổi tối</li>
+          <li>Phương án góc phải ngoài cửa: lấy lại sự chú ý từ quán bên cạnh</li>
+          <li>Bộ nhận diện: bảng màu, kiểu chữ, danh thiếp, phiếu quà tặng, ảnh đại diện</li>
+          <li>Menu 1 tờ 2 mặt khổ A3, 5 thứ tiếng (Việt, Anh, Hàn, Nga, Trung), có mã QR thanh toán và mạng xã hội</li>
+          <li>Danh sách vật tư kèm link và bảng giá tham khảo</li>
+        </ul>
+      </div>
+      <div class="card" style="align-content:start">
+        <span class="eyebrow">Phí thiết kế trọn gói</span>
+        <div class="price"><span class="new">7.000.000 đ</span></div>
+        <div class="free"><span class="tag">ƯU ĐÃI</span><span>Còn <b>5.000.000 đ</b> cho khách được người quen giới thiệu.</span></div>
+        <p class="note">Chỉ thiết kế, không nhận thi công. Tiền mua vật tư và công thi công do quán tự lo (theo bảng vật tư tham khảo, khoảng 35,7 triệu đồng).</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure><img src="img/sanh.jpg" alt="Sảnh với góc tiếp khách dưới logo"><figcaption>Sảnh</figcaption></figure>
+      <figure><img src="img/hanhlang.jpg" alt="Hành lang tre với đèn chân tường"><figcaption>Hành lang tre</figcaption></figure>
+      <figure><img src="img/phong.jpg" alt="Phòng massage tông be"><figcaption>Phòng massage</figcaption></figure>
+      <figure><img src="img/goc.jpg" alt="Góc phải ngoài cửa với hàng cau và standee"><figcaption>Góc phải ngoài cửa</figcaption></figure>
+    </div>
+    <div class="grid2">
+      <figure><img src="img/brand.jpg" alt="Bộ nhận diện thương hiệu Anpro Spa"><figcaption>Bộ nhận diện</figcaption></figure>
+      <figure><img src="img/menu.jpg" alt="Menu A3 mặt 1"><figcaption>Menu A3, 5 thứ tiếng</figcaption></figure>
+    </div>
+  </section>
+
+  <svg class="tide" viewBox="0 0 400 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 2 50 14 T100 14 T150 14 T200 14 T250 14 T300 14 T350 14 T400 14" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+
+  <!-- 2 -->
+  <section id="ads">
+    <div class="sec-head"><span class="num">02</span><h2>Quảng cáo RedNote &amp; Google Maps</h2>
+      <p class="note" style="font-size:1rem">Đưa quán tới khách du lịch đang tìm spa ở Phú Quốc, đặc biệt khách Trung Quốc trên RedNote (小红书) và khách quốc tế tìm trên Google Maps.</p></div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Quảng cáo RedNote 小红书</h3>
+        <p>Chi phí tùy theo đánh giá tài khoản RedNote của chủ quán.</p>
+        <div class="free"><span>✓</span><span><b>Kiểm tra tài khoản miễn phí.</b> Chỉ thu phí khi bắt đầu chạy quảng cáo.</span></div>
+      </div>
+      <div class="card">
+        <h3>Google Maps</h3>
+        <p>Hỗ trợ xây dựng trang Google Maps của quán và chạy quảng cáo Google Maps, giúp khách tìm "spa near me" dễ thấy quán hơn. Chi phí báo sau khi kiểm tra.</p>
+        <div class="free"><span>✓</span><span><b>Kiểm tra miễn phí.</b> Chỉ thu phí khi bắt đầu chạy.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="tide" viewBox="0 0 400 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 2 50 14 T100 14 T150 14 T200 14 T250 14 T300 14 T350 14 T400 14" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+
+  <!-- 3 -->
+  <section id="web">
+    <div class="sec-head"><span class="num">03</span><h2>Website riêng của Anpro Spa</h2>
+      <p class="note" style="font-size:1rem">Website là "trạm trung tâm": khách thấy quán ở bất cứ đâu, từ Google Maps, RedNote, mã QR trên menu hay biển hiệu, đều được dẫn về một trang duy nhất, từ đó đặt lịch hoặc nhắn tin ngay trên ứng dụng họ quen dùng.</p></div>
+
+    <div class="hub" role="img" aria-label="Sơ đồ: các kênh dẫn khách về website, website dẫn tới đặt lịch và các ứng dụng nhắn tin">
+      <svg viewBox="0 0 760 330">
+        <g font-size="14">
+          <g stroke-width="1.2" style="fill:var(--foam);stroke:var(--sea)">
+            <rect x="10" y="20" width="170" height="40" rx="20"/><rect x="10" y="80" width="170" height="40" rx="20"/><rect x="10" y="140" width="170" height="40" rx="20"/><rect x="10" y="200" width="170" height="40" rx="20"/><rect x="10" y="260" width="170" height="40" rx="20"/>
+          </g>
+          <text x="95" y="45" text-anchor="middle">Google Maps</text>
+          <text x="95" y="105" text-anchor="middle">RedNote 小红书</text>
+          <text x="95" y="165" text-anchor="middle">Facebook / TikTok</text>
+          <text x="95" y="225" text-anchor="middle">QR trên menu, biển</text>
+          <text x="95" y="285" text-anchor="middle">Khách giới thiệu</text>
+          <g stroke-width="1.5" fill="none" style="stroke:var(--sea)">
+            <path d="M180 40 C 250 40, 260 165, 300 165"/><path d="M180 100 C 250 100, 260 165, 300 165"/><path d="M180 160 L300 165"/><path d="M180 220 C 250 220, 260 165, 300 165"/><path d="M180 280 C 250 280, 260 165, 300 165"/>
+            <path d="M460 165 C 500 165, 510 50, 580 50"/><path d="M460 165 C 500 165, 510 110, 580 110"/><path d="M460 165 L580 170"/><path d="M460 165 C 500 165, 510 230, 580 230"/><path d="M460 165 C 500 165, 510 290, 580 290"/>
+          </g>
+          <circle cx="380" cy="165" r="82" style="fill:var(--sea)"/>
+          <text x="380" y="155" text-anchor="middle" font-size="20" font-weight="600" style="fill:var(--paper)">Website</text>
+          <text x="380" y="180" text-anchor="middle" font-size="14" style="fill:var(--paper)">Anpro Spa</text>
+          <text x="380" y="200" text-anchor="middle" font-size="12" style="fill:var(--paper)">5 thứ tiếng</text>
+          <g stroke-width="1.2" style="fill:var(--paper);stroke:var(--drift)">
+            <rect x="580" y="30" width="170" height="40" rx="8"/><rect x="580" y="90" width="170" height="40" rx="8"/><rect x="580" y="150" width="170" height="40" rx="8"/><rect x="580" y="210" width="170" height="40" rx="8"/><rect x="580" y="270" width="170" height="40" rx="8"/>
+          </g>
+          <text x="665" y="55" text-anchor="middle" font-weight="600">Đặt lịch</text>
+          <text x="665" y="115" text-anchor="middle">Zalo · WhatsApp</text>
+          <text x="665" y="175" text-anchor="middle">WeChat · KakaoTalk</text>
+          <text x="665" y="235" text-anchor="middle">Xem menu, giá</text>
+          <text x="665" y="295" text-anchor="middle">Chỉ đường tới quán</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Vì sao spa nên có website riêng</h3>
+        <ul class="check">
+          <li><b>Một đường link cho mọi kênh.</b> In lên menu, biển, danh thiếp, gắn vào Google Maps và RedNote: khách bấm vào là thấy đủ dịch vụ, giá, ảnh và nút đặt lịch.</li>
+          <li><b>Khách nước ngoài tự đọc được.</b> Trang có 5 thứ tiếng, khách Hàn, Nga, Trung không cần hỏi giá qua tin nhắn mới quyết định.</li>
+          <li><b>Đặt lịch nhanh hơn.</b> Nút nhắn Zalo, WhatsApp, WeChat, KakaoTalk ngay trên trang, khách dùng ứng dụng nào cũng liên hệ được.</li>
+          <li><b>Trông chuyên nghiệp, đáng tin.</b> Quán có trang riêng nổi bật hơn hẳn quán chỉ có fanpage, nhất là với khách du lịch lần đầu tới.</li>
+          <li><b>Là tài sản của quán.</b> Không phụ thuộc vào một mạng xã hội; đổi giá, thêm dịch vụ chỉ cần sửa một chỗ.</li>
+        </ul>
+        <div class="langs" aria-label="Ngôn ngữ hỗ trợ"><span>Tiếng Việt</span><span>English</span><span>한국어</span><span>Русский</span><span>中文</span></div>
+      </div>
+      <div class="card" style="align-content:start">
+        <span class="eyebrow">Chi phí website</span>
+        <div class="price"><span class="new">15.000.000 đ</span><span class="note">/ 1 website</span></div>
+        <ul class="check">
+          <li>Sửa theo ý đến khi quán hài lòng</li>
+          <li>Duy trì hằng tháng: <b>1.500.000 đ / tháng</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <svg class="tide" viewBox="0 0 400 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q25 2 50 14 T100 14 T150 14 T200 14 T250 14 T300 14 T350 14 T400 14" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+
+  <section id="tong">
+    <div class="sec-head"><h2>Tổng hợp báo giá</h2></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Hạng mục</th><th class="r">Chi phí</th></tr></thead>
+      <tbody>
+        <tr><td>Gói thiết kế decor &amp; nhận diện<br><span class="note">Chỉ thiết kế, không thi công. Khách được người quen giới thiệu: 5.000.000 đ</span></td><td class="r"><b>7.000.000 đ</b></td></tr>
+        <tr><td>Quảng cáo RedNote 小红书<br><span class="note">Kiểm tra tài khoản miễn phí</span></td><td class="r">Tùy đánh giá tài khoản</td></tr>
+        <tr><td>Xây dựng trang &amp; quảng cáo Google Maps<br><span class="note">Kiểm tra miễn phí</span></td><td class="r">Báo sau khi kiểm tra</td></tr>
+        <tr><td>Website riêng, 5 thứ tiếng<br><span class="note">Sửa đến khi hài lòng</span></td><td class="r"><b>15.000.000 đ</b></td></tr>
+        <tr><td>Duy trì website</td><td class="r">1.500.000 đ / tháng</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Phí quảng cáo chỉ thu khi bắt đầu chạy. Chi phí vật tư và thi công decor tính riêng theo bảng vật tư tham khảo.</p>
+  </section>
+
+  <footer class="statement" id="lienhe">
+    <span class="eyebrow">Liên hệ tư vấn</span>
+    <h2>Kiểm tra RedNote và Google Maps miễn phí, trước khi quyết định.</h2>
+    <p class="note" style="font-size:1rem">Nhắn Zalo để được kiểm tra tài khoản và tư vấn website cho quán.</p>
+    <span class="zalo">Zalo · Huy Đoàn</span>
+  </footer>
+  <p class="foot">Báo giá cho Anpro Spa · Đường Trần Hưng Đạo, Tổ 4, KP Cửa Lấp Dương Tơ, Đặc khu Phú Quốc</p>
+</div>
+
+<script>
+(function(){
+  var ba=document.getElementById('ba'), r=document.getElementById('baRange');
+  if(!ba||!r) return;
+  function set(v){ba.style.setProperty('--pos',v+'%');}
+  r.addEventListener('input',function(){set(r.value);});
+})();
+</script>
+
+</body>
+</html>
