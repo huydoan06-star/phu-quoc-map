@@ -198,6 +198,10 @@ ul.lux li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;heig
 .contact h2 em{color:var(--gold-soft)}
 .contact p{max-width:52ch;color:rgba(233,241,239,.82)}
 .zalo-mark{width:22px;height:22px;flex:none}
+.qr{margin:10px 0 0;display:grid;gap:10px;justify-items:center}
+.qr img{width:168px;height:168px;background:#fff;padding:10px;border-radius:14px;box-shadow:0 0 0 1px rgba(215,189,140,.5)}
+.qr figcaption{font-size:.82rem;color:rgba(233,241,239,.7)}
+@media (max-width:760px){.qr{display:none}}
 .addr{border-top:1px solid var(--line-sea);margin-top:30px;padding-top:22px;font-size:.86rem;color:rgba(233,241,239,.65)}
 
 /* mobile sticky CTA */
@@ -427,6 +431,10 @@ ul.lux li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;heig
       <svg class="zalo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8A2.5 2.5 0 0 1 17.5 16H10l-4.5 4v-4h0A2.5 2.5 0 0 1 3 13.5"/><path d="M8 8h4l-4 4h4M14.5 8v4M17 10a1.4 1.4 0 1 1 0 .01"/></svg>
       Zalo · Huy Đoàn
     </a>
+    <figure class="qr">
+      <img src="img/zalo-qr.png" alt="Mã QR danh thiếp Zalo Huy Đoàn" width="400" height="400" loading="lazy">
+      <figcaption>Hoặc quét mã bằng Zalo trên điện thoại</figcaption>
+    </figure>
     <p class="addr">Báo giá cho Anpro Spa · Đường Trần Hưng Đạo, Tổ 4, KP Cửa Lấp Dương Tơ, Đặc khu Phú Quốc</p>
   </div>
 </footer>
@@ -435,13 +443,11 @@ ul.lux li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;heig
 
 <script>
 (function(){
-  // Điền số Zalo của Huy Đoàn vào đây (ví dụ "09xxxxxxxx") để mọi nút mở thẳng Zalo.
-  // Để trống thì các nút cuộn xuống mục Liên hệ.
-  var ZALO = "";
+  // Link danh thiếp Zalo của Huy Đoàn (giải từ mã QR). Để trống thì các nút cuộn xuống mục Liên hệ.
+  var ZALO = "https://zaloapp.com/qr/p/vs3zpstd4th8";
   if (ZALO) {
     document.querySelectorAll('.js-zalo').forEach(function(a){
-      a.href = 'https://zalo.me/' + ZALO.replace(/\D/g,'');
-      a.target = '_blank'; a.rel = 'noopener';
+      a.href = ZALO; a.target = '_blank'; a.rel = 'noopener';
     });
   }
 
